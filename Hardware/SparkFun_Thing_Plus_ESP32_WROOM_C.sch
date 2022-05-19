@@ -26464,161 +26464,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="ThingPlus">
-<packages>
-<package name="THINGPLUS_FOOTPRINT">
-<pad name="RST" x="10.16" y="-21.59" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="3V3" x="10.16" y="-19.05" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="AREF" x="10.16" y="-16.51" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="GND" x="10.16" y="-13.97" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="A0" x="10.16" y="-11.43" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="A1" x="10.16" y="-8.89" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="A2" x="10.16" y="-6.35" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="A3" x="10.16" y="-3.81" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="A4" x="10.16" y="-1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="A5" x="10.16" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="SCK" x="10.16" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="COPI" x="10.16" y="6.35" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="CIPO" x="10.16" y="8.89" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="RX" x="10.16" y="11.43" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="TX" x="10.16" y="13.97" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="FREEBIE" x="10.16" y="16.51" drill="1.016" diameter="1.8796" rot="R180"/>
-<rectangle x1="9.906" y1="-6.604" x2="10.414" y2="-6.096" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-9.144" x2="10.414" y2="-8.636" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-11.684" x2="10.414" y2="-11.176" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-14.224" x2="10.414" y2="-13.716" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-16.764" x2="10.414" y2="-16.256" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-19.304" x2="10.414" y2="-18.796" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-21.844" x2="10.414" y2="-21.336" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="11.176" x2="10.414" y2="11.684" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="8.636" x2="10.414" y2="9.144" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="6.096" x2="10.414" y2="6.604" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="3.556" x2="10.414" y2="4.064" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="1.016" x2="10.414" y2="1.524" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-1.524" x2="10.414" y2="-1.016" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="-4.064" x2="10.414" y2="-3.556" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="13.716" x2="10.414" y2="14.224" layer="51" rot="R90"/>
-<rectangle x1="9.906" y1="16.256" x2="10.414" y2="16.764" layer="51" rot="R90"/>
-<pad name="V_BATT" x="-10.16" y="-11.43" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="EN" x="-10.16" y="-8.89" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="V_USB" x="-10.16" y="-6.35" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="13" x="-10.16" y="-3.81" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="12" x="-10.16" y="-1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="11" x="-10.16" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="10" x="-10.16" y="3.81" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="9" x="-10.16" y="6.35" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="8" x="-10.16" y="8.89" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="7" x="-10.16" y="11.43" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="SCL" x="-10.16" y="13.97" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="SDA" x="-10.16" y="16.51" drill="1.016" diameter="1.8796" rot="R180"/>
-<rectangle x1="-10.414" y1="-6.604" x2="-9.906" y2="-6.096" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="-9.144" x2="-9.906" y2="-8.636" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="-11.684" x2="-9.906" y2="-11.176" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="11.176" x2="-9.906" y2="11.684" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="8.636" x2="-9.906" y2="9.144" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="6.096" x2="-9.906" y2="6.604" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="3.556" x2="-9.906" y2="4.064" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="1.016" x2="-9.906" y2="1.524" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="-1.524" x2="-9.906" y2="-1.016" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="-4.064" x2="-9.906" y2="-3.556" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="13.716" x2="-9.906" y2="14.224" layer="51" rot="R90"/>
-<rectangle x1="-10.414" y1="16.256" x2="-9.906" y2="16.764" layer="51" rot="R90"/>
-<wire x1="-11.43" y1="17.78" x2="11.43" y2="17.78" width="0.254" layer="51"/>
-<wire x1="11.43" y1="17.78" x2="11.43" y2="-22.86" width="0.254" layer="51"/>
-<wire x1="11.43" y1="-22.86" x2="-11.43" y2="-22.86" width="0.254" layer="51"/>
-<wire x1="-11.43" y1="-22.86" x2="-11.43" y2="17.78" width="0.254" layer="51"/>
-<text x="0" y="-11.43" size="1.27" layer="49" align="center">Thing
-Plus</text>
-<text x="0" y="11.43" size="0.508" layer="49" align="center">Device</text>
-<wire x1="6.35" y1="16.51" x2="6.35" y2="5.08" width="0.127" layer="49"/>
-<wire x1="6.35" y1="5.08" x2="-6.35" y2="5.08" width="0.127" layer="49"/>
-<wire x1="-6.35" y1="5.08" x2="-6.35" y2="16.51" width="0.127" layer="49"/>
-<wire x1="-6.35" y1="16.51" x2="6.35" y2="16.51" width="0.127" layer="49"/>
-</package>
-</packages>
-<symbols>
-<symbol name="THINGPLUS_LOGICAL">
-<wire x1="12.7" y1="-33.02" x2="-12.7" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="12.7" y1="33.02" x2="-12.7" y2="33.02" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-33.02" x2="12.7" y2="33.02" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-33.02" x2="-12.7" y2="33.02" width="0.254" layer="94"/>
-<pin name="13" x="15.24" y="-25.4" visible="pin" length="short" rot="R180"/>
-<pin name="12" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
-<pin name="!RESET" x="-15.24" y="20.32" visible="pin" length="short"/>
-<pin name="AREF" x="-15.24" y="12.7" visible="pin" length="short"/>
-<pin name="11" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
-<pin name="10" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="3.3V" x="-15.24" y="25.4" visible="pin" length="short"/>
-<pin name="GND" x="-15.24" y="-30.48" visible="pin" length="short"/>
-<pin name="V_USB" x="-15.24" y="27.94" visible="pin" length="short"/>
-<pin name="EN" x="-15.24" y="17.78" visible="pin" length="short"/>
-<pin name="V_BATT" x="-15.24" y="30.48" visible="pin" length="short"/>
-<pin name="9" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
-<text x="-12.7" y="-35.56" size="1.778" layer="96" font="vector" rot="MR180" align="top-left">&gt;Value</text>
-<text x="-12.7" y="33.274" size="1.778" layer="95" font="vector">&gt;Name</text>
-<pin name="A0" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="A1" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="A2" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="A3" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="A4" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="A5" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="SCK" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="COPI" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="CIPO" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="RX" x="15.24" y="27.94" visible="pin" length="short" rot="R180"/>
-<pin name="TX" x="15.24" y="30.48" visible="pin" length="short" rot="R180"/>
-<pin name="FREEBIE" x="15.24" y="-30.48" visible="pin" length="short" rot="R180"/>
-<pin name="8" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="7" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="SCL" x="15.24" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="SDA" x="15.24" y="22.86" visible="pin" length="short" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="THINGPLUS_LOGICAL" prefix="U">
-<gates>
-<gate name="U1" symbol="THINGPLUS_LOGICAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="THINGPLUS_FOOTPRINT">
-<connects>
-<connect gate="U1" pin="!RESET" pad="RST"/>
-<connect gate="U1" pin="10" pad="10"/>
-<connect gate="U1" pin="11" pad="11"/>
-<connect gate="U1" pin="12" pad="12"/>
-<connect gate="U1" pin="13" pad="13"/>
-<connect gate="U1" pin="3.3V" pad="3V3"/>
-<connect gate="U1" pin="7" pad="7"/>
-<connect gate="U1" pin="8" pad="8"/>
-<connect gate="U1" pin="9" pad="9"/>
-<connect gate="U1" pin="A0" pad="A0"/>
-<connect gate="U1" pin="A1" pad="A1"/>
-<connect gate="U1" pin="A2" pad="A2"/>
-<connect gate="U1" pin="A3" pad="A3"/>
-<connect gate="U1" pin="A4" pad="A4"/>
-<connect gate="U1" pin="A5" pad="A5"/>
-<connect gate="U1" pin="AREF" pad="AREF"/>
-<connect gate="U1" pin="CIPO" pad="CIPO"/>
-<connect gate="U1" pin="COPI" pad="COPI"/>
-<connect gate="U1" pin="EN" pad="EN"/>
-<connect gate="U1" pin="FREEBIE" pad="FREEBIE"/>
-<connect gate="U1" pin="GND" pad="GND"/>
-<connect gate="U1" pin="RX" pad="RX"/>
-<connect gate="U1" pin="SCK" pad="SCK"/>
-<connect gate="U1" pin="SCL" pad="SCL"/>
-<connect gate="U1" pin="SDA" pad="SDA"/>
-<connect gate="U1" pin="TX" pad="TX"/>
-<connect gate="U1" pin="V_BATT" pad="V_BATT"/>
-<connect gate="U1" pin="V_USB" pad="V_USB"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-IC-Comms">
 <description>&lt;h3&gt;SparkFun Communication ICs&lt;/h3&gt;
 This is the communications library, which contains things that exist on wired busses.  This includes USB to serial conversion ICs, like the FTDI line, plus high speed line drivers, level shifters, bus drivers, CAN transceivers and ethernet PHYs.
@@ -29167,6 +29012,149 @@ Includes both "standard" footprints and "narrow" version (for use with tighter l
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Boards">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+This library contains footprints for SparkFun breakout boards, microcontrollers (Arduino, Particle, Teensy, etc.),  breadboards, non-RF modules, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="THING_PLUS">
+<wire x1="0" y1="55.88" x2="2.54" y2="58.42" width="0.127" layer="51" curve="-90"/>
+<wire x1="2.54" y1="58.42" x2="20.32" y2="58.42" width="0.127" layer="51"/>
+<wire x1="20.32" y1="58.42" x2="22.86" y2="55.88" width="0.127" layer="51" curve="-90"/>
+<wire x1="22.86" y1="55.88" x2="22.86" y2="2.54" width="0.127" layer="51"/>
+<wire x1="22.86" y1="2.54" x2="20.32" y2="0" width="0.127" layer="51" curve="-90"/>
+<wire x1="20.32" y1="0" x2="2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="51" curve="-90"/>
+<wire x1="0" y1="2.54" x2="0" y2="55.88" width="0.127" layer="51"/>
+<pad name="13" x="21.59" y="52.07" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="21.59" y="49.53" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="21.59" y="46.99" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="21.59" y="44.45" drill="1.016" diameter="1.8796"/>
+<pad name="17" x="21.59" y="41.91" drill="1.016" diameter="1.8796"/>
+<pad name="18" x="21.59" y="39.37" drill="1.016" diameter="1.8796"/>
+<pad name="19" x="21.59" y="36.83" drill="1.016" diameter="1.8796"/>
+<pad name="20" x="21.59" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="21" x="21.59" y="31.75" drill="1.016" diameter="1.8796"/>
+<pad name="22" x="21.59" y="29.21" drill="1.016" diameter="1.8796"/>
+<pad name="23" x="21.59" y="26.67" drill="1.016" diameter="1.8796"/>
+<pad name="24" x="21.59" y="24.13" drill="1.016" diameter="1.8796"/>
+<pad name="25" x="21.59" y="21.59" drill="1.016" diameter="1.8796"/>
+<pad name="26" x="21.59" y="19.05" drill="1.016" diameter="1.8796"/>
+<pad name="27" x="21.59" y="16.51" drill="1.016" diameter="1.8796"/>
+<pad name="28" x="21.59" y="13.97" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="1.27" y="24.13" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="1.27" y="26.67" drill="1.016" diameter="1.8796"/>
+<pad name="10" x="1.27" y="29.21" drill="1.016" diameter="1.8796"/>
+<pad name="9" x="1.27" y="31.75" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="1.27" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="1.27" y="36.83" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="1.27" y="39.37" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="1.27" y="41.91" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="1.27" y="44.45" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="1.27" y="46.99" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="1.27" y="49.53" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="1.27" y="52.07" drill="1.016" diameter="1.8796"/>
+<circle x="2.54" y="55.88" radius="1.651" width="0.127" layer="51"/>
+<circle x="20.32" y="55.88" radius="1.651" width="0.127" layer="51"/>
+<circle x="20.32" y="2.54" radius="1.651" width="0.127" layer="51"/>
+<circle x="2.54" y="2.54" radius="1.651" width="0.127" layer="51"/>
+<text x="0" y="-2.54" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="0" y="59.69" size="1.27" layer="27" font="vector">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="THING_PLUS">
+<pin name="SDA" x="-12.7" y="10.16" length="short"/>
+<pin name="SCL" x="-12.7" y="7.62" length="short"/>
+<pin name="GPIO6" x="-12.7" y="5.08" length="short"/>
+<pin name="GPIO5" x="-12.7" y="2.54" length="short"/>
+<pin name="GPIO4" x="-12.7" y="0" length="short"/>
+<pin name="GPIO3" x="-12.7" y="-2.54" length="short"/>
+<pin name="GPIO2" x="-12.7" y="-5.08" length="short"/>
+<pin name="GPIO1" x="-12.7" y="-7.62" length="short"/>
+<pin name="GPIO0" x="-12.7" y="-10.16" length="short"/>
+<pin name="VUSB" x="-12.7" y="-12.7" length="short"/>
+<pin name="!EN" x="-12.7" y="-15.24" length="short"/>
+<pin name="VBAT" x="-12.7" y="-17.78" length="short"/>
+<pin name="FREE" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="TX" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="RX" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="POCI" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="PICO" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="SCK" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="A5" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="A4" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="A3" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="A2" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="A1" x="12.7" y="-15.24" length="short" rot="R180"/>
+<pin name="A0" x="12.7" y="-17.78" length="short" rot="R180"/>
+<pin name="GND" x="12.7" y="-20.32" length="short" rot="R180"/>
+<pin name="NC" x="12.7" y="-22.86" length="short" rot="R180"/>
+<pin name="3V3" x="12.7" y="-25.4" length="short" rot="R180"/>
+<pin name="!RESET" x="12.7" y="-27.94" length="short" rot="R180"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="-33.02" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="13.208" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="THING_PLUS" prefix="J">
+<gates>
+<gate name="G$1" symbol="THING_PLUS" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="THING_PLUS">
+<connects>
+<connect gate="G$1" pin="!EN" pad="11"/>
+<connect gate="G$1" pin="!RESET" pad="28"/>
+<connect gate="G$1" pin="3V3" pad="27"/>
+<connect gate="G$1" pin="A0" pad="24"/>
+<connect gate="G$1" pin="A1" pad="23"/>
+<connect gate="G$1" pin="A2" pad="22"/>
+<connect gate="G$1" pin="A3" pad="21"/>
+<connect gate="G$1" pin="A4" pad="20"/>
+<connect gate="G$1" pin="A5" pad="19"/>
+<connect gate="G$1" pin="FREE" pad="13"/>
+<connect gate="G$1" pin="GND" pad="25"/>
+<connect gate="G$1" pin="GPIO0" pad="9"/>
+<connect gate="G$1" pin="GPIO1" pad="8"/>
+<connect gate="G$1" pin="GPIO2" pad="7"/>
+<connect gate="G$1" pin="GPIO3" pad="6"/>
+<connect gate="G$1" pin="GPIO4" pad="5"/>
+<connect gate="G$1" pin="GPIO5" pad="4"/>
+<connect gate="G$1" pin="GPIO6" pad="3"/>
+<connect gate="G$1" pin="NC" pad="26"/>
+<connect gate="G$1" pin="PICO" pad="17"/>
+<connect gate="G$1" pin="POCI" pad="16"/>
+<connect gate="G$1" pin="RX" pad="15"/>
+<connect gate="G$1" pin="SCK" pad="18"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="TX" pad="14"/>
+<connect gate="G$1" pin="VBAT" pad="12"/>
+<connect gate="G$1" pin="VUSB" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -29242,7 +29230,6 @@ Includes both "standard" footprints and "narrow" version (for use with tighter l
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
-<part name="U6" library="ThingPlus" deviceset="THINGPLUS_LOGICAL" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="USB_C" device="_2-LAYER_PADS"/>
 <part name="R9" library="SparkFun-Resistors" deviceset="5.1KOHM" device="-0402T-1/16W-1%" value="5.1k"/>
 <part name="R10" library="SparkFun-Resistors" deviceset="5.1KOHM" device="-0402T-1/16W-1%" value="5.1k"/>
@@ -29293,6 +29280,7 @@ Includes both "standard" footprints and "narrow" version (for use with tighter l
 <part name="U3" library="SparkFun-IC-Power" deviceset="XC6222" device="B331MR-G"/>
 <part name="U5" library="SparkFun-IC-Power" deviceset="XC6222" device="B331MR-G"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="MICRO-SD" device="FRICTION"/>
+<part name="J5" library="SparkFun-Boards" deviceset="THING_PLUS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -29497,8 +29485,8 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <instance part="GND16" gate="1" x="294.64" y="96.52" smashed="yes">
 <attribute name="VALUE" x="294.64" y="96.266" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND19" gate="1" x="363.22" y="101.6" smashed="yes">
-<attribute name="VALUE" x="363.22" y="101.346" size="1.778" layer="96" align="top-center"/>
+<instance part="GND19" gate="1" x="408.94" y="114.3" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="408.94" y="114.046" size="1.778" layer="96" rot="MR0" align="top-center"/>
 </instance>
 <instance part="GND20" gate="1" x="203.2" y="30.48" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="203.2" y="30.226" size="1.778" layer="96" rot="MR0" align="top-center"/>
@@ -29551,17 +29539,17 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <instance part="SUPPLY12" gate="G$1" x="256.54" y="251.46" smashed="yes">
 <attribute name="VALUE" x="256.54" y="254.254" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="358.14" y="167.64" smashed="yes">
-<attribute name="VALUE" x="358.14" y="170.434" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY13" gate="G$1" x="350.52" y="137.16" smashed="yes">
+<attribute name="VALUE" x="350.52" y="139.954" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="363.22" y="170.18" smashed="yes">
-<attribute name="VALUE" x="363.22" y="172.974" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY14" gate="G$1" x="345.44" y="132.08" smashed="yes">
+<attribute name="VALUE" x="345.44" y="134.874" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY4" gate="G$1" x="93.98" y="248.92" smashed="yes">
 <attribute name="VALUE" x="93.98" y="251.714" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="353.06" y="165.1" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="353.06" y="167.894" size="1.778" layer="96" rot="MR0" align="bottom-center"/>
+<instance part="SUPPLY17" gate="G$1" x="416.56" y="124.46" smashed="yes">
+<attribute name="VALUE" x="416.56" y="127.254" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY18" gate="G$1" x="139.7" y="162.56" smashed="yes">
 <attribute name="VALUE" x="139.7" y="165.354" size="1.778" layer="96" align="bottom-center"/>
@@ -29589,10 +29577,6 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <instance part="Q3" gate="G$1" x="22.86" y="254" smashed="yes">
 <attribute name="NAME" x="27.94" y="254" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="27.94" y="256.54" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="U6" gate="U1" x="381" y="137.16" smashed="yes">
-<attribute name="VALUE" x="368.3" y="101.6" size="1.778" layer="96" font="vector" rot="MR180" align="top-left"/>
-<attribute name="NAME" x="368.3" y="170.434" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J1" gate="J1" x="241.3" y="241.3" smashed="yes">
 <attribute name="NAME" x="238.76" y="251.714" size="1.778" layer="95" font="vector"/>
@@ -29762,6 +29746,10 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <attribute name="NAME" x="53.34" y="43.688" size="1.778" layer="95"/>
 <attribute name="VALUE" x="53.34" y="15.24" size="1.778" layer="96"/>
 </instance>
+<instance part="J5" gate="G$1" x="383.54" y="147.32" smashed="yes">
+<attribute name="NAME" x="373.38" y="114.3" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="373.38" y="160.528" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -29779,12 +29767,6 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <wire x1="93.98" y1="248.92" x2="93.98" y2="246.38" width="0.1524" layer="91"/>
 <junction x="93.98" y="246.38"/>
 <pinref part="U3" gate="G$1" pin="OUT"/>
-</segment>
-<segment>
-<wire x1="353.06" y1="162.56" x2="353.06" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
-<pinref part="U6" gate="U1" pin="3.3V"/>
-<wire x1="353.06" y1="162.56" x2="365.76" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -29838,6 +29820,12 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="38.1" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
+<pinref part="J5" gate="G$1" pin="3V3"/>
+<wire x1="416.56" y1="124.46" x2="416.56" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="121.92" x2="396.24" y2="121.92" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="!RESET!" class="0">
 <segment>
@@ -29847,9 +29835,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="Q2" gate="Q1" pin="C"/>
 </segment>
 <segment>
-<wire x1="365.76" y1="157.48" x2="363.22" y2="157.48" width="0.1524" layer="91"/>
-<label x="363.22" y="157.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="U6" gate="U1" pin="!RESET"/>
+<wire x1="396.24" y1="119.38" x2="398.78" y2="119.38" width="0.1524" layer="91"/>
+<label x="398.78" y="119.38" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="!RESET"/>
 </segment>
 <segment>
 <wire x1="142.24" y1="157.48" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
@@ -29961,12 +29949,6 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U6" gate="U1" pin="GND"/>
-<wire x1="365.76" y1="106.68" x2="363.22" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="363.22" y1="106.68" x2="363.22" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R9" gate="R1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="261.62" y1="223.52" x2="261.62" y2="226.06" width="0.1524" layer="91"/>
@@ -30039,6 +30021,12 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="76.2" y1="27.94" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<pinref part="J5" gate="G$1" pin="GND"/>
+<wire x1="408.94" y1="116.84" x2="408.94" y2="127" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="127" x2="396.24" y2="127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CH340-DTR" class="0">
 <segment>
@@ -30074,12 +30062,6 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<wire x1="365.76" y1="165.1" x2="358.14" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="165.1" x2="358.14" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="G$1" pin="V_USB"/>
-<pinref part="U6" gate="U1" pin="V_USB"/>
-</segment>
-<segment>
 <wire x1="256.54" y1="248.92" x2="256.54" y2="251.46" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="248.92" x2="254" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="G$1" pin="V_USB"/>
@@ -30097,6 +30079,12 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="243.84" x2="137.16" y2="246.38" width="0.1524" layer="91" style="longdash"/>
 <junction x="137.16" y="246.38"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="VUSB"/>
+<pinref part="SUPPLY13" gate="G$1" pin="V_USB"/>
+<wire x1="370.84" y1="134.62" x2="350.52" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="134.62" x2="350.52" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D+" class="0">
@@ -30148,12 +30136,6 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="Q3" gate="G$1" pin="D"/>
 </segment>
 <segment>
-<wire x1="365.76" y1="167.64" x2="363.22" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="167.64" x2="363.22" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="SUPPLY14" gate="G$1" pin="V_BATT"/>
-<pinref part="U6" gate="U1" pin="V_BATT"/>
-</segment>
-<segment>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="185.42" y1="243.84" x2="185.42" y2="246.38" width="0.1524" layer="91"/>
 <junction x="185.42" y="246.38"/>
@@ -30178,6 +30160,12 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="SUPPLY23" gate="G$1" pin="V_BATT"/>
 <wire x1="360.68" y1="248.92" x2="360.68" y2="246.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="VBAT"/>
+<pinref part="SUPPLY14" gate="G$1" pin="V_BATT"/>
+<wire x1="370.84" y1="129.54" x2="345.44" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="129.54" x2="345.44" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DTR-10K" class="0">
@@ -30223,9 +30211,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_26/TP_A0" class="0">
 <segment>
-<wire x1="396.24" y1="144.78" x2="398.78" y2="144.78" width="0.1524" layer="91"/>
-<label x="398.78" y="144.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="A0"/>
+<wire x1="396.24" y1="129.54" x2="398.78" y2="129.54" width="0.1524" layer="91"/>
+<label x="398.78" y="129.54" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="A0"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="109.22" x2="182.88" y2="109.22" width="0.1524" layer="91"/>
@@ -30235,9 +30223,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_25/TP_A1" class="0">
 <segment>
-<wire x1="396.24" y1="142.24" x2="398.78" y2="142.24" width="0.1524" layer="91"/>
-<label x="398.78" y="142.24" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="A1"/>
+<wire x1="396.24" y1="132.08" x2="398.78" y2="132.08" width="0.1524" layer="91"/>
+<label x="398.78" y="132.08" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="A1"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
@@ -30247,9 +30235,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_34/TP_A2" class="0">
 <segment>
-<wire x1="396.24" y1="139.7" x2="398.78" y2="139.7" width="0.1524" layer="91"/>
-<label x="398.78" y="139.7" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="A2"/>
+<wire x1="396.24" y1="134.62" x2="398.78" y2="134.62" width="0.1524" layer="91"/>
+<label x="398.78" y="134.62" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="A2"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
@@ -30260,8 +30248,8 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <net name="ESP_39/TP_A3" class="0">
 <segment>
 <wire x1="396.24" y1="137.16" x2="398.78" y2="137.16" width="0.1524" layer="91"/>
-<label x="398.78" y="137.16" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="A3"/>
+<label x="398.78" y="137.16" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="A3"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
@@ -30271,9 +30259,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_36/TP_A4" class="0">
 <segment>
-<wire x1="396.24" y1="134.62" x2="398.78" y2="134.62" width="0.1524" layer="91"/>
-<label x="398.78" y="134.62" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="A4"/>
+<wire x1="396.24" y1="139.7" x2="398.78" y2="139.7" width="0.1524" layer="91"/>
+<label x="398.78" y="139.7" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="A4"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
@@ -30283,9 +30271,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_4/TP_FB" class="0">
 <segment>
-<pinref part="U6" gate="U1" pin="FREEBIE"/>
-<wire x1="396.24" y1="106.68" x2="398.78" y2="106.68" width="0.1524" layer="91"/>
-<label x="398.78" y="106.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="396.24" y1="157.48" x2="398.78" y2="157.48" width="0.1524" layer="91"/>
+<label x="398.78" y="157.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="FREE"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="137.16" x2="182.88" y2="137.16" width="0.1524" layer="91"/>
@@ -30295,9 +30283,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_19/TP_POCI" class="0">
 <segment>
-<wire x1="396.24" y1="152.4" x2="398.78" y2="152.4" width="0.1524" layer="91"/>
-<label x="398.78" y="152.4" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="U6" gate="U1" pin="CIPO"/>
+<wire x1="396.24" y1="149.86" x2="398.78" y2="149.86" width="0.1524" layer="91"/>
+<label x="398.78" y="149.86" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="POCI"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
@@ -30336,9 +30324,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_22/TP_SCL" class="0">
 <segment>
-<wire x1="396.24" y1="157.48" x2="398.78" y2="157.48" width="0.1524" layer="91"/>
-<label x="398.78" y="157.48" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="SCL"/>
+<wire x1="370.84" y1="154.94" x2="368.3" y2="154.94" width="0.1524" layer="91"/>
+<label x="368.3" y="154.94" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="4"/>
@@ -30356,11 +30344,11 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U2" gate="U1" pin="SCL/IO22"/>
 </segment>
 </net>
-<net name="ESP_14/TP_7" class="0">
+<net name="ESP_14/TP_0" class="0">
 <segment>
-<wire x1="396.24" y1="127" x2="398.78" y2="127" width="0.1524" layer="91"/>
-<label x="398.78" y="127" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="7"/>
+<wire x1="370.84" y1="137.16" x2="368.3" y2="137.16" width="0.1524" layer="91"/>
+<label x="368.3" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="GPIO0"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="132.08" x2="182.88" y2="132.08" width="0.1524" layer="91"/>
@@ -30368,11 +30356,11 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U2" gate="U1" pin="SCK2/IOA14"/>
 </segment>
 </net>
-<net name="ESP_32/TP_8" class="0">
+<net name="ESP_32/TP_1" class="0">
 <segment>
-<wire x1="396.24" y1="124.46" x2="398.78" y2="124.46" width="0.1524" layer="91"/>
-<label x="398.78" y="124.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="8"/>
+<wire x1="370.84" y1="139.7" x2="368.3" y2="139.7" width="0.1524" layer="91"/>
+<label x="368.3" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="GPIO1"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
@@ -30380,11 +30368,11 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U2" gate="U1" pin="XTAL_P/IOA32"/>
 </segment>
 </net>
-<net name="ESP_15/TP_9" class="0">
+<net name="ESP_15/TP_2" class="0">
 <segment>
-<wire x1="396.24" y1="121.92" x2="398.78" y2="121.92" width="0.1524" layer="91"/>
-<label x="398.78" y="121.92" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="9"/>
+<wire x1="370.84" y1="142.24" x2="368.3" y2="142.24" width="0.1524" layer="91"/>
+<label x="368.3" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="GPIO2"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
@@ -30392,11 +30380,11 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U2" gate="U1" pin="CS2/IOA15"/>
 </segment>
 </net>
-<net name="ESP_33/TP_10" class="0">
+<net name="ESP_33/TP_3" class="0">
 <segment>
-<wire x1="396.24" y1="119.38" x2="398.78" y2="119.38" width="0.1524" layer="91"/>
-<label x="398.78" y="119.38" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="10"/>
+<wire x1="370.84" y1="144.78" x2="368.3" y2="144.78" width="0.1524" layer="91"/>
+<label x="368.3" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="GPIO3"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
@@ -30404,11 +30392,11 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U2" gate="U1" pin="XTAL_N/IOA33"/>
 </segment>
 </net>
-<net name="ESP_27/TP_11" class="0">
+<net name="ESP_27/TP_4" class="0">
 <segment>
-<wire x1="396.24" y1="116.84" x2="398.78" y2="116.84" width="0.1524" layer="91"/>
-<label x="398.78" y="116.84" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="11"/>
+<wire x1="370.84" y1="147.32" x2="368.3" y2="147.32" width="0.1524" layer="91"/>
+<label x="368.3" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="GPIO4"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
@@ -30416,11 +30404,11 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U2" gate="U1" pin="IOA27"/>
 </segment>
 </net>
-<net name="ESP_12/TP_12" class="0">
+<net name="ESP_12/TP_5" class="0">
 <segment>
-<wire x1="396.24" y1="114.3" x2="398.78" y2="114.3" width="0.1524" layer="91"/>
-<label x="398.78" y="114.3" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="12"/>
+<wire x1="370.84" y1="149.86" x2="368.3" y2="149.86" width="0.1524" layer="91"/>
+<label x="368.3" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="GPIO5"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="144.78" x2="182.88" y2="144.78" width="0.1524" layer="91"/>
@@ -30429,11 +30417,6 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </segment>
 </net>
 <net name="ESP_13/TP_13/LED" class="0">
-<segment>
-<wire x1="396.24" y1="111.76" x2="398.78" y2="111.76" width="0.1524" layer="91"/>
-<label x="398.78" y="111.76" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="13"/>
-</segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <label x="292.1" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -30448,9 +30431,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_16/TP_RX" class="0">
 <segment>
-<wire x1="396.24" y1="165.1" x2="398.78" y2="165.1" width="0.1524" layer="91"/>
-<label x="398.78" y="165.1" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="U6" gate="U1" pin="RX"/>
+<wire x1="396.24" y1="152.4" x2="398.78" y2="152.4" width="0.1524" layer="91"/>
+<label x="398.78" y="152.4" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="RX"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="129.54" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
@@ -30460,9 +30443,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_17/TP_TX" class="0">
 <segment>
-<wire x1="396.24" y1="167.64" x2="398.78" y2="167.64" width="0.1524" layer="91"/>
-<label x="398.78" y="167.64" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="U6" gate="U1" pin="TX"/>
+<wire x1="396.24" y1="154.94" x2="398.78" y2="154.94" width="0.1524" layer="91"/>
+<label x="398.78" y="154.94" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="TX"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="127" x2="182.88" y2="127" width="0.1524" layer="91"/>
@@ -30479,9 +30462,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_21/TP_SDA" class="0">
 <segment>
-<wire x1="396.24" y1="160.02" x2="398.78" y2="160.02" width="0.1524" layer="91"/>
-<label x="398.78" y="160.02" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="SDA"/>
+<wire x1="370.84" y1="157.48" x2="368.3" y2="157.48" width="0.1524" layer="91"/>
+<label x="368.3" y="157.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="3"/>
@@ -30588,9 +30571,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U3" gate="G$1" pin="EN"/>
 </segment>
 <segment>
-<wire x1="365.76" y1="154.94" x2="363.22" y2="154.94" width="0.1524" layer="91"/>
-<label x="363.22" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U6" gate="U1" pin="EN"/>
+<wire x1="370.84" y1="132.08" x2="368.3" y2="132.08" width="0.1524" layer="91"/>
+<label x="368.3" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="!EN"/>
 </segment>
 </net>
 <net name="ESP_2/RGB_DI" class="0">
@@ -30611,9 +30594,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_35/TP_A5" class="0">
 <segment>
-<wire x1="396.24" y1="132.08" x2="398.78" y2="132.08" width="0.1524" layer="91"/>
-<label x="398.78" y="132.08" size="1.27" layer="95" xref="yes"/>
-<pinref part="U6" gate="U1" pin="A5"/>
+<wire x1="396.24" y1="142.24" x2="398.78" y2="142.24" width="0.1524" layer="91"/>
+<label x="398.78" y="142.24" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="A5"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
@@ -30623,9 +30606,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_23/TP_PICO" class="0">
 <segment>
-<wire x1="396.24" y1="149.86" x2="398.78" y2="149.86" width="0.1524" layer="91"/>
-<label x="398.78" y="149.86" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="U6" gate="U1" pin="COPI"/>
+<wire x1="396.24" y1="147.32" x2="398.78" y2="147.32" width="0.1524" layer="91"/>
+<label x="398.78" y="147.32" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="PICO"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="25.4" x2="48.26" y2="25.4" width="0.1524" layer="91"/>
@@ -30640,9 +30623,9 @@ V_BATT - Single Cell (4.2V MAX)</text>
 </net>
 <net name="ESP_18/TP_SCK" class="0">
 <segment>
-<wire x1="396.24" y1="147.32" x2="398.78" y2="147.32" width="0.1524" layer="91"/>
-<label x="398.78" y="147.32" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="U6" gate="U1" pin="SCK"/>
+<wire x1="396.24" y1="144.78" x2="398.78" y2="144.78" width="0.1524" layer="91"/>
+<label x="398.78" y="144.78" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="SCK"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
@@ -30691,6 +30674,13 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <pinref part="U1" gate="G$1" pin="STAT"/>
 <wire x1="144.78" y1="238.76" x2="144.78" y2="241.3" width="0.1524" layer="91" style="longdash"/>
 <wire x1="144.78" y1="241.3" x2="147.32" y2="241.3" width="0.1524" layer="91" style="longdash"/>
+</segment>
+</net>
+<net name="ESP_13/TP_6/LED" class="0">
+<segment>
+<wire x1="370.84" y1="152.4" x2="368.3" y2="152.4" width="0.1524" layer="91"/>
+<label x="368.3" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="GPIO6"/>
 </segment>
 </net>
 </nets>
