@@ -29571,8 +29571,12 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <wire x1="30.48" y1="161.29" x2="86.36" y2="161.29" width="0.2032" layer="97"/>
 <wire x1="30.48" y1="158.75" x2="86.36" y2="158.75" width="0.2032" layer="97"/>
 <wire x1="30.48" y1="156.21" x2="86.36" y2="156.21" width="0.2032" layer="97"/>
-<text x="139.192" y="241.554" size="1.778" layer="97" font="vector">CHG</text>
-<text x="109.22" y="252.984" size="1.778" layer="97" font="vector">PWR</text>
+<text x="126.492" y="211.074" size="1.778" layer="97" font="vector">Cut trace to 
+disconnect CHG LED.</text>
+<text x="73.66" y="258.064" size="1.778" layer="97" font="vector">Cut trace to 
+disconnect PWR LED.</text>
+<text x="235.712" y="211.074" size="1.778" layer="97" font="vector">Cut trace to 
+disconnect SHLD from GND.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
