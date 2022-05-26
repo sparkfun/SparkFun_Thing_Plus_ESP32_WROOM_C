@@ -29577,6 +29577,7 @@ disconnect CHG LED.</text>
 disconnect PWR LED.</text>
 <text x="235.712" y="211.074" size="1.778" layer="97" font="vector">Cut trace to 
 disconnect SHLD from GND.</text>
+<text x="360.68" y="220.98" size="1.778" layer="97" font="vector">Unshifted 7-bit I2C address: 0x36</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
