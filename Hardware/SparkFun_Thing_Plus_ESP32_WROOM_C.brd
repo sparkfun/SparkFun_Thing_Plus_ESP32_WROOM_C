@@ -3,11 +3,11 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top/Horz" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom/Vert" color="1" fill="1" visible="yes" active="yes"/>
@@ -12722,18 +12722,18 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="PROD_ID" value="CAP-12417" x="14.732" y="12.3952" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
 <attribute name="VALUE" x="16.002" y="18.0372" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="0402-TIGHT" value="0.1uF" x="7.493" y="15.2654" smashed="yes">
+<element name="C4" library="SparkFun-Capacitors" package="0402-TIGHT" value="10uF" x="7.493" y="15.2654" smashed="yes">
 <attribute name="NAME" x="7.493" y="15.8274" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-14993" x="8.763" y="15.2654" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="VALUE" x="7.493" y="14.7034" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<attribute name="PROD_ID" value="CAP-14848" x="8.763" y="15.2654" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
+<attribute name="VALUE" value="10uF" x="7.493" y="14.7034" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="D5" library="SparkFun-LED" package="WS2812-2020" value="WS2812" x="21.717" y="54.9402" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="DIO-15591" x="21.717" y="54.9402" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="C5" library="SparkFun-Capacitors" package="0402-TIGHT" value="10uF" x="21.0566" y="57.3024" smashed="yes" rot="R270">
+<element name="C5" library="SparkFun-Capacitors" package="0402-TIGHT" value="0.1uF" x="21.0566" y="57.3024" smashed="yes" rot="R270">
 <attribute name="NAME" x="21.6186" y="57.3024" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-14848" x="21.0566" y="56.0324" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" value="10uF" x="20.4946" y="57.3024" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="CAP-14993" x="21.0566" y="56.0324" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" value="0.1uF" x="20.4946" y="57.3024" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$72" library="output" package="#17#TX#0" value="" x="21.082" y="49.53" smashed="yes" rot="MR0"/>
 <element name="U$81" library="output" package="#16#RX#0" value="" x="21.082" y="46.99" smashed="yes" rot="MR0"/>

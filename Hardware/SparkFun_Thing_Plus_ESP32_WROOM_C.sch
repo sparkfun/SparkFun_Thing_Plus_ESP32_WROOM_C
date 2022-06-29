@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -29439,13 +29439,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
 <part name="SUPPLY15" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND37" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="D5" library="SparkFun-LED" deviceset="WS2812" device="_2020" value="WS2812"/>
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND12" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="10UF" device="-0402T-6.3V-20%" value="10uF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-6.3V-10%-X7R" value="0.1uF"/>
 <part name="SUPPLY21" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J4" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device=""/>
@@ -29865,15 +29865,15 @@ disconnect SHLD from GND.</text>
 <instance part="GND10" gate="1" x="304.8" y="154.94" smashed="yes">
 <attribute name="VALUE" x="304.8" y="154.686" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C4" gate="G$1" x="327.66" y="162.56" smashed="yes">
-<attribute name="NAME" x="329.184" y="165.481" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="329.184" y="160.401" size="1.778" layer="96" font="vector"/>
+<instance part="C4" gate="G$1" x="76.2" y="30.48" smashed="yes">
+<attribute name="NAME" x="77.724" y="33.401" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="77.724" y="28.321" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY16" gate="G$1" x="327.66" y="170.18" smashed="yes">
-<attribute name="VALUE" x="327.66" y="172.974" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY16" gate="G$1" x="76.2" y="38.1" smashed="yes">
+<attribute name="VALUE" x="76.2" y="40.894" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND37" gate="1" x="327.66" y="154.94" smashed="yes">
-<attribute name="VALUE" x="327.66" y="154.686" size="1.778" layer="96" align="top-center"/>
+<instance part="GND37" gate="1" x="76.2" y="22.86" smashed="yes">
+<attribute name="VALUE" x="76.2" y="22.606" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="D5" gate="G$1" x="304.8" y="165.1" smashed="yes">
 <attribute name="NAME" x="309.626" y="170.434" size="1.778" layer="95" font="vector" align="bottom-center"/>
@@ -29885,15 +29885,15 @@ disconnect SHLD from GND.</text>
 <instance part="GND12" gate="1" x="48.26" y="15.24" smashed="yes">
 <attribute name="VALUE" x="48.26" y="14.986" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="C5" gate="G$1" x="76.2" y="30.48" smashed="yes">
-<attribute name="NAME" x="77.724" y="33.401" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="77.724" y="28.321" size="1.778" layer="96" font="vector"/>
+<instance part="C5" gate="G$1" x="327.66" y="162.56" smashed="yes">
+<attribute name="NAME" x="329.184" y="165.481" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="329.184" y="160.401" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="SUPPLY21" gate="G$1" x="76.2" y="38.1" smashed="yes">
-<attribute name="VALUE" x="76.2" y="40.894" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY21" gate="G$1" x="327.66" y="170.18" smashed="yes">
+<attribute name="VALUE" x="327.66" y="172.974" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND13" gate="1" x="76.2" y="22.86" smashed="yes">
-<attribute name="VALUE" x="76.2" y="22.606" size="1.778" layer="96" align="top-center"/>
+<instance part="GND13" gate="1" x="327.66" y="154.94" smashed="yes">
+<attribute name="VALUE" x="327.66" y="154.686" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="J4" gate="G$1" x="205.74" y="243.84" smashed="yes" rot="MR90">
 <attribute name="NAME" x="211.582" y="241.3" size="1.778" layer="95" rot="MR90"/>
@@ -30011,7 +30011,7 @@ disconnect SHLD from GND.</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="SUPPLY16" gate="G$1" pin="3.3V"/>
-<wire x1="327.66" y1="170.18" x2="327.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="38.1" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91" style="longdash"/>
@@ -30022,7 +30022,7 @@ disconnect SHLD from GND.</text>
 <segment>
 <pinref part="SUPPLY21" gate="G$1" pin="3.3V"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="38.1" x2="76.2" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="170.18" x2="327.66" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
@@ -30212,7 +30212,7 @@ disconnect SHLD from GND.</text>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND37" gate="1" pin="GND"/>
-<wire x1="327.66" y1="160.02" x2="327.66" y2="157.48" width="0.1524" layer="91" style="longdash"/>
+<wire x1="76.2" y1="27.94" x2="76.2" y2="25.4" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="20.32" x2="48.26" y2="20.32" width="0.1524" layer="91" style="longdash"/>
@@ -30223,7 +30223,7 @@ disconnect SHLD from GND.</text>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="76.2" y1="27.94" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="160.02" x2="327.66" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
