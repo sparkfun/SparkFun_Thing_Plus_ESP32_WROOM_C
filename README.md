@@ -25,7 +25,7 @@ Documentation
 
 Product Versions
 ----------------
-* ESP32 Thing Plus (USB-C)
+* ESP32 Thing Plus (USB-C variant)
   * [WRL-20168](https://www.sparkfun.com/products/20168)- v1.0, Initial Release
   * [SPX-18018](https://www.sparkfun.com/products/18018) - SparkX Release
 * ESP32 Thing Plus
