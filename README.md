@@ -1,7 +1,19 @@
 SparkFun Thing Plus - ESP32 WROOM (USB-C)
 ========================================
 
-[REPLACE ME![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com//assets/parts/1/7/2/3/9/18018-Thing_Plus_C_-_ESP32_WROOM-01.jpg)](https://www.sparkfun.com/products/18018)
+<p align="center">
+	<a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/issues" alt="Issues">
+		<img src="https://img.shields.io/github/issues/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
+	<a href="https://docs.sparkfun.com/SparkFun_RTK_Firmware" alt="Documentation">
+		<img src="https://docs.sparkfun.com/SparkFun_RTK_Firmware/badge/?version=latest&style=flat" /></a>
+  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/blob/master/LICENSE" alt="License">
+		<img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
+	<a href="https://twitter.com/intent/follow?screen_name=sparkfun">
+   	<img src="https://img.shields.io/twitter/follow/sparkfun.svg?style=social&logo=twitter" alt="follow on Twitter"></a>
+</p>
+
+
+[REPLACE ME![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com//assets/parts/1/7/2/3/9/20168-Thing_Plus_C_-_ESP32_WROOM-01.jpg)](https://www.sparkfun.com/products/18018)
 
 *[SparkFun Thing Plus - ESP32 WROOM (USB-C) (WRL-20168)](https://www.sparkfun.com/products/20168)*
 
@@ -14,8 +26,12 @@ The ESP32 Thing plus integrates a rich set of peripherals, ranging from capaciti
 Repository Contents
 -------------------
 
-* **/Hardware** - Eagle design files (.brd, .sch)
-* **/Firmware** - Example sketches demonstrating extra peripherals
+* **[/Hardware](/Hardware/)**
+    * [Eagle design files](/Hardware/eagle_files.zip) (.brd, .sch)
+    * [Schematic (.pdf)](/Hardware/schematic.pdf)
+    * [Dimensions](/Hardware/dimensions.pdf) (.pdf)
+    * [Graphical Datasheet](/Hardware/graphical_datasheet.pdf) (.pdf)
+* **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals
 
 Documentation
 --------------
