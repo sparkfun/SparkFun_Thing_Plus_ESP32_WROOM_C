@@ -59,6 +59,8 @@ markdown_extensions:
   - pymdownx.tilde
   - tables
   - admonition
+  - md_in_html
+  - attr_list
 
 extra:
   social:
@@ -75,16 +77,17 @@ extra:
   
 nav:
   - Product Manual:
-    - introduction.md
+    - getting_started.md
     - hardware_overview.md
     - hardware_assembly.md
     - software_overview.md
-    - troubleshooting_tips.md
-  - Resources:
-    - sparkfun_pages.md
-    - CAD_files.md
+  - Product Resources:
+    - board_files.md
     - component_datasheets.md
     - manufacturer_resources.md
+    - troubleshooting_tips.md
+    - sparkfun_pages.md
+    - old_resources.md
   - Contribution/Issues:
+    - file_issue.md
     - contribute.md
-    - issues.md

@@ -1,11 +1,12 @@
 # Troubleshooting Tips
 
-<div class="alert alert-info" role="alert">
+!!! note
     <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> <strong>Not working as expected and need help? </strong></p>
     <p>If you need technical assistance and more information on a product that is not working as you expected, we recommend heading on over to the <a href="https://www.sparkfun.com/technical_assistance">SparkFun Technical Assistance</a> page for some initial troubleshooting.</p>
--> <!-- button(SparkFun Technical Assistance Page, https://www.sparkfun.com/technical_assistance) --> <-
+    <center>
+    [SparkFun Technical Assistance Page](https://www.sparkfun.com/technical_assistance){ .md-button .md-button--primary }
+    </center>
     <p>If you can't find what you need there, you'll need a <a href="https://forum.sparkfun.com/ucp.php?mode=register">Forum Account</a> to search product forums and post questions.<p>
-</div>
 
 
 ### Upload Issues
@@ -27,7 +28,10 @@ If users are have issues during the uploading process, they can try to manually 
 ### COM Port Not Shown
 If the board doesn&apos;t appear on a COM port, double check the correct driver has been installed. Unlike previous versions of the ESP32 Thing Plus, this variant requires the [CH340 driver](https://www.sparkfun.com/ch340) to be installed. *For more information, check out our [How to Install CH340 Drivers Tutorial](https://www.sparkfun.com/ch340).*
 
-<!-- tutorial_big(908) -->
+<center>
+[![How to Install CH340 Drivers](https://cdn.sparkfun.com/c/500-282/assets/learn_tutorials/9/0/8/USB-to-serial_converter_CH340-closeup.jpg)](https://learn.sparkfun.com/tutorials/908)<br>
+[**How to Install CH340 Drivers**](https://learn.sparkfun.com/tutorials/908)
+</center>
 
 Users can also check their USB cable; some cables are power only. Try testing the cable with a smart phone or tablet to see if it appears as a device on the computer. If the phone/tablet doesn't appear, then the USB cable is power only.
 
@@ -47,7 +51,8 @@ Make sure that the &micro;SD card is compatible with the Arduino library being u
 ### Qwiic Connector Power
 For users having issues with the power to their Qwiic devices, don't forget that <code>GPIO 0</code> controls the power output from the XC6222 LDO regulator to the Qwiic connector. Users must toggle <code>GPIO 0</code> high to enable power for the Qwiic connector. In order to conserve battery power or in low power applications, users will can toggle <code>GPIO 0</code> low, to disable the power to the Qwiic connector.
 
-<div class="alert alert-info"><b>Note:</b> <code>GPIO 0</code> is also connected to the <kbd>BOOT</kbd> button. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.</div>
+!!! note
+    <code>GPIO 0</code> is also connected to the <kbd>BOOT</kbd> button. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
 
 
 ### Current Consumption
