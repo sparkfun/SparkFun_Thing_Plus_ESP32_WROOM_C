@@ -34,7 +34,7 @@ The USB connector is provided to power and program the board. For most users, it
 
 
 ### CH340 Serial-to-UART
-The CH340 allows the ESP32-WROOM to communicate with a computer/host device through the board&apos;s USB-C connection. This allows the board to show up as a device on the serial (or COM) port of the computer. Users will need to install the latest drivers for the computer to recognize the board *(see [**Software Overview**](https://learn.sparkfun.com/tutorials/esp32-wroom-thing-plus-usb-c-hookup-guide/software-overview) section)*.
+The CH340 allows the ESP32-WROOM to communicate with a computer/host device through the board&apos;s USB-C connection. This allows the board to show up as a device on the serial (or COM) port of the computer. Users will need to install the latest drivers for the computer to recognize the board *(see [**Software Overview**](/SparkFun_Thing_Plus_ESP32_WROOM_C/software_overview/#ch340-driver) section)*.
 
 
 ## Power
@@ -102,20 +102,24 @@ The power source for the [XC6222 LDO voltage regulators](https://cdn.sparkfun.co
 
 The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate and source pins. Depending on the power supplies connected to the board, the MOSFET will switch between the battery and USB-C connection as power sources for the XC6222 voltage regulators.
 
-<table>
+
+<table  style="font-size:12.25px;width:100%">
     <tr>
-        <th rowspan="2" style="text-align:center; vertical-align:middle">Power Source</th>
+        <th rowspan="2" style="text-align:center; vertical-align:middle; min-width:1rem;">
+            Power<br>
+            Source
+        </th>
         <th colspan="4" style="text-align:center; vertical-align:middle">MOSFET</th>
         <th rowspan="2" style="text-align:center; vertical-align:middle">Power Control Description</th>
     </tr>
     <tr>
-        <th style="text-align:center; vertical-align:middle">Gate</th>
-        <th style="text-align:center; vertical-align:middle">Source</th>
-        <th style="text-align:center">
+        <th style="text-align:center; vertical-align:middle; min-width:1rem;" width="11.4%">Gate</th>
+        <th style="text-align:center; vertical-align:middle; min-width:1rem;" width="14.8%">Source</th>
+        <th style="text-align:center; min-width:1rem;" width="18.4%">
             V<sub>GS</sub><br>
             (V<sub>Gate</sub> - V<sub>Source</sub>)</sub>
         </th>
-        <th style="text-align:center">
+        <th style="text-align:center; min-width:1rem;" width="14.3%">
             MOSFET<br>
             Operation
         </th>
@@ -186,6 +190,7 @@ The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate an
 </table>
 
 
+
 The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of control for the board's power. By default, the regulated 3.3V output is enabled. To disable and shutdown the output voltage from the XC6222, the control pin needs to be pulled low (i.e. shorted to ground (`GND`)). For more information, please refer to the [XC6222 datasheet](https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf).
 
 * The 3.3V power for the board (`3V3`) is controlled by the `EN` pin, which is broken out on the board.
@@ -202,7 +207,7 @@ The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of 
 ### Current Consumption
 According to the specifications, the ESP32-WROOM draws about **240 mA** during RF transmissions. With the WiFi example in this tutorial, have measured it to average around **140 mA** and peak at *300 mA* while actively transceiving. The table below, summarizes the approximate current draw of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) for various operational conditions. The measurements in the table below, were made with the [Nordic Power Profiler Kit II](https://www.sparkfun.com/products/17816).
 
-<table>
+<table style="font-size:13.6px">
     <tr>
         <th rowspan="2" style="vertical-align:middle; text-align:center">Operation</th>
         <th colspan="4" style="text-align:center">Avg. Current Draw</th>
@@ -257,7 +262,7 @@ According to the specifications, the ESP32-WROOM draws about **240 mA** during R
             <i>721 &micro;A (peak)</i>
         </td>
         <td style="vertical-align:middle; text-align:center;">
-            <i>(see above)</i>
+            N/A
         </td>
     </tr>
     <tr>
@@ -278,7 +283,7 @@ According to the specifications, the ESP32-WROOM draws about **240 mA** during R
             <i>(before shutdown)</i>
         </td>
         <td style="vertical-align:middle; text-align:center;">
-            --
+            N/A
         </td>
     </tr>
     <tr>
@@ -707,7 +712,7 @@ The <kbd>BOOT</kbd> button can be used to force the board into the serial bootlo
 </center>
 
 
-!!! note
+!!! warning
     <b>&#9889;</b> The <kbd>BOOT</kbd> button is also connected to <code>GPIO 0</code>, which controls the voltage output to the Qwiic connector. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
 
 
