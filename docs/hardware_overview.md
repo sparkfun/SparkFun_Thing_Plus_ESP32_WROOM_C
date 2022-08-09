@@ -556,7 +556,7 @@ There are several pins that have special functionality in addition to general **
     </div>
     <div class="col-md-7">
         <div class="alert alert-info">
-            <b>Note:</b> By default, in the Arduino IDE, <code>analogRead()</code> returns a 10-bit value. To change the resolution of the value returned by the <code>analogRead()</code> function, use the <a href="https://www.arduino.cc/en/Reference.AnalogReadResolution"><code>analogReadResolution(bits)</code> function</a>.
+            <b>Note:</b> By default, in the Arduino IDE, <code>analogRead()</code> returns a 10-bit value. To change the resolution of the value returned by the <code>analogRead()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/"><code>analogReadResolution(bits)</code> function</a>.
         </div>
         <div class="alert alert-info">
             <p><b>Note:</b> To learn more about analog vs. digital signals, check out this great <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">tutorial</a>.</p>
