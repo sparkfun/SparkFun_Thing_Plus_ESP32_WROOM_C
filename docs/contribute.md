@@ -1,4 +1,7 @@
-# Contribute: Help Fix our Mistake!
+# Contribute: Help Fix our Mistake! <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/pulls" alt="Pull Requests"><img src="https://img.shields.io/github/issues-pr/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a> <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/pulls" alt="Pull Requests"><img src="https://img.shields.io/github/contributors/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a> 
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
+
 Spot something wrong? Feel free to contribute our open-source design and documentation.
 
 ## Improve our Documentation

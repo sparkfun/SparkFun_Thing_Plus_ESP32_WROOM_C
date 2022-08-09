@@ -1,4 +1,4 @@
-# Did we make a mistake?
+# Did we make a mistake?  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/issues" alt="Issues"><img src="https://img.shields.io/github/issues/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
 
 !!! attention
     This in not where customers should seek assistance on a product. If you need technical assistance or more information on a product that is not working as expected, please head over to the [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistance) page for some initial troubleshooting.

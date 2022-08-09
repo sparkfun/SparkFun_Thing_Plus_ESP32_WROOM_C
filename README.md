@@ -2,14 +2,14 @@ SparkFun Thing Plus - ESP32 WROOM (USB-C)
 ========================================
 
 <p align="center">
-	<a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/issues" alt="Issues">
-		<img src="https://img.shields.io/github/issues/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
-	<a href="https://docs.sparkfun.com/SparkFun_RTK_Firmware" alt="Documentation">
-		<img src="https://docs.sparkfun.com/SparkFun_RTK_Firmware/badge/?version=latest&style=flat" /></a>
-  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/blob/master/LICENSE" alt="License">
-		<img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
-	<a href="https://twitter.com/intent/follow?screen_name=sparkfun">
-   	<img src="https://img.shields.io/twitter/follow/sparkfun.svg?style=social&logo=twitter" alt="follow on Twitter"></a>
+  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/issues" alt="Issues">
+    <img src="https://img.shields.io/github/issues/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
+  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/actions" alt="Actions">
+    <img src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/actions/workflows/mkdocs.yml/badge.svg" /></a>
+  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/blob/master/LICENSE.md" alt="License">
+    <img src="https://img.shields.io/badge/license-CC%20BY--SA%204.0-EF9421.svg" /></a>
+  <a href="https://twitter.com/intent/follow?screen_name=sparkfun">
+    <img src="https://img.shields.io/twitter/follow/sparkfun.svg?style=social&logo=twitter" alt="follow on Twitter"></a>
 </p>
 
 
