@@ -191,17 +191,17 @@ As a more professionally oriented product, we will skip over the more fundamenta
         </td>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/51">Pulse Width Modulation<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/f/9/c/8/a/512e869bce395fbc64000002.JPG"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/f/9/c/8/a/512e869bce395fbc64000002.JPG"></a>
         </td>
     </tr>
     <tr>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/62">Logic Levels<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/2/Input_Output_Logic_Level_Tolerances_tutorial_tile.png"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/2/Input_Output_Logic_Level_Tolerances_tutorial_tile.png"></a>
         </td>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/82">I2C<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg"></a>
         </td>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/16">Serial Peripheral Interface (SPI)<br>
@@ -211,21 +211,21 @@ As a more professionally oriented product, we will skip over the more fundamenta
     <tr>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/908">How to Install CH340 Drivers<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/9/0/8/USB-to-serial_converter_CH340-closeup.jpg"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/9/0/8/USB-to-serial_converter_CH340-closeup.jpg"></a>
         </td>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/852">ESP32 Thing Plus Hookup Guide<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/5/2/SparkFun_Transparent_Graphical_OLED_Breakout__Qwiic__Hookup_Guide-01.jpg"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/5/2/SparkFun_Transparent_Graphical_OLED_Breakout__Qwiic__Hookup_Guide-01.jpg"></a>
         </td>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/61">Installing the Arduino IDE<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/1/arduinoThumb.jpg"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/1/arduinoThumb.jpg"></a>
         </td>
     </tr>
     <tr>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/1265">Installing Board Definitions in the Arduino IDE<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/2/6/5/sparkfun_boards.PNG"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/2/6/5/sparkfun_boards.PNG"></a>
         </td>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/5">How to Solder: Through-Hole Soldering<br>
@@ -233,7 +233,7 @@ As a more professionally oriented product, we will skip over the more fundamenta
         </td>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
-<img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
         </td>
     </tr>
 </table>
@@ -252,5 +252,5 @@ As a more professionally oriented product, we will skip over the more fundamenta
 One of the new, advanced features of the board is that it takes advantage of the [Qwiic connect system](https://www.sparkfun.com/qwiic). We recommend familiarizing yourself with the **Logic Levels** and **I<sup>2</sup>C** tutorials.  Click on the banner above to learn more about [Qwiic products](https://www.sparkfun.com/qwiic).
 
 <center>
-<iframe width="600" height="327" src="https://www.youtube.com/embed/x0RDEHqFIF8" title="SparkFun's Qwiic Connect System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="600" height="327" src="https://www.youtube.com/embed/x0RDEHqFIF8" title="SparkFun's Qwiic Connect System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
