@@ -77,13 +77,10 @@ To get started, users will need a few items. Now some users may have a few of th
 
 !!! note
     <p>New to soldering? Check out our <a href="https://learn.sparkfun.com/tutorials/5">Through-Hole Soldering Tutorial</a> for a quick introduction!</p>
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <!-- tutorial_big(5) -->
-        </div>
-        <div class="col-md-3"></div>
-    </div>
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/5">How to Solder: Through-Hole Soldering<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/e/3/9/9/4/51d9fbe1ce395f7a2a000000.jpg"></a>
+    </p>
 
 
 
@@ -170,15 +167,11 @@ To get started, users will need a few items. Now some users may have a few of th
 
 
 !!! note
-    <p>New to soldering? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces Tutorial</a> for a quick introduction!</p>
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <!-- tutorial_big(664) -->
-        </div>
-        <div class="col-md-3"></div>
-    </div>
-
+    <p>New to jumpter pads? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces Tutorial</a> for a quick introduction!</p>
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
+    </p>
 
 
 ## Suggested Reading

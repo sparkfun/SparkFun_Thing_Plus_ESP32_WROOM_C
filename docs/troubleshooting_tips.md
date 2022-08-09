@@ -56,96 +56,98 @@ For users having issues with the power to their Qwiic devices, don't forget that
 ### Current Consumption
 For ultra low power projects, these are the current consumption of the individual components, as specified in their datasheet:
 
-<div class="row">
-    <div class="col-md-6">
-        <ul>
-            <li><a href="https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf">XC6222 LDO Regulator</a>:
-                <ul>
-                    <li>Supply Current: 100 - 220 &micro;A</li>
-                </ul>
-            </li>
-            <li><a href="https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf">MCP73831 Charger Controller</a>:
-                <ul>
-                    <li>Supply Current:
-                        <ul>
-                            <li>510 - 1500 &micro;A (Charging)</li>
-                            <li>53 - 200 &micro;A (Charge complete; no battery)</li>
-                        </ul>
-                    </li>
-                    <li>Constant-Voltage Mode
-                        <ul>
-                            <li>Line/Load regulation: 100 - 50 mA</li>
-                        </ul>
-                    </li>
-                    <li>Fast Charge Constant-Current Mode
-                        <ul>
-                            <li>Fast Charge Current: 450 - 550 mA</li>
-                        </ul>
-                    </li>
-                    <li>Battery Detection Current: 6 &micro;A</li>
-                    <li>Leakage Current: up to 2&micro;A</li>
-                    <li>Status Indicator:
-                        <ul>
-                            <li>Sink Current: 25 mA</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf">MAX17048 Fuel Gauge</a>:
-                <ul>
-                    <li>Supply Current:
-                        <ul>
-                            <li>Sleep: 0.5 - 2 &micro;A</li>
-                            <li>Hibernate: 3 - 5 &micro;A</li>
-                            <li>Active: 23 - 40 &micro;A</li>
-                        </ul>
-                    </li>
-                    <li>I<sup>2</sup>C: 0.2 - 0.4 &micro;A</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="col-md-6">
-        <ul>
-            <li><a href="https://cdn.sparkfun.com/assets/5/0/a/8/5/CH340DS1.PDF">CH340C Serial-to-UART Bridge</a>:
-                <ul>
-                    <li>Supply Current: 4 - 12 mA
-                        <ul>
-                            <li>USB Suspended: 0.04 - 0.15 mA</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf">ESP32 SoC</a>:
-                <ul>
-                    <li>Rec Supply current: 500 mA</li>
-                    <li>Active: 95 - 240 mA
-                        <ul>
-                            <li>w/ RF Transceiver:
-                                <ul>
-                                    <li>TX: up to 380 mA</li>
-                                    <li>RX: Up to 118 mA</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Sleep Modes:
-                        <ul>
-                            <li>Modem: 20 - 68 mA</li>
-                            <li>Light: .8 mA</li>
-                            <li>Deep: 10 - 150 &micro;A</li>
-                            <li>Hibernation: 5 &micro;A</li>
-                            <li>Off: 1&micro;A</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="https://cdn.sparkfun.com/assets/7/0/3/c/9/WS2812C-2020.pdf">WS2812 RGB LED</a>:
-                <ul>
-                    <li>Supply Current: 1&micro;A (@5V)</li>
-                    <li>LEDs: 5mA each (@5V)</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+<table>
+    <tr>
+        <td>
+            <ul>
+                <li><a href="https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf">XC6222 LDO Regulator</a>:
+                    <ul>
+                        <li>Supply Current: 100 - 220 &micro;A</li>
+                    </ul>
+                </li>
+                <li><a href="https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf">MCP73831 Charger Controller</a>:
+                    <ul>
+                        <li>Supply Current:
+                            <ul>
+                                <li>510 - 1500 &micro;A (Charging)</li>
+                                <li>53 - 200 &micro;A (Charge complete; no battery)</li>
+                            </ul>
+                        </li>
+                        <li>Constant-Voltage Mode
+                            <ul>
+                                <li>Line/Load regulation: 100 - 50 mA</li>
+                            </ul>
+                        </li>
+                        <li>Fast Charge Constant-Current Mode
+                            <ul>
+                                <li>Fast Charge Current: 450 - 550 mA</li>
+                            </ul>
+                        </li>
+                        <li>Battery Detection Current: 6 &micro;A</li>
+                        <li>Leakage Current: up to 2&micro;A</li>
+                        <li>Status Indicator:
+                            <ul>
+                                <li>Sink Current: 25 mA</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf">MAX17048 Fuel Gauge</a>:
+                    <ul>
+                        <li>Supply Current:
+                            <ul>
+                                <li>Sleep: 0.5 - 2 &micro;A</li>
+                                <li>Hibernate: 3 - 5 &micro;A</li>
+                                <li>Active: 23 - 40 &micro;A</li>
+                            </ul>
+                        </li>
+                        <li>I<sup>2</sup>C: 0.2 - 0.4 &micro;A</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li><a href="https://cdn.sparkfun.com/assets/5/0/a/8/5/CH340DS1.PDF">CH340C Serial-to-UART Bridge</a>:
+                    <ul>
+                        <li>Supply Current: 4 - 12 mA
+                            <ul>
+                                <li>USB Suspended: 0.04 - 0.15 mA</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf">ESP32 SoC</a>:
+                    <ul>
+                        <li>Rec Supply current: 500 mA</li>
+                        <li>Active: 95 - 240 mA
+                            <ul>
+                                <li>w/ RF Transceiver:
+                                    <ul>
+                                        <li>TX: up to 380 mA</li>
+                                        <li>RX: Up to 118 mA</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Sleep Modes:
+                            <ul>
+                                <li>Modem: 20 - 68 mA</li>
+                                <li>Light: .8 mA</li>
+                                <li>Deep: 10 - 150 &micro;A</li>
+                                <li>Hibernation: 5 &micro;A</li>
+                                <li>Off: 1&micro;A</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="https://cdn.sparkfun.com/assets/7/0/3/c/9/WS2812C-2020.pdf">WS2812 RGB LED</a>:
+                    <ul>
+                        <li>Supply Current: 1&micro;A (@5V)</li>
+                        <li>LEDs: 5mA each (@5V)</li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>

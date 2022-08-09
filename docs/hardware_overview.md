@@ -1,17 +1,18 @@
-<div class="alert alert-info">
-    <div class="row">
-        <div class="col-md-9">
-            <b>Note:</b> All mentions of <code>GPIO</code> in this section will refer to the I/O pins of the ESP32-WROOM module as represented in the datasheets and <a href="https://github.com/espressif/arduino-esp32/tree/master/variants/esp32thing_plus_c/pins_arduino.h">pin numbers</a> of the board definition in the ESP32 Arduino core. They do not correspond with the net names for the <i>ThingPlus Form Factor</i> device in the <a href="https://cdn.sparkfun.com/assets/5/9/7/4/1/SparkFun_Thing_Plus_ESP32-WROOM_C_schematic2.pdf">schematic</a>. <i>(The device in the schematic is primarily, used internally to facilitate the board design process; just ignore the naming of the <code>GPIO0</code> - <code>GPIO6</code> nets.)</i>
-        </div>
-        <div class="col-md-3">
-            <center>
-                <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/thing_plus-device2.png"><img alt="Thing Plus device for pin layout" src="https://cdn.sparkfun.com/r/100-130/assets/learn_tutorials/2/3/5/3/thing_plus-device2.png"></a>
-                <br>
-                <i>(Click to enlarge)</i>
-            </center>
-        </div>
-    </div>
-</div>
+!!! note
+    <table>
+        <tr>
+            <td>
+                All mentions of <code>GPIO</code> in this section will refer to the I/O pins of the ESP32-WROOM module as represented in the datasheets and <a href="https://github.com/espressif/arduino-esp32/tree/master/variants/esp32thing_plus_c/pins_arduino.h">pin numbers</a> of the board definition in the ESP32 Arduino core. They do not correspond with the net names for the <i>ThingPlus Form Factor</i> device in the <a href="https://cdn.sparkfun.com/assets/5/9/7/4/1/SparkFun_Thing_Plus_ESP32-WROOM_C_schematic2.pdf">schematic</a>. <i>(The device in the schematic is primarily, used internally to facilitate the board design process; just ignore the naming of the <code>GPIO0</code> - <code>GPIO6</code> nets.)</i>
+            </td>
+            <td>
+                <center>
+                    <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/thing_plus-device2.png"><img alt="Thing Plus device for pin layout" src="https://cdn.sparkfun.com/r/100-130/assets/learn_tutorials/2/3/5/3/thing_plus-device2.png"></a>
+                    <br>
+                    <i>(Click to enlarge)</i>
+                </center>
+            </td>
+        </tr>
+    </table>
 
 
 ## Board Dimensions
@@ -379,50 +380,52 @@ It is possible for users to reach sub-mA power consumption levels with the deep 
 This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module](https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf) with 16MB of flash memory. Espressif&apos;s ESP32-WROOM module is a versitile, WiFi+BT+BLE MCU module that targets a wide variety of applications. At the core of this module is the ESP32-D0WDQ6 system on a chip (SoC) which is designed to be both scalable and adaptive. Its laundry list of features include:
 
 
-<div class="row">
-    <div class="col-md-8">
-        <ul>
-            <li>Xtensa® Dual-Core 32-bit LX6 Microprocessor <i>(up to 240MHz)</i></li>
-                <ul>
-                    <li>448KB ROM and 520KB SRAM</li>
-                    <li>16MB of Embedded SPI Flash Storage</li>
-                </ul>
-            <li>Cryptographic Hardware Accelerators</li>
-                <ul>
-                    <li>AES, SHA2, ECC, RSA-4096</li>
-                </ul>
-            <li>Integrated 802.11 b/g/n WiFi 2.4GHz Transceiver <i>(up to 150Mbps)</i></li>
-            <li>Integrated dual-mode Bluetooth (Bluetooth v4.2 and BLE) </li>
-            <li>26 GPIO <i>(including strapping pins)</i></li>
-                <ul>
-                    <li>8x Capacitive Touch Electrodes</li>
-                </ul>
-            <li>Operating Voltage: <b>3.0 to 3.6V</b></li>
-                <ul>
-                    <li>WiFi: 380mA <i>(peak)</i></li>
-                   <li>Light-Sleep: 800&micro;A</li>
-                    <li>Deep-Sleep: 10 - 150&micro;A</li>
-                </ul>
-        </ul>
-        <div class="alert alert-warning">
-            <p><b>Note:</b> Users should be aware of the following nuances and details of this board</p>
+<table>
+    <tr>
+        <td>
             <ul>
-                <li>The ESP32-WROOM is only compatible with <b>2.4GHz WiFi</b> networks; it will not work on the 5GHz bands.</li>
-                <li>For details on the boot mode configuration, please refer to <a href="https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf#8">section <b>3.3 Strapping Pins</b></a> of the ESP32-WROOM module datasheet.</li>
+                <li>Xtensa® Dual-Core 32-bit LX6 Microprocessor <i>(up to 240MHz)</i></li>
+                    <ul>
+                        <li>448KB ROM and 520KB SRAM</li>
+                        <li>16MB of Embedded SPI Flash Storage</li>
+                    </ul>
+                <li>Cryptographic Hardware Accelerators</li>
+                    <ul>
+                        <li>AES, SHA2, ECC, RSA-4096</li>
+                    </ul>
+                <li>Integrated 802.11 b/g/n WiFi 2.4GHz Transceiver <i>(up to 150Mbps)</i></li>
+                <li>Integrated dual-mode Bluetooth (Bluetooth v4.2 and BLE) </li>
+                <li>26 GPIO <i>(including strapping pins)</i></li>
+                    <ul>
+                        <li>8x Capacitive Touch Electrodes</li>
+                    </ul>
+                <li>Operating Voltage: <b>3.0 to 3.6V</b></li>
+                    <ul>
+                        <li>WiFi: 380mA <i>(peak)</i></li>
+                    <li>Light-Sleep: 800&micro;A</li>
+                        <li>Deep-Sleep: 10 - 150&micro;A</li>
+                    </ul>
             </ul>
-        </div>
-    </div>
-    <div class="col-md-4" align="center">
-        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/esp32_module.jpg"><img alt="ESP32-WROOM" src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/2/3/5/3/esp32_module.jpg"></a><br>
-        <i>ESP32-WROOM module on the ESP32 Thing Plus (USB-C).<br>
-        (Click to enlarge)</i>
-    </div>
-</div>
+        </td>
+        <td align="center">
+            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/esp32_module.jpg"><img alt="ESP32-WROOM" src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/2/3/5/3/esp32_module.jpg"></a><br>
+            <i>ESP32-WROOM module on the ESP32 Thing Plus (USB-C).<br>
+            (Click to enlarge)</i>
+        </td>
+    <tr>
+</table>
 
 
+!!! warning
+    <p>Users should be aware of the following nuances and details of this board</p>
+    <ul>
+        <li>The ESP32-WROOM is only compatible with <b>2.4GHz WiFi</b> networks; it will not work on the 5GHz bands.</li>
+        <li>For details on the boot mode configuration, please refer to <a href="https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf#8">section <b>3.3 Strapping Pins</b></a> of the ESP32-WROOM module datasheet.</li>
+    </ul>
 
-<div class="alert alert-info">
-    <p><b>Note:</b> The ESP32-WROOM module has various power modes:</p>
+
+!!! note
+    <p>The ESP32-WROOM module has various power modes:</p>
     <ul>
         <li><b>Active</b> -  The chip radio is powered on. The chip can receive, transmit, or listen.</li>
         <li><b>Modem Sleep</b> - The CPU is operational and the clock is configurable. The Wi-Fi/Bluetooth
@@ -436,7 +439,6 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
     </ul>
     
     <p><i>For more information on the power management of the ESP32-WROOM module, pleaser refer to <b>Section 3.7</b> and <b>Tables: 8 and 17</b> of the <a href="https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf">ESP32 SoC Datasheet</a>.</i></p>
-</div>
 
 
 ### Debugging
@@ -518,210 +520,160 @@ When configured as an <b>output</b> the pin will be at a <b>HIGH</b> or <b>LOW</
 There are several pins that have special functionality in addition to general **digital I/O**. These pins and their additional functions are listed in the tabs below. For more technical specifications on the **I/O** pins, you can refer to the [schematic](https://cdn.sparkfun.com/assets/5/9/7/4/1/SparkFun_Thing_Plus_ESP32-WROOM_C_schematic2.pdf), [ESP32-WROOM module datasheet](https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf), [ESP32 SoC datasheet](https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf), and [documentation for the ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#peripherals).
 
 
-<!-- Tabs -->
+#### Analog Input Pins
+The ESP32-WROOM module provides a <b>12-bit ADC</b> input on thirteen of its I/O pins. This functionality is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/"><code>analogRead(pin)</code> function</a>. <i>(*The available ADC pins are highlighted in the image below.)</i>
 
-<div class="col-tabs">
-    <ul class="nav nav-tabs" role="tablist" style="border-bottom-color:dimgrey">
-        <li role="presentation" class="active">
-        <a href="#Analog-Input-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
-            Analog Input</a></li>
-        <li role="presentation">
-        <a href="#PWM-Output-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
-            PWM/Analog Output</a></li>
-        <li role="presentation">
-        <a href="#Serial-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
-            Serial Comm.</a></li>
-        <li role="presentation">
-        <a href="#SPI-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
-            SPI</a></li>
-        <li role="presentation">
-        <a href="#I2C-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
-            I<sup>2</sup>C</a></li>
+<a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_adc2.jpg" width="250" align="right"></a>
+            
+!!! note
+    By default, in the Arduino IDE, <code>analogRead()</code> returns a 10-bit value. To change the resolution of the value returned by the <code>analogRead()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/"><code>analogReadResolution(bits)</code> function</a>.
+
+!!! note
+    <p>To learn more about analog vs. digital signals, check out this great <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">tutorial</a>.</p>
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/89">Analog vs. Digital<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/3/7/6/6/0/51c48875ce395f745a000000.png"></a>
+    </p>
+
+<br>
+
+<p align="center">
+    <i>Analog input pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+</p>
+
+
+
+####  PWM and Analog (DAC) Output Pins
+The ESP32-WROOM module supports up to sixteen channels of <b>20-bit PWM</b> (Pulse Width Modulation) outputs on any of its I/O pins. This is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/"><code>analogWrite(pin, value)</code> function</a> or the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/ledc.html">LED Control API</a>. <i>(*Any I/O pin can be used for the PWM outputs; the available DAC pins, with true analog outputs, are highlighted in the image below.)</i>
+
+<a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_pwm_dac.jpg" width="250" align="right"></a>
+
+!!! note
+    <p>By default, in the Arduino IDE, <code>analogWrite()</code> accepts an 8-bit value. To change the resolution of the PWM signal for the <code>analogWrite()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogwriteresolution/"><code>analogWriteResolution(bits)</code> function</a>.</p>
+    <p><i>(*The PWM output is not a true analog signal. For a true analog output, please refer to the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/dac.html">DAC API</a> for <code>GPIO 25</code> and <code>GPIO 26</code>.)</i></p>
+
+!!! note
+    <p><b>Note:</b> To learn more about pulse width modulation (PWM), check out this great <a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation">tutorial</a>.</p>
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/51">Pulse Width Modulation<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/f/9/c/8/a/512e869bce395fbc64000002.JPG"></a>
+    </p>
+
+<p align="center">
+    <i>Any I/O pin can be used for a PWM output, but these are the DAC pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+</p>
+
+
+
+#### Serial Communication Pins
+The ESP32-WROOM module provides three UART ports. By default, the UART port for the USB connection (<code>Serial</code>) and the labeled UART I/O pins on the board (<code>Serial1</code>) can be accessed through the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">serial communication class</a>.
+
+<a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_serial.jpg"><img alt="Annotated image of UART pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_serial.jpg" width="250" align="right"></a>
+
+!!! note
+    By default, in the Arduino IDE, the <b>SparkFun ESP32 Thing Plus C</b> board definition supports:        
+    <ul>
+        <li><code>Serial</code> - <b>UART (USB)</b></li>
+        <li><code>Serial1</code> - <b>Pins: <code>RX</code>/<code>TX</code> (<code>GPIO 16</code>/<code>GPIO 17</code>)</b></li>
     </ul>
-<!--Analog Input Tab-->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade active in" id="Analog-Input-tab">
-            <div class="col-sm-12">
-<H4>Analog Input Pins</H4>
+    In order to utilize the serial communication on the strapping pins, users will need to create a custom serial port object and declare which pins to access.
+    
+!!! note
+    <p><b>Note:</b> To learn more about serial communication, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-communication">tutorial</a>.</p>
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/8">Serial Communication<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/7/d/f/9/9/50d24be7ce395f1f6c000000.jpg"></a>
+    </p>
 
-<p>The ESP32-WROOM module provides a <b>12-bit ADC</b> input on thirteen of its I/O pins. This functionality is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/"><code>analogRead(pin)</code> function</a>. <i>(*The available ADC pins are highlighted in the image below.)</i></p>
+<p align="center">
+    <i>Default UART ports on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+</p>
 
-<p><div class="row">
-    <div class="col-md-5">
-        <center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_adc2.jpg"></a>
-            <br>
-            <i>Analog input pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-        </center>
-    </div>
-    <div class="col-md-7">
-        <div class="alert alert-info">
-            <b>Note:</b> By default, in the Arduino IDE, <code>analogRead()</code> returns a 10-bit value. To change the resolution of the value returned by the <code>analogRead()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/"><code>analogReadResolution(bits)</code> function</a>.
-        </div>
-        <div class="alert alert-info">
-            <p><b>Note:</b> To learn more about analog vs. digital signals, check out this great <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">tutorial</a>.</p>
-            <br>  
-            <!-- tutorial_big(89) -->
-        </div>
-    </div>
-</div></p>
-            </div>
-        </div>
-<!--PWM Tab-->
-        <div role="tabpanel" class="tab-pane fade" id="PWM-Output-tab">
-            <div class="col-sm-12">
-<H4>Pulse Width Modulation (PWM) and Analog (DAC) Output Pins</H4>
-<p>The ESP32-WROOM module supports up to sixteen channels of <b>20-bit PWM</b> outputs on any of its I/O pins. This is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/"><code>analogWrite(pin, value)</code> function</a> or the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/ledc.html">LED Control API</a>. <i>(*Any I/O pin can be used for the PWM outputs; the available DAC pins, with true analog outputs, are highlighted in the image below.)</i></p>
-
-<p><div class="row">
-    <div class="col-md-5">
-        <center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_pwm_dac.jpg"></a>
-            <br>
-            <i>Any I/O pin can be used for a PWM output, but these are the DAC pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-        </center>
-    </div>
-    <div class="col-md-7">
-        <div class="alert alert-info">
-            <p><b>Note:</b> By default, in the Arduino IDE, <code>analogWrite()</code> accepts an 8-bit value. To change the resolution of the PWM signal for the <code>analogWrite()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogwriteresolution/"><code>analogWriteResolution(bits)</code> function</a>.</p>
-            <p><i>(*The PWM output is not a true analog signal. For a true analog output, please refer to the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/dac.html">DAC API</a> for <code>GPIO 25</code> and <code>GPIO 26</code>.)</i></p>
-        </div>
-        <div class="alert alert-info">
-            <p><b>Note:</b> To learn more about pulse width modulation (PWM), check out this great <a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation">tutorial</a>.</p>
-            <br>
-            <!-- tutorial_big(51) -->
-        </div>
-    </div>
-</div></p>
-            </div>
-        </div>
-<!--Serial Communication Tab-->
-        <div role="tabpanel" class="tab-pane fade" id="Serial-tab">
-            <div class="col-sm-12">
-<H4>Serial Communication Pins</H4>
-<p>The ESP32-WROOM module provides three UART ports. By default, the UART port for the USB connection (<code>Serial</code>) and the labeled UART I/O pins on the board (<code>Serial1</code>) can be accessed through the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">serial communication class</a>.</p>
-<p><div class="row">
-    <div class="col-md-5">
-        <center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_serial.jpg"><img alt="Annotated image of UART pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_serial.jpg"></a>
-            <br>
-            <i>Default UART ports on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-        </center>
-    </div>
-    <div class="col-md-7">
-        <div class="alert alert-info"><b>Note:</b> By default, in the Arduino IDE, the <b>SparkFun ESP32 Thing Plus C</b> board definition supports:        
-        <ul>
-            <li><code>Serial</code> - <b>UART (USB)</b></li>
-            <li><code>Serial1</code> - <b>Pins: <code>RX</code>/<code>TX</code> (<code>GPIO 16</code>/<code>GPIO 17</code>)</b></li>
-        </ul>
-        In order to utilize the serial communication on the strapping pins, users will need to create a custom serial port object and declare which pins to access.</div>
-        <div class="alert alert-info">
-            <p><b>Note:</b> To learn more about serial communication, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-communication">tutorial</a>.</p>
-            <br>
-            <!-- tutorial_big(8) -->
-        </div>
-    </div>
-</div></p>
-
-<div class="alert alert-info">
-    <p><b>Note:</b> We have noticed that with the ESP32 Arduino core, <code>Serial.available()</code> does not operate instantaneously. This is due to an interrupt triggered by the UART, to empty the FIFO when the <b><code>RX</code></b> pin is inactive for two byte periods:
+!!! note
+    <p>We have noticed that with the ESP32 Arduino core, <code>Serial.available()</code> does not operate instantaneously. This is due to an interrupt triggered by the UART, to empty the FIFO when the <b><code>RX</code></b> pin is inactive for two byte periods:
         <ul>
             <li>At 9600 baud, <code>hwAvailable</code> takes [<code>number of bytes received</code> + 2] x 1 ms = <b>11 ms</b> before the UART indicates that data was received from: <code>\r\nERROR\r\n</code>.</li>
             <li>At 115200 baud, <code>hwAvailable</code> takes [<code>number of bytes received</code> + 2] x .087 ms = <b>~1 ms</b> before the UART indicates that data was received from: <code>\r\nERROR\r\n</code>.</li>
         </ul>
     </p>
     <p><i>For more information, please refer to this <a href="https://gitter.im/espressif/arduino-esp32?at=5e25d6370a1cf54144909c85"> chatroom discussion</a>.</i></p>
-</div>
-            </div>
-        </div>
-<!--SPI Tab-->
-        <div role="tabpanel" class="tab-pane fade" id="SPI-tab">
-            <div class="col-sm-12">
-<H4>SPI Communication</H4>
-<p>The ESP32-WROOM module provides three SPI buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/SPI">SPI class</a> is configured to utilize pins <code>GPIO 18</code> (SCK), <code>GPIO 19</code> (POCI), <code>GPIO 23</code> (PICO). These pins share the same SPI bus as the &micro;SD card slot, which utilizes pin <code>5</code> (<code>SS</code>) for its chip select. In order to utilize the other SPI ports or objects, users will need to create a custom SPI object and declare which pins to access.</p>
-
-<div class="alert alert-info"><b>Note:</b> To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. The <code>MOSI</code> signal on a controller has been replaced with <code>SDO</code> or <code>PICO</code>. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to deprecate the <b>MOSI</b>/<b>MISO</b> terminology and transition to the <b>SDO</b>/<b>SDI</b> naming convention</a>.</p>
-</div>
 
 
-<div class="row">
-    <div class="col-md-5">
-        <p><center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_spi.jpg"></a>
-            <br>
-            <i>Default SPI bus connections on the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
-        </center></p>
-    </div>
-    <div class="col-md-7">
-        <center>
-            <table>
-                <tr>
-                    <th style="text-align:center">SCK</th>
-                    <td style="text-align:center"><code>GPIO 18</code> (<code>SCK</code>)</td>
-                </tr>
-                <tr>
-                    <th style="text-align:center">SDI or POCI</th>
-                    <td style="text-align:center"><code>GPIO 19</code> (<code>MISO</code>)</td>
-                </tr>
-                <tr>
-                    <th style="text-align:center">SDO or PICO</th>
-                    <td style="text-align:center"><code>GPIO 23</code> (<code>MOSI</code>)</td>
-                </tr>
-                <tr>
-                    <th style="text-align:center">CS (&micro;SD Card)</th>
-                    <td style="text-align:center"><code>GPIO 5</code> (<code>SS</code>)</td>
-                </tr>
-            </table>
-        </center>
-        <div class="alert alert-info">
-            <p><b>Note:</b> To learn more about the serial peripheral interface (SPI) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">tutorial</a>.</p>
-            <br>
-            <!-- tutorial_big(16) -->
-        </div>
-    </div>
-</div>
-            </div>
-        </div>
-<!--I2C Tab-->
-        <div role="tabpanel" class="tab-pane fade" id="I2C-tab">
-            <div class="col-sm-12">
 
-<H4>I<sup>2</sup>C Communication Pins</H4>
-<p>The ESP32-WROOM module module can support up to two I<sup>2</sup>C buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/wire">Wire class</a> is configured to utilize pins <code>GPIO 21</code> (SDA) and <code>GPIO 22</code> (SCL). These pins share the same I<sup>2</sup>C bus with the Qwiic connector and MAX17048 fuel gauge. In order to utilize the other  I<sup>2</sup>C ports, users will need to create a custom Wire object and declare which pins to access.</p>
+#### SPI Communication
+The ESP32-WROOM module provides three SPI buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/SPI">SPI class</a> is configured to utilize pins <code>GPIO 18</code> (SCK), <code>GPIO 19</code> (POCI), <code>GPIO 23</code> (PICO). These pins share the same SPI bus as the &micro;SD card slot, which utilizes pin <code>5</code> (<code>SS</code>) for its chip select. In order to utilize the other SPI ports or objects, users will need to create a custom SPI object and declare which pins to access.
 
-<div class="row">
-<div class="col-md-5">
-        <p><center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg"></a>
-            <br>
-            <i>Default I<sup>2</sup>C bus connections for the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
-        </center></p>
-    </div>
-    <div class="col-md-7">
-        <center>
-            <table>
-                <tr>
-                    <th style="text-align:center">SCL</th>
-                    <td  style="text-align:center"><code>GPIO 22</code> (<code>SCL</code>)</td>
-                </tr>
-                <tr>
-                    <th style="text-align:center">SDA</th>
-                    <td style="text-align:center"><code>GPIO 21</code> (<code>SDA</code>)</td>
-                </tr>
-            </table>
-        </center>
-        <div class="alert alert-info">
-            <p><b>Note:</b> To learn more about the inter-integrated circuit (I<sup>2</sup>C) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/i2c">tutorial</a>.</p>
-            <br>
-            <!-- tutorial_big(82) -->
-        </div>
-    </div>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
+!!! note
+    To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. The <code>MOSI</code> signal on a controller has been replaced with <code>SDO</code> or <code>PICO</code>. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to deprecate the <b>MOSI</b>/<b>MISO</b> terminology and transition to the <b>SDO</b>/<b>SDI</b> naming convention</a>.</p>
 
+<a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_spi.jpg" width="250" align="right"></a>
+
+<center>
+    <table>
+        <tr>
+            <th style="text-align:center">SCK</th>
+            <td style="text-align:center"><code>GPIO 18</code> (<code>SCK</code>)</td>
+        </tr>
+        <tr>
+            <th style="text-align:center">SDI or POCI</th>
+            <td style="text-align:center"><code>GPIO 19</code> (<code>MISO</code>)</td>
+        </tr>
+        <tr>
+            <th style="text-align:center">SDO or PICO</th>
+            <td style="text-align:center"><code>GPIO 23</code> (<code>MOSI</code>)</td>
+        </tr>
+        <tr>
+            <th style="text-align:center">CS (&micro;SD Card)</th>
+            <td style="text-align:center"><code>GPIO 5</code> (<code>SS</code>)</td>
+        </tr>
+    </table>
+</center>
+
+!!! note
+    To learn more about the serial peripheral interface (SPI) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">tutorial</a>.
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/16">Serial Peripheral Interface (SPI)<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/6/spiThumb_Updated.jpg"></a>
+    </p>
+
+<p align="center">
+    <i>Default SPI bus connections on the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
+</p>
+
+
+
+#### I<sup>2</sup>C Communication Pins
+The ESP32-WROOM module module can support up to two I<sup>2</sup>C buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/wire">Wire class</a> is configured to utilize pins <code>GPIO 21</code> (SDA) and <code>GPIO 22</code> (SCL). These pins share the same I<sup>2</sup>C bus with the Qwiic connector and MAX17048 fuel gauge. In order to utilize the other  I<sup>2</sup>C ports, users will need to create a custom Wire object and declare which pins to access.
+
+<a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg" width="250" align="right"></a>
+
+<center>
+    <table>
+        <tr>
+            <th style="text-align:center">SCL</th>
+            <td  style="text-align:center"><code>GPIO 22</code> (<code>SCL</code>)</td>
+        </tr>
+        <tr>
+            <th style="text-align:center">SDA</th>
+            <td style="text-align:center"><code>GPIO 21</code> (<code>SDA</code>)</td>
+        </tr>
+    </table>
+</center>
+
+
+!!! note
+    To learn more about the inter-integrated circuit (I<sup>2</sup>C) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/i2c">tutorial</a>.</p>
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/82">I2C<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg"></a>
+    </p>
+
+<br>
+<br>
+
+<p align="center">
+    <i>Default I<sup>2</sup>C bus connections for the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
+</p>
 
 
 
@@ -780,50 +732,52 @@ The red, power (`PWR`) LED will light up once **3.3V** is supplied to the board.
 ### Battery Charging LED
 The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 charge management controller. The LED will shut off when no battery is present, when the charge management controller is in standby (*after the battery charging has been completed*), or when the charge management controller is shutdown. The LED will illuminate when the charge management controller is in the process of charging the battery. For more information, please refer to the [MCP73831 datasheet](https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf).
 
-<div class="row" align="center">
-    <div class="col-md-6">
-        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/LED_chg.jpg"><img alt="Charge LED" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/LED_chg.jpg"></a><br>
-        <i>The battery charging (<code>CHG</code>) LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-    </div>
-    <div class="col-md-6">
-<table>
+<table style="width:100%">
     <tr>
-        <th style="text-align:center">Charge Cycle State</th>
-        <th style="text-align:center">STAT1</th>
-    </tr>
-    <tr>
-        <td>
-            Shutdown
-            <ul>
-                <li>Thermal Shutdown</li>
-                <li>V<sub>DD</sub> < V<sub>BAT</sub></li>
-            </ul>
+        <td align="center">
+            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/LED_chg.jpg"><img alt="Charge LED" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/LED_chg.jpg"></a><br>
+            <i>The battery charging (<code>CHG</code>) LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </td>
-        <td align="center" style="vertical-align:middle"><b>Off</b> (High Z)</td>
-    </tr>
-    <tr>
-        <td>No Battery Present</td>
-        <td align="center"><b>Off</b> (High Z)</td>
-    </tr>
-    <tr>
-        <td>Charge Complete – Standby</td>
-        <td align="center"><b>Off</b> (H)</td>
-    </tr>
-    <tr>
-        <td>Preconditioning</td>
-        <td align="center"><b>On</b> (L)</td>
-    </tr>
-    <tr>
-        <td>Constant-Current Fast Charge</td>
-        <td align="center"><b>On</b> (L)</td>
-    </tr>
-    <tr>
-        <td>Constant Voltage</td>
-        <td align="center"><b>On</b> (L)</td>
+        <td align="center" width="50%">
+            <table>
+                <tr>
+                    <th style="text-align:center">Charge Cycle State</th>
+                    <th style="text-align:center">STAT1</th>
+                </tr>
+                <tr>
+                    <td>
+                        Shutdown
+                        <ul>
+                            <li>Thermal Shutdown</li>
+                            <li>V<sub>DD</sub> < V<sub>BAT</sub></li>
+                        </ul>
+                    </td>
+                    <td align="center" style="vertical-align:middle"><b>Off</b> (High Z)</td>
+                </tr>
+                <tr>
+                    <td>No Battery Present</td>
+                    <td align="center"><b>Off</b> (High Z)</td>
+                </tr>
+                <tr>
+                    <td>Charge Complete – Standby</td>
+                    <td align="center"><b>Off</b> (H)</td>
+                </tr>
+                <tr>
+                    <td>Preconditioning</td>
+                    <td align="center"><b>On</b> (L)</td>
+                </tr>
+                <tr>
+                    <td>Constant-Current Fast Charge</td>
+                    <td align="center"><b>On</b> (L)</td>
+                </tr>
+                <tr>
+                    <td>Constant Voltage</td>
+                    <td align="center"><b>On</b> (L)</td>
+                </tr>
+            </table>
+        </td>
     </tr>
 </table>
-    </div>
-</div>
 
 
 ### STAT LED
@@ -880,22 +834,17 @@ There are two jumpers on the back of the board that can be used to easily modify
     *Traces around the **`CHG LED`** jumper. (Click to enlarge)*
     </center>
 
+!!! note
+    <p>Never modified a jumper before? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces tutorial</a> for a quick introduction!</p>
+    <p align="center">
+        <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
+        <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
+    </p>
 
-<div class="row">
-    <div class="col-md-5" align="center">
-        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/jumpers.jpg"><img alt="Jumpers" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/jumpers.jpg"></a>
-        <br>
-        <i>The jumpers on the back of the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-    </div>
-    <div class="col-md-7">
-        <div class="alert alert-info">
-            <p>Never modified a jumper before? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces tutorial</a> for a quick introduction!</p>
-            <p><!-- tutorial_big(664) --></p>
-        </div>
-    </div>
-    <div class="col-md-3"></div>
-</div>
-
+<center>
+[![Jumpers](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/jumpers.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/jumpers.jpg)<br>
+*The jumpers on the back of the ESP32-WROOM Thing Plus. (Click to enlarge)*
+</center>
 
 
 
@@ -940,44 +889,47 @@ The Qwiic connector and battery fuel gauge are attached to the primary I<sup>2</
 
 
 ### Battery Fuel Gauge
-The [MAX17048 fuel gauge](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf) measures the approximate charge or discharge rate, state of charge (SOC) (based on ModelGauge algorithm), and voltage of a connected battery. Additionally, the chip is powered directly from `VBAT`, when a LiPo battery is connected. For more information, pleas refer to the [MAX17048 datasheet](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf).
+The [MAX17048 fuel gauge](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf) measures the approximate charge or discharge rate, state of charge (SOC) (based on ModelGauge algorithm), and voltage of a connected battery. Additionally, the chip is powered directly from `VBAT`, when a LiPo battery is connected. For more information, please refer to the [MAX17048 datasheet](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf).
 
 
-<div class="row" align="center">
-    <div class="col-md-6">
-        <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"><img alt="MAX17048 Fuel Gauge" src="https://cdn.sparkfun.com/r/300-300/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"></a><br>
-        <i>The MAX17048 fuel gauge on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-    </div>
-    <div class="col-md-6">
 <table>
     <tr>
-        <td>I<sup>2</sup>C Address</td>
         <td>
-            <b>0x36</b> (7-bit)<br>
-            <b>0x6C</b> (write)/<b>0x6D</b> (read)
+            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"><img alt="MAX17048 Fuel Gauge" src="https://cdn.sparkfun.com/r/300-300/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"></a><br>
+            <i>The MAX17048 fuel gauge on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </td>
-    </tr>
-    <tr>
-        <td>Voltage Measurement</td>
         <td>
-            Range: 2.5 - 5 V<br>
-            Precision: &PlusMinus;7.5 mV/Cell<br>
-            Resolution 1.25 mV/Cell
-        </td>
-    </tr>
-    <tr>
-        <td>Current Consumption</td>
-        <td>
-            Sleep: .5 - 2 µA<br>
-            Hibernate: 3 - 5 µA<br>
-            Active: 23 - 40 µA
+            <table>
+                <tr>
+                    <td>I<sup>2</sup>C Address</td>
+                    <td>
+                        <b>0x36</b> (7-bit)<br>
+                        <b>0x6C</b> (write)/<b>0x6D</b> (read)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Voltage Measurement</td>
+                    <td>
+                        Range: 2.5 - 5 V<br>
+                        Precision: &PlusMinus;7.5 mV/Cell<br>
+                        Resolution 1.25 mV/Cell
+                    </td>
+                </tr>
+                <tr>
+                    <td>Current Consumption</td>
+                    <td>
+                        Sleep: .5 - 2 µA<br>
+                        Hibernate: 3 - 5 µA<br>
+                        Active: 23 - 40 µA
+                    </td>
+                </tr>
+            </table>
         </td>
     </tr>
 </table>
 
-<div class="alert alert-info" align="left"><b>Note:</b> The <code>Alert</code> pin for the MAX17048 is not connected and cannot be utilized.</div>
-    </div>
-</div>
+!!! note
+    The <code>Alert</code> pin for the MAX17048 is not connected and cannot be utilized.
 
 
 ### Qwiic Connector
@@ -996,66 +948,44 @@ In order to enable power for the Qwiic connector, users must toggle <code>GPIO 0
     <b>&#9889;</b> <code>GPIO 0</code> is also connected to the <kbd>BOOT</kbd> button. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
 
 
-**What is Qwiic?**
+#### What is Qwiic?
 
 The Qwiic system is intended a quick, hassle-free cabling/connector system for I<sup>2</sup>C devices. Qwiic is actually a play on words between "quick" and I<sup>2</sup>C or "iic".
-<br>
-<br>
 
-<!-- youtube(https://youtu.be/x0RDEHqFIF8) -->
+<center>
+<iframe width="600" height="327" src="https://www.youtube.com/embed/x0RDEHqFIF8" title="SparkFun's Qwiic Connect System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
-<H4>Features of the Qwiic System</H4>
+<b>Features of the Qwiic System</b>
 
-<div class="col-tabs">
-    <ul class="nav nav-tabs" role="tablist" style="border-bottom-color:dimgrey">
-        <li role="presentation" class="active">
-        <a href="#Soldering-tab" aria-control="Soldering-tab" role="tab" data-toggle="tab">
-            No Soldering</a></li>
-        <li role="presentation">
-        <a href="#Connector-tab" aria-control="Connector-tab" role="tab" data-toggle="tab">
-            Polarized Connector</a></li>
-        <li role="presentation">
-        <a href="#Daisy-tab" aria-control="Daisy-tab" role="tab" data-toggle="tab">
-            Daisy Chain</a></li>
-    </ul>
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade active in" id="Soldering-tab">
-            <div class="col-sm-12">
-              <h4 style="margin-bottom:10px;">Keep your soldering iron at bay.</h4>
-            </div>
-            <div class="col-sm-8">
-              <p>Cables plug easily between boards making quick work of setting up a new prototype. We currently offer three different lengths of Qwiic cables as well as a breadboard friendly cable to connect any Qwiic enabled board to anything else. Initially you may need to solder headers onto the shield to connect your platform to the Qwiic system but once that’s done it’s plug and go!</p>
-            </div>
-            <div class="col-sm-4 col-sm-4"> <img src="https://cdn.sparkfun.com/assets/8/d/9/2/a/jst-board.jpg" alt="Qwiic Cable and Board">
-              <p class="small" align="center">Qwiic cables connected to <a href="https://www.sparkfun.com/products/14414">Spectral Sensor Breakout</a></p>
-            </div>
-        <div class="clearfix"></div>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="Connector-tab">
-            <div class="col-sm-12">
-              <h4 style="margin-bottom:10px;">Minimize your mistakes.</h4>
-            </div>
-            <div class="col-sm-8">
-              <p>How many times have you swapped the SDA and SCL wires on your breadboard hoping the sensor will start working? The Qwiic connector is polarized so you know you’ll have it wired correctly, every time, from the start.</p>
-              <p>The PCB connector is part number SM04B-SRSS (<a href="https://cdn.sparkfun.com/assets/parts/1/2/2/8/9/Qwiic_Connector_Datasheet.pdf">Datasheet</a>) or equivalent. The mating connector used on cables is part number SHR04V-S-B or equivalent. This is a common and low cost connector.</p>
-            </div>
-            <div class="col-sm-4 col-sm-4"> <img src="https://cdn.sparkfun.com/assets/d/a/2/e/6/jst-connector_1.jpg" alt="JST Connector">
-              <p class="small" align="center">1mm pitch, 4-pin JST connector</p>
-            </div>
-        <div class="clearfix"></div>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="Daisy-tab">
-            <div class="col-sm-12">
-              <h4 style="margin-bottom:10px;">Expand with ease.</h4>
-            </div>
-            <div class="col-sm-12">
-              <p>It’s time to leverage the power of the I<sup>2</sup>C bus! Most Qwiic boards will have two or more connectors on them allowing multiple devices to be connected.</p>
-            </div>
-            <div class="col-sm-12"> <img src="https://cdn.sparkfun.com/assets/b/d/0/1/0/daisy-chain_2.png" alt="Daisy Chain" class="img-responsive">
-              <p class="small" align="center">Shown above: <a href="https://www.sparkfun.com/products/14352">Qwiic Shield for Arduino</a> on <a href="https://www.sparkfun.com/products/13975">RedBoard</a>, <a href="https://www.sparkfun.com/products/14351">Spectral Sensor Breakout - NIR</a>, <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout - Visible</a> and <a href="https://www.sparkfun.com/products/14414">SparkFun GPS Breakout</a>
-     </p>
-            </div>
-        <div class="clearfix"></div>
-        </div>
-    </div>  
-</div>
+<table>
+    <tr>
+        <td>
+            <p><b>No Soldering</b> - <i>Keep your soldering iron at bay<i></p>
+            <p>Cables plug easily between boards making quick work of setting up a new prototype. We currently offer three different lengths of Qwiic cables as well as a breadboard friendly cable to connect any Qwiic enabled board to anything else. Initially you may need to solder headers onto the shield to connect your platform to the Qwiic system but once that’s done it’s plug and go!</p>
+        </td>
+        <td>
+            <img src="https://cdn.sparkfun.com/assets/8/d/9/2/a/jst-board.jpg" alt="Qwiic Cable and Board"><br>
+            <i>Qwiic cables connected to <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout</a></i>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p><b>Polarized Connector</b> - <i>Minimize your mistakes</i></p>
+            <p>How many times have you swapped the SDA and SCL wires on your breadboard hoping the sensor will start working? The Qwiic connector is polarized so you know you’ll have it wired correctly, every time, from the start.</p>
+            <p>The PCB connector is part number SM04B-SRSS (<a href="https://cdn.sparkfun.com/assets/parts/1/2/2/8/9/Qwiic_Connector_Datasheet.pdf">Datasheet</a>) or equivalent. The mating connector used on cables is part number SHR04V-S-B or equivalent. This is a common and low cost connector.</p>
+        </td>
+        <td>
+            <img src="https://cdn.sparkfun.com/assets/d/a/2/e/6/jst-connector_1.jpg" alt="JST Connector"><br>
+            <i>1mm pitch, 4-pin JST connector</i>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p><b>Daisy Chain</b> - </i>Expand with ease</i></p>
+            <p>It’s time to leverage the power of the I<sup>2</sup>C bus! Most Qwiic boards will have two or more connectors on them allowing multiple devices to be connected.</p>
+            <p align="center"><img src="https://cdn.sparkfun.com/assets/b/d/0/1/0/daisy-chain_2.png" alt="Daisy Chain"><br>
+            <i>Shown above: <a href="https://www.sparkfun.com/products/14352">Qwiic Shield for Arduino</a> on <a href="https://www.sparkfun.com/products/13975">RedBoard</a>, <a href="https://www.sparkfun.com/products/14351">Spectral Sensor Breakout - NIR</a>, <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout - Visible</a> and <a href="https://www.sparkfun.com/products/14414">SparkFun GPS Breakout</a></i></p>
+        </td>
+    </tr>
+</table>
