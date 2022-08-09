@@ -1,5 +1,3 @@
-# Espressif's Resources
-
 Espressif also provides great resources for their ESP32 module: 
 
 * [ESP32 Product Resource Page](http://espressif.com/en/products/hardware/esp32/resources)

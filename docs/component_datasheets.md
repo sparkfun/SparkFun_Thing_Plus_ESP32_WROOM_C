@@ -1,5 +1,3 @@
-# Hardware Datasheets
-
 * [ESP32-WROOM Module (PDF)](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf)
     * [ESP32 SoC (PDF)](./component_datasheets/esp32_soc_datasheet_en.pdf)
 * [MCP73831 (PDF)](./component_datasheets/MCP73831.pdf)

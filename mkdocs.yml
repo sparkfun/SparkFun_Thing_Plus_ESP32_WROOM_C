@@ -76,18 +76,18 @@ extra:
       link: https://twitter.com/sparkfun
   
 nav:
+  - ESP32 Thing Plus (USB-C): index.md
   - Product Manual:
-    - getting_started.md
-    - hardware_overview.md
-    - hardware_assembly.md
-    - software_overview.md
+    - Required Materials: getting_started.md
+    - Hardware Overview: hardware_overview.md
+    - Hardware Assembly: hardware_assembly.md
+    - Software Overview: software_overview.md
   - Product Resources:
-    - board_files.md
-    - component_datasheets.md
-    - manufacturer_resources.md
-    - troubleshooting_tips.md
-    - sparkfun_pages.md
-    - old_resources.md
+    - Board Files: board_files.md
+    - Hardware Datasheets: component_datasheets.md
+    - Espressif's Resources: manufacturer_resources.md
+    - Troubleshooting Tips: troubleshooting_tips.md
+    - SparkFun's Resources: sparkfun_pages.md
   - Contribution/Issues:
-    - file_issue.md
-    - contribute.md
+    - Issues: file_issue.md
+    - Contribute: contribute.md

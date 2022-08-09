@@ -1,5 +1,3 @@
-# Hardware Assembly
-
 ## USB Programming
 The USB connection is utilized for programming and serial communication. Users only need to plug their ESP32-WROOM Thing Plus into a computer using a USB-C cable.
 

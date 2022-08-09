@@ -1,5 +1,3 @@
-# Hardware Overview
-
 <div class="alert alert-info">
     <div class="row">
         <div class="col-md-9">
