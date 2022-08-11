@@ -13,7 +13,7 @@ SparkFun Thing Plus - ESP32 WROOM (USB-C)
 </p>
 
 
-[REPLACE ME![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com//assets/parts/1/7/2/3/9/20168-Thing_Plus_C_-_ESP32_WROOM-01.jpg)](https://www.sparkfun.com/products/18018)
+[REPLACE ME![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com/assets/parts/1/9/9/6/8/20168Diagonal.jpg)](https://www.sparkfun.com/products/18018)
 
 *[SparkFun Thing Plus - ESP32 WROOM (USB-C) (WRL-20168)](https://www.sparkfun.com/products/20168)*
 

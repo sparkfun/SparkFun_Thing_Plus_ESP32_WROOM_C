@@ -18,7 +18,7 @@ To get started, users will need a few items. Now some users may have a few of th
         </td>
         <td>
             <a class="thumb" href="https://www.sparkfun.com/products/20168">
-                <center><img src="" alt="SparkFun Thing Plus - ESP32 WROOM (USB-C)" height="140">
+                <center><img src="https://cdn.sparkfun.com/r/140-140/assets/parts/1/9/9/6/8/20168Diagonal.jpg" alt="SparkFun Thing Plus - ESP32 WROOM (USB-C)" height="140">
                 </center>
                 <h3 class="title">SparkFun Thing Plus - ESP32 WROOM (USB-C)</h3>
             </a>
