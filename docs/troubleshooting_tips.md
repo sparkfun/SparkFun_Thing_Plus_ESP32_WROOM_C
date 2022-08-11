@@ -19,7 +19,7 @@ If users are have issues during the uploading process, they can try to manually 
     * Press the <kbd>RST</kbd> button.
     * Power cycle the board. 
 
-[![Boot Button](./img/hookup_guide/button_boot.jpg)](./img/hookup_guide/button_boot.jpg)<br>
+[![Boot Button](./img/hookup_guide/button_boot.jpg){ width="200" }](./img/hookup_guide/button_boot.jpg)<br>
 *<kbd>BOOT</kbd> button on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 
 

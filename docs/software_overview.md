@@ -58,11 +58,6 @@ Install the latest <b>ESP32</b> board definitions in the Arduino IDE.
 [**Installing Board Definitions in the Arduino IDE**](https://learn.sparkfun.com/tutorials/1265)
 </center>
 
-<figure markdown>
-  [![Installing Board Definitions in the Arduino IDE](https://cdn.sparkfun.com/c/500-282/assets/learn_tutorials/1/2/6/5/sparkfun_boards.PNG){ width=" 500" }](https://learn.sparkfun.com/tutorials/1265)
-  <figcaption>[**Installing Board Definitions in the Arduino IDE**](https://learn.sparkfun.com/tutorials/1265)</figcaption>
-</figure>
-
 
 !!! note
     <p>For more instructions, users can follow this tutorial on <a href="https://docs.arduino.cc/learn/starting-guide/cores">Installing Additional Cores</a> provided by Arduino. Users will also need the <code>.json</code> file for the Espressif Arduino core:</p>
@@ -71,20 +66,9 @@ Install the latest <b>ESP32</b> board definitions in the Arduino IDE.
     </center></p>
 
 
-When selecting a board to program in the Arduino IDE, users should select the **SparkFun ESP32 Thing Plus C** from the Tools drop down menu *(i.e. **Tools** > **Board** > **ESP32 Arduino** > **SparkFun ESP32 Thing Plus C**).* Alternatively, users can also select the **ESP32 Dev Module**; however, they may loose some pin assignments (i.e. `LED_BUILTIN`).
+When selecting a board to program in the Arduino IDE, users should select the **SparkFun ESP32 Thing Plus C** from the Tools drop down menu _(i.e. **Tools** > **Board** > **ESP32 Arduino** > **SparkFun ESP32 Thing Plus C**)._ Alternatively, users can also select the **ESP32 Dev Module**; however, they may loose some pin assignments (i.e. `LED_BUILTIN`).
 
 <center>
-[![Board Selection](./img/hookup_guide/board_selection.png){ width=" 300" }](./img/hookup_guide/board_selection.png)<br>
-*Selecting the **SparkFun ESP32 Thing Plus C** from the Tools drop down menu in the Arduino IDE. (Click to enlarge)*
+[![Board Selection](./img/hookup_guide/board_selection.png){ width="400" }](./img/hookup_guide/board_selection.png)<br>
+_Selecting the **SparkFun ESP32 Thing Plus C** from the Tools drop down menu in the Arduino IDE. (Click to enlarge)_
 </center>
-
-<figure markdown>
-  ![Image title](https://dummyimage.com/600x400/){ width="300" }
-  <figcaption>Image caption</figcaption>
-</figure>
-
-
-<figure markdown>
-  ![Board Selection](./img/hookup_guide/board_selection.png)
-  <figcaption>Selecting the **SparkFun ESP32 Thing Plus C** from the Tools drop down menu in the Arduino IDE. (Click to enlarge)</figcaption>
-</figure>
