@@ -23,7 +23,7 @@ All of our designs are open-source! Please help us make it better.
 
 * Our board design files are contained in the [`Hardware` folder](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/tree/main/Hardware) of the [SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C) repository. 
 
-### Sumbit a Desing Improvement
+### Sumbit a Design Improvement
 1. Fork this repo
 2. Add your design improvements
 3. File a pull request with your changes, and enjoy making the ~~words~~ ~~worlds~~ world a better place.
