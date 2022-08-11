@@ -2,11 +2,11 @@
     <table>
         <tr>
             <td>
-                All mentions of <code>GPIO</code> in this section will refer to the I/O pins of the ESP32-WROOM module as represented in the datasheets and <a href="https://github.com/espressif/arduino-esp32/tree/master/variants/esp32thing_plus_c/pins_arduino.h">pin numbers</a> of the board definition in the ESP32 Arduino core. They do not correspond with the net names for the <i>ThingPlus Form Factor</i> device in the <a href="https://cdn.sparkfun.com/assets/5/9/7/4/1/SparkFun_Thing_Plus_ESP32-WROOM_C_schematic2.pdf">schematic</a>. <i>(The device in the schematic is primarily, used internally to facilitate the board design process; just ignore the naming of the <code>GPIO0</code> - <code>GPIO6</code> nets.)</i>
+                All mentions of <code>GPIO</code> in this section will refer to the I/O pins of the ESP32-WROOM module as represented in the datasheets and <a href="https://github.com/espressif/arduino-esp32/tree/master/variants/esp32thing_plus_c/pins_arduino.h">pin numbers</a> of the board definition in the ESP32 Arduino core. They do not correspond with the net names for the <i>ThingPlus Form Factor</i> device in the <a href="./d">schematic</a>. <i>(The device in the schematic is primarily, used internally to facilitate the board design process; just ignore the naming of the <code>GPIO0</code> - <code>GPIO6</code> nets.)</i>
             </td>
             <td>
                 <center>
-                    <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/thing_plus-device2.png"><img alt="Thing Plus device for pin layout" src="https://cdn.sparkfun.com/r/100-130/assets/learn_tutorials/2/3/5/3/thing_plus-device2.png"></a>
+                    <a href="./img/hookup_guide/thing_plus-device2.png"><img alt="Thing Plus device for pin layout" src="./img/hookup_guide/thing_plus-device2.png" width="100"></a>
                     <br>
                     <i>(Click to enlarge)</i>
                 </center>
@@ -19,8 +19,8 @@
 The board dimensions are illustrated in the drawing below. The listed measurements are in inches and the two mounting holes are compatible with 4-40 standoff screws.
 
 <center>
-[![Board Dimensions](https://cdn.sparkfun.com/r/400-400/assets/c/9/f/e/1/SparkFun_Thing_Plus_ESP32-WROOM_C_dimensions.png)](https://cdn.sparkfun.com/assets/c/9/f/e/1/SparkFun_Thing_Plus_ESP32-WROOM_C_dimensions.png)<br>
-*[Board dimensions (PDF)](https://cdn.sparkfun.com/assets/c/6/c/e/0/SparkFun_Thing_Plus_ESP32-WROOM_C_dimensions.pdf) for the ESP32-WROOM Thing Plus, in inches. (Click to enlarge)*
+[![Board Dimensions](./img/hookup_guide/dimensions.png)](./img/hookup_guide/dimensions.png)<br>
+*[Board dimensions (PDF)](./board_files/dimensions.pdf) for the ESP32-WROOM Thing Plus, in inches. (Click to enlarge)*
 </center>
 
 
@@ -28,7 +28,7 @@ The board dimensions are illustrated in the drawing below. The listed measuremen
 The USB connector is provided to power and program the board. For most users, it will be the primary programing interface for the ESP32.
 
 <center>
-[![USB-C Connector](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/usb_connector.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/usb_connector.jpg)<br>
+[![USB-C Connector](./img/hookup_guide/usb_connector.jpg)](./img/hookup_guide/usb_connector.jpg)<br>
 *USB-C connector on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -50,7 +50,7 @@ The ESP32-WROOM Thing Plus only requires **3.3V** to power the board. However, t
     * Only powers the board and not the Qwiic connector.
 
 <center>
-[![Power connections](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/power_connections2.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/power_connections2.jpg)<br>
+[![Power connections](./img/hookup_guide/power_connections2.jpg)](./img/hookup_guide/power_connections2.jpg)<br>
 *ESP32-WROOM Thing Plus power connections. (Click to enlarge)*
 </center>
 
@@ -59,44 +59,44 @@ Below, is a general summary of the power circuitry on the board:
 * **`3V3`** - Provides a regulated 3.3V from the USB (5V) power and/or battery connections.
     * Used to power the ESP32-WROOM module, &micro;SD card slot, WS2812 RGB LED, CH340C Serial-to-UART bridge, and power LED.
         * The Qwiic connector is powered by its own voltage regulator, from the same power source(s).
-    * The **3.3V** [XC6222](https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf) LDO regulator can source up to 700mA.
+    * The **3.3V** [XC6222](./component_datasheets/XC6222.pdf) LDO regulator can source up to 700mA.
         * Output is controlled by the `EN` pin on the board.
 * **`VUSB`** - The voltage from the USB-C connector, usually **5V**.
     * Power source for the entire board.
         * Powers the 3.3V voltage regulators and the battery charging circuit for `VBAT`.
     * Overides power from the battery through a P-channel MOSFET, when both are connected.
-    * Utilizes a [BAT20J protection diode](https://cdn.sparkfun.com/assets/0/7/3/1/9/BAT20J_datasheet.pdf) for the USB-C connection.
+    * Utilizes a [BAT20J protection diode](./component_datasheets/BAT20J_datasheet.pdf) for the USB-C connection.
 * **`VBAT`** - The voltage from the JST battery connector; meant for single cell LiPo batteries.
-    * Provides power to the 3.3V voltage regulators and [MAX17048](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf) battery fuel gauge.
-    * The [MCP73831](https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf) linear charge management controller is powered from the USB (5V) power supply.
+    * Provides power to the 3.3V voltage regulators and [MAX17048](./component_datasheets/MAX17048.pdf) battery fuel gauge.
+    * The [MCP73831](./component_datasheets/MCP73831.pdf) linear charge management controller is powered from the USB (5V) power supply.
         * The charge controller is configured for **500mA** *(max)* rate of charge to a connected battery.
 * **`GND`** - The common ground or the 0V reference for the voltage supplies.
 * **Qwiic Connector** - Provides a regulated 3.3V voltage from the USB (5V) power and/or battery connections.
     * Operates independently from the `3V3` pin, with its own voltage regulator.
-    * The **3.3V** [XC6222](https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf) LDO regulator can source up to 700mA.
+    * The **3.3V** [XC6222](./component_datasheets/XC6222.pdf) LDO regulator can source up to 700mA.
         * Output is controlled by `GPIO 0` of the ESP32-WROOM.
 
-*For more details, users can reference the [schematic](https://cdn.sparkfun.com/assets/5/9/7/4/1/SparkFun_Thing_Plus_ESP32-WROOM_C_schematic2.pdf) and the datasheets of the individual components in the power circuitry.*
+*For more details, users can reference the [schematic](./board_files/schematic.pdf) and the datasheets of the individual components in the power circuitry.*
 
 
 ### Power Status LED
 The red, `PWR` LED will light up once **3.3V** is supplied to the board; however, for most users, it will light up when **5V** is supplied through the USB connection or when a LiPo battery is connected to the JST connector.
 
 <center>
-[![Power LED](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/LED_pwr.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/LED_pwr.jpg)<br>
+[![Power LED](./img/hookup_guide/LED_pwr.jpg)](./img/hookup_guide/LED_pwr.jpg)<br>
 *ESP32-WROOM Thing Plus `PWR` status LED indicator. (Click to enlarge)*
 </center>
 
 
 ### Charging Circuit
-The charging circuit utilizes the [MCP73831 linear charge management controller](https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf) and is powered directly from the USB-C connector or `VUSB`. The controller is configured for a **500mA** charge rate and active charging is indicated by the yellow, `CHG` LED. If the charge controller is shutdown or charging is complete, the `CHG` LED will turn off. For more information, please refer to the [MCP73831 datasheet](https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf) and the **Indicator LEDs** section below.
+The charging circuit utilizes the [MCP73831 linear charge management controller](./component_datasheets/MCP73831.pdf) and is powered directly from the USB-C connector or `VUSB`. The controller is configured for a **500mA** charge rate and active charging is indicated by the yellow, `CHG` LED. If the charge controller is shutdown or charging is complete, the `CHG` LED will turn off. For more information, please refer to the [MCP73831 datasheet](./component_datasheets/MCP73831.pdf) and the **Indicator LEDs** section below.
 
 
 ### Power Control
-The power source for the [XC6222 LDO voltage regulators](https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf) is controlled by a P-channel MOSFET. In addition, the **3.3V** regulated output from the XC6222 LDOs are enabled by the control pin (`CE`).
+The power source for the [XC6222 LDO voltage regulators](./component_datasheets/XC6222.pdf) is controlled by a P-channel MOSFET. In addition, the **3.3V** regulated output from the XC6222 LDOs are enabled by the control pin (`CE`).
 
 <center>    
-[![3V3 Power Supply Circuits](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/power_control_circuits.png)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/power_control_circuits.png)<br>
+[![3V3 Power Supply Circuits](./img/hookup_guide/power_control_circuits.png)](./img/hookup_guide/power_control_circuits.png)<br>
 *Circuits for the 3.3V power on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -191,13 +191,13 @@ The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate an
 
 
 
-The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of control for the board's power. By default, the regulated 3.3V output is enabled. To disable and shutdown the output voltage from the XC6222, the control pin needs to be pulled low (i.e. shorted to ground (`GND`)). For more information, please refer to the [XC6222 datasheet](https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf).
+The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of control for the board's power. By default, the regulated 3.3V output is enabled. To disable and shutdown the output voltage from the XC6222, the control pin needs to be pulled low (i.e. shorted to ground (`GND`)). For more information, please refer to the [XC6222 datasheet](./component_datasheets/XC6222.pdf).
 
 * The 3.3V power for the board (`3V3`) is controlled by the `EN` pin, which is broken out on the board.
 * The 3.3V power for the Qwiic connector is controlled by `GPIO 0` of the ESP32-WROOM.
 
 <center>
-[![Control Pins](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/power_control.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/power_control.jpg)<br>
+[![Control Pins](./img/hookup_guide/power_control.jpg)](./img/hookup_guide/power_control.jpg)<br>
 *XC6222 control pins on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -376,13 +376,13 @@ According to the specifications, the ESP32-WROOM draws about **240 mA** during R
 It is possible for users to reach sub-mA power consumption levels with the deep sleep power modes. Using the [`TimerWakeUp` Deep Sleep example code](https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/DeepSleep/TimerWakeUp/TimerWakeUp.ino), the LED jumpers cut, and powering the board through the LiPo battery connection we measured a power consumption of **845 &micro;A** *(990 &micro;A peak)* @ **3.7V** while the MCU was inactive.
 
 <center>
-[![Deep Sleep Power Consumption Profile](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/ulp_batt.png)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/ulp_batt.png)<br>
+[![Deep Sleep Power Consumption Profile](./img/charge_profiles/measurement-ulp-from_batt.png)](./img/charge_profiles/measurement-ulp-from_batt.png)<br>
 *The current measurement from `VBAT` at **3.7V** during deep sleep. (Click to enlarge)*
 </center>
 
 
 ## ESP32-WROOM
-This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module](https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf) with 16MB of flash memory. Espressif&apos;s ESP32-WROOM module is a versitile, WiFi+BT+BLE MCU module that targets a wide variety of applications. At the core of this module is the ESP32-D0WDQ6 system on a chip (SoC) which is designed to be both scalable and adaptive. Its laundry list of features include:
+This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf) with 16MB of flash memory. Espressif&apos;s ESP32-WROOM module is a versitile, WiFi+BT+BLE MCU module that targets a wide variety of applications. At the core of this module is the ESP32-D0WDQ6 system on a chip (SoC) which is designed to be both scalable and adaptive. Its laundry list of features include:
 
 
 <table>
@@ -413,7 +413,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
             </ul>
         </td>
         <td align="center">
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/esp32_module.jpg"><img alt="ESP32-WROOM" src="https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/2/3/5/3/esp32_module.jpg"></a><br>
+            <a href="./img/hookup_guide/esp32_module.jpg"><img alt="ESP32-WROOM" src="./img/hookup_guide/esp32_module.jpg"></a><br>
             <i>ESP32-WROOM module on the ESP32 Thing Plus (USB-C).<br>
             (Click to enlarge)</i>
         </td>
@@ -425,7 +425,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
     <p>Users should be aware of the following nuances and details of this board</p>
     <ul>
         <li>The ESP32-WROOM is only compatible with <b>2.4GHz WiFi</b> networks; it will not work on the 5GHz bands.</li>
-        <li>For details on the boot mode configuration, please refer to <a href="https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf#8">section <b>3.3 Strapping Pins</b></a> of the ESP32-WROOM module datasheet.</li>
+        <li>For details on the boot mode configuration, please refer to <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf#8">section <b>3.3 Strapping Pins</b></a> of the ESP32-WROOM module datasheet.</li>
     </ul>
 
 
@@ -443,7 +443,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
         <li><b>Off</b> - Chip is powered off</li>
     </ul>
     
-    <p><i>For more information on the power management of the ESP32-WROOM module, pleaser refer to <b>Section 3.7</b> and <b>Tables: 8 and 17</b> of the <a href="https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf">ESP32 SoC Datasheet</a>.</i></p>
+    <p><i>For more information on the power management of the ESP32-WROOM module, pleaser refer to <b>Section 3.7</b> and <b>Tables: 8 and 17</b> of the <a href="./component_datasheets/esp32_soc_datasheet_en.pdf">ESP32 SoC Datasheet</a>.</i></p>
 
 
 ### Debugging
@@ -471,12 +471,12 @@ Users can manually force the board into the <a href="https://docs.espressif.com/
                 <li>The I/O pins are <strong>not 5V-tolerant</strong>! To interface with higher voltage components, a <a href="https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide"><b>logic level adapter</b></a> is recommended.</li>
             </ul>
         </li>
-        <li>&#9889;  There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.</li>
-        <li>There are some limitations to the ADC performance, see the <b>Note</b> from the <a href="https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf"><b>ADC Characteristics</b> section of the ESP32 SoC datasheet</a>.
+        <li>&#9889;  There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.</li>
+        <li>There are some limitations to the ADC performance, see the <b>Note</b> from the <a href="./component_datasheets/esp32_soc_datasheet_en.pdf"><b>ADC Characteristics</b> section of the ESP32 SoC datasheet</a>.
     </ul>
 
 
-The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** broken out into a feather form factor layout on this board. All of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) pins have a .1&#x22; pitch spacing for headers. With the [pin multiplexing](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#id1) capabilities of the ESP32 SoC, various pins can have several functionalities. For more technical specifications on the **I/O** pins, please refer to the [ESP32 SoC datasheet](https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf).
+The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** broken out into a feather form factor layout on this board. All of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) pins have a .1&#x22; pitch spacing for headers. With the [pin multiplexing](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#id1) capabilities of the ESP32 SoC, various pins can have several functionalities. For more technical specifications on the **I/O** pins, please refer to the [ESP32 SoC datasheet](./component_datasheets/esp32_soc_datasheet_en.pdf).
 
 * 13x 12-bit analog to digital converter (ADC) channels
 * 3x UARTs (only two are configured by default in the Arduino IDE, one UART is used for bootloading/debug)<br>
@@ -488,7 +488,7 @@ The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** 
 * 8x Capacitive Touch Inputs
 
 <center>
-[![Graphical datasheet](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/graphical_datasheet.png)](https://cdn.sparkfun.com/assets/c/9/e/8/7/SparkFun_Thing_Plus_ESP32_WROOM_C_graphical_datasheet.pdf)<br>
+[![Graphical datasheet](./img/hookup_guide/graphical_datasheet.png)](./board_files/graphical_datasheet.pdf)<br>
 *Graphical datasheet for the ESP32-WROOM Thing Plus (USB-C). (Click to enlarge)*
 </center>
 
@@ -518,11 +518,11 @@ When configured properly, an <b>input</b> pin will be looking for a <b>HIGH</b> 
 When configured as an <b>output</b> the pin will be at a <b>HIGH</b> or <b>LOW</b> voltage. <b>Output</b> pins are <b>Low Impedance</b>: This means that they can provide a relatively substantial amount of current to other circuits.
 
 !!! warning
-    <b>&#9889;</b> There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.
+    <b>&#9889;</b> There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.
 
 
 ### Additional Functions
-There are several pins that have special functionality in addition to general **digital I/O**. These pins and their additional functions are listed in the tabs below. For more technical specifications on the **I/O** pins, you can refer to the [schematic](https://cdn.sparkfun.com/assets/5/9/7/4/1/SparkFun_Thing_Plus_ESP32-WROOM_C_schematic2.pdf), [ESP32-WROOM module datasheet](https://cdn.sparkfun.com/assets/1/4/9/2/5/esp32-wroom-32e_datasheet_en.pdf), [ESP32 SoC datasheet](https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf), and [documentation for the ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#peripherals).
+There are several pins that have special functionality in addition to general **digital I/O**. These pins and their additional functions are listed in the tabs below. For more technical specifications on the **I/O** pins, you can refer to the [schematic](./board_files/schematic.pdf), [ESP32-WROOM module datasheet](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf), [ESP32 SoC datasheet](./component_datasheets/esp32_soc_datasheet_en.pdf), and [documentation for the ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#peripherals).
 
 
 <!-- Tabs -->
@@ -556,7 +556,7 @@ There are several pins that have special functionality in addition to general **
 <p><div class="row">
     <div class="col-md-5">
         <center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_adc2.jpg"></a>
+            <a href="./img/hookup_guide/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="./img/hookup_guide/pins_adc2.jpg"></a>
             <br>
             <i>Analog input pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </center>
@@ -583,7 +583,7 @@ There are several pins that have special functionality in addition to general **
 <p><div class="row">
     <div class="col-md-5">
         <center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_pwm_dac.jpg"></a>
+            <a href="./img/hookup_guide/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="./img/hookup_guide/pins_pwm_dac.jpg"></a>
             <br>
             <i>Any I/O pin can be used for a PWM output, but these are the DAC pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </center>
@@ -610,7 +610,7 @@ There are several pins that have special functionality in addition to general **
 <p><div class="row">
     <div class="col-md-5">
         <center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_serial.jpg"><img alt="Annotated image of UART pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_serial.jpg"></a>
+            <a href="./img/hookup_guide/pins_serial.jpg"><img alt="Annotated image of UART pins" src="./img/hookup_guide/pins_serial.jpg"></a>
             <br>
             <i>Default UART ports on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </center>
@@ -654,7 +654,7 @@ There are several pins that have special functionality in addition to general **
 <div class="row">
     <div class="col-md-5">
         <p><center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/pins_spi.jpg"></a>
+            <a href="./img/hookup_guide/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="./img/hookup_guide/pins_spi.jpg"></a>
             <br>
             <i>Default SPI bus connections on the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
         </center></p>
@@ -699,7 +699,7 @@ There are several pins that have special functionality in addition to general **
 <div class="row">
 <div class="col-md-5">
         <p><center>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg"></a>
+            <a href="./img/hookup_guide/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="./img/hookup_guide/I2C_connections.jpg"></a>
             <br>
             <i>Default I<sup>2</sup>C bus connections for the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
         </center></p>
@@ -739,7 +739,7 @@ There are two buttons on ESP32-WROOM Thing Plus; a <kbd>RST</kbd> and <kbd>BOOT<
 The <kbd>RST</kbd> *(reset)* button allows users to reset the program running on the ESP32-WROOM module without unplugging the board.
 
 <center>
-[![Reset Button](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/button_reset.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/button_reset.jpg)<br>
+[![Reset Button](./img/hookup_guide/button_reset.jpg)](./img/hookup_guide/button_reset.jpg)<br>
 *<kbd>RST</kbd> button on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -757,7 +757,7 @@ The <kbd>BOOT</kbd> button can be used to force the board into the serial bootlo
     * Power cycle the board. 
 
 <center>
-[![Boot Button](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/button_boot.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/button_boot.jpg)<br>
+[![Boot Button](./img/hookup_guide/button_boot.jpg)](./img/hookup_guide/button_boot.jpg)<br>
 *<kbd>BOOT</kbd> button on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -779,18 +779,18 @@ There are four indicator LEDs on the ESP32-WROOM Thing Plus:
 The red, power (`PWR`) LED will light up once **3.3V** is supplied to the board. For most users, it will light up when **5V** is supplied through the USB connection and/or when a LiPo battery is attached to the JST connector. 
 
 <center>
-[![Power LED](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/LED_pwr.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/LED_pwr.jpg)<br>
+[![Power LED](./img/hookup_guide/LED_pwr.jpg)](./img/hookup_guide/LED_pwr.jpg)<br>
 *ESP32-WROOM Thing Plus `PWR` status LED indicator. (Click to enlarge)*
 </center>
 
 
 ### Battery Charging LED
-The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 charge management controller. The LED will shut off when no battery is present, when the charge management controller is in standby (*after the battery charging has been completed*), or when the charge management controller is shutdown. The LED will illuminate when the charge management controller is in the process of charging the battery. For more information, please refer to the [MCP73831 datasheet](https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf).
+The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 charge management controller. The LED will shut off when no battery is present, when the charge management controller is in standby (*after the battery charging has been completed*), or when the charge management controller is shutdown. The LED will illuminate when the charge management controller is in the process of charging the battery. For more information, please refer to the [MCP73831 datasheet](./component_datasheets/MCP73831.pdf).
 
 <table style="width:100%">
     <tr>
         <td align="center">
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/LED_chg.jpg"><img alt="Charge LED" src="https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/LED_chg.jpg"></a><br>
+            <a href="./img/hookup_guide/LED_chg.jpg"><img alt="Charge LED" src="./img/hookup_guide/LED_chg.jpg"></a><br>
             <i>The battery charging (<code>CHG</code>) LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </td>
         <td align="center" width="50%">
@@ -839,16 +839,16 @@ The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 ch
 The blue, status (`STAT`) LED is typically used as a test or status LED to make sure that a board is working or for basic debugging. This indicator is connected to `GPIO 13`.
 
 <center>
-[![Status LED](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/LED_stat.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/LED_stat.jpg)<br>
+[![Status LED](./img/hookup_guide/LED_stat.jpg)](./img/hookup_guide/LED_stat.jpg)<br>
 *The status (`STAT`) LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
 
 ### WS2812 RGB LED
-The WS2812 RGB LED is controlled with a 24-bit (GRB) data signal. This indicator is connected to `GPIO 02` and the digital output pin from the LED is available through a test point. For more information, please refer to the [WS2812C datasheet](https://cdn.sparkfun.com/assets/7/0/3/c/9/WS2812C-2020.pdf).
+The WS2812 RGB LED is controlled with a 24-bit (GRB) data signal. This indicator is connected to `GPIO 02` and the digital output pin from the LED is available through a test point. For more information, please refer to the [WS2812C datasheet](./component_datasheets/WS2812C-2020.pdf).
 
 <center>
-[![RGB LED](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/LED_WS2812.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/LED_WS2812.jpg)<br>
+[![RGB LED](./img/hookup_guide/LED_WS2812.jpg)](./img/hookup_guide/LED_WS2812.jpg)<br>
 *`WS2812` LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -872,7 +872,7 @@ The [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) in
 * **`GPIO 23`**: `CMD`/`PICO` (or Peripheral's `SDI`)
 
 <center>
-[![SD card slot](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/SD_card_slot.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/SD_card_slot.jpg)<br>
+[![SD card slot](./img/hookup_guide/SD_card_slot.jpg)](./img/hookup_guide/SD_card_slot.jpg)<br>
 *&micro;SD card slot on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -885,7 +885,7 @@ There are two jumpers on the back of the board that can be used to easily modify
 * **CHG LED** - This jumper can be used to remove power to the `CHG` LED.
     * Avoid cutting the box&apos;s silkscreen; there are traces under it:
     <center>
-    [![traces around jumper](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/jumper_caution_small.gif)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/jumper_caution.gif)<br>
+    [![traces around jumper](./img/hookup_guide/jumper_caution_small.gif)](./img/hookup_guide/jumper_caution.gif)<br>
     *Traces around the **`CHG LED`** jumper. (Click to enlarge)*
     </center>
 
@@ -897,7 +897,7 @@ There are two jumpers on the back of the board that can be used to easily modify
     </p>
 
 <center>
-[![Jumpers](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/jumpers.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/jumpers.jpg)<br>
+[![Jumpers](./img/hookup_guide/jumpers.jpg)](./img/hookup_guide/jumpers.jpg)<br>
 *The jumpers on the back of the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
@@ -944,13 +944,13 @@ The Qwiic connector and battery fuel gauge are attached to the primary I<sup>2</
 
 
 ### Battery Fuel Gauge
-The [MAX17048 fuel gauge](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf) measures the approximate charge or discharge rate, state of charge (SOC) (based on ModelGauge algorithm), and voltage of a connected battery. Additionally, the chip is powered directly from `VBAT`, when a LiPo battery is connected. For more information, please refer to the [MAX17048 datasheet](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf).
+The [MAX17048 fuel gauge](./component_datasheets/MAX17048.pdf) measures the approximate charge or discharge rate, state of charge (SOC) (based on ModelGauge algorithm), and voltage of a connected battery. Additionally, the chip is powered directly from `VBAT`, when a LiPo battery is connected. For more information, please refer to the [MAX17048 datasheet](./component_datasheets/MAX17048.pdf).
 
 
 <table>
     <tr>
         <td>
-            <a href="https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"><img alt="MAX17048 Fuel Gauge" src="https://cdn.sparkfun.com/r/300-300/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"></a><br>
+            <a href="./img/hookup_guide/fuel_gauge.jpg"><img alt="MAX17048 Fuel Gauge" src="https://cdn.sparkfun.com/r/300-300/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"></a><br>
             <i>The MAX17048 fuel gauge on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </td>
         <td>
@@ -991,7 +991,7 @@ The [MAX17048 fuel gauge](https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf
 A Qwiic connector is provided for users to seamlessly integrate with <a href="https://www.sparkfun.com/qwiic">SparkFun's Qwiic Ecosystem</a>.
 
 <center>
-[![Qwiic connector and I2C pins](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/I2C_connections.jpg)<br>
+[![Qwiic connector and I2C pins](./img/hookup_guide/I2C_connections.jpg)](./img/hookup_guide/I2C_connections.jpg)<br>
 *Qwiic connector and I<sup>2</sup>C pins on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 

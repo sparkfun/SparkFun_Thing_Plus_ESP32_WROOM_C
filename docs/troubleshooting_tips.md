@@ -19,7 +19,7 @@ If users are have issues during the uploading process, they can try to manually 
     * Press the <kbd>RST</kbd> button.
     * Power cycle the board. 
 
-[![Boot Button](https://cdn.sparkfun.com/r/350-350/assets/learn_tutorials/2/3/5/3/button_boot.jpg)](https://cdn.sparkfun.com/assets/learn_tutorials/2/3/5/3/button_boot.jpg)<br>
+[![Boot Button](./img/hookup_guide/button_boot.jpg)](./img/hookup_guide/button_boot.jpg)<br>
 *<kbd>BOOT</kbd> button on the ESP32-WROOM Thing Plus. (Click to enlarge)*
 
 
@@ -60,12 +60,12 @@ For ultra low power projects, these are the current consumption of the individua
     <tr>
         <td>
             <ul>
-                <li><a href="https://cdn.sparkfun.com/assets/0/3/b/e/f/XC6222.pdf">XC6222 LDO Regulator</a>:
+                <li><a href="./component_datasheets/XC6222.pdf">XC6222 LDO Regulator</a>:
                     <ul>
                         <li>Supply Current: 100 - 220 &micro;A</li>
                     </ul>
                 </li>
-                <li><a href="https://cdn.sparkfun.com/assets/1/c/4/2/3/MCP73831.pdf">MCP73831 Charger Controller</a>:
+                <li><a href="./component_datasheets/MCP73831.pdf">MCP73831 Charger Controller</a>:
                     <ul>
                         <li>Supply Current:
                             <ul>
@@ -92,7 +92,7 @@ For ultra low power projects, these are the current consumption of the individua
                         </li>
                     </ul>
                 </li>
-                <li><a href="https://cdn.sparkfun.com/assets/b/b/2/c/b/MAX17048.pdf">MAX17048 Fuel Gauge</a>:
+                <li><a href="./component_datasheets/MAX17048.pdf">MAX17048 Fuel Gauge</a>:
                     <ul>
                         <li>Supply Current:
                             <ul>
@@ -108,7 +108,7 @@ For ultra low power projects, these are the current consumption of the individua
         </td>
         <td>
             <ul>
-                <li><a href="https://cdn.sparkfun.com/assets/5/0/a/8/5/CH340DS1.PDF">CH340C Serial-to-UART Bridge</a>:
+                <li><a href="./component_datasheets/CH340DS1.PDF">CH340C Serial-to-UART Bridge</a>:
                     <ul>
                         <li>Supply Current: 4 - 12 mA
                             <ul>
@@ -117,7 +117,7 @@ For ultra low power projects, these are the current consumption of the individua
                         </li>
                     </ul>
                 </li>
-                <li><a href="https://cdn.sparkfun.com/assets/a/1/8/4/4/esp32_soc_datasheet_en.pdf">ESP32 SoC</a>:
+                <li><a href="./component_datasheets/esp32_soc_datasheet_en.pdf">ESP32 SoC</a>:
                     <ul>
                         <li>Rec Supply current: 500 mA</li>
                         <li>Active: 95 - 240 mA
@@ -141,7 +141,7 @@ For ultra low power projects, these are the current consumption of the individua
                         </li>
                     </ul>
                 </li>
-                <li><a href="https://cdn.sparkfun.com/assets/7/0/3/c/9/WS2812C-2020.pdf">WS2812 RGB LED</a>:
+                <li><a href="./component_datasheets/WS2812C-2020.pdf">WS2812 RGB LED</a>:
                     <ul>
                         <li>Supply Current: 1&micro;A (@5V)</li>
                         <li>LEDs: 5mA each (@5V)</li>
