@@ -747,7 +747,7 @@ The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 ch
             <table>
                 <tr>
                     <th style="text-align:center">Charge Cycle State</th>
-                    <th style="text-align:center">STAT1</th>
+                    <th style="text-align:center">LED</th>
                 </tr>
                 <tr>
                     <td>

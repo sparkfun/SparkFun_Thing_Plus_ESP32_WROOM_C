@@ -8,11 +8,11 @@
 
 
 ### Upload Issues
-If users are have issues during the uploading process, they can try to manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the <kbd>BOOT</kbd> button. Holding down the <kbd>BOOT</kbd> button, while connecting the board to a computer through its USB-C connector or resetting the board will cause the MCU to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a> and its serial bootloader. The board will remain in this mode until it power cycles (happens automatically after uploading new firmware) or the <kbd>RST</kbd> button is pressed.
+If users have issues during the uploading process, they can try to manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the <kbd>BOOT</kbd> button. Holding down the <kbd>BOOT</kbd> button, while connecting the board to a computer through its USB-C connector or resetting the board will cause the MCU to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a> and its serial bootloader. The board will remain in this mode until it power cycles (which happens automatically after uploading new firmware) or the <kbd>RST</kbd> button is pressed.
 
 1. Hold the <kbd>BOOT</kbd> button down.
 2. Reset the MCU.
-    * While unpowered, connect the board to a computer with through the USB-C connection.
+    * While unpowered, connect the board to a computer through the USB-C connection.
     * While powered, press the <kbd>RST</kbd> button.
 3. Release the <kbd>BOOT</kbd> button.
 4. After programming is completed, reboot the MCU.
@@ -24,17 +24,17 @@ If users are have issues during the uploading process, they can try to manually 
 
 
 ### COM Port Not Shown
-If the board doesn&apos;t appear on a COM port, double check the correct driver has been installed. Unlike previous versions of the ESP32 Thing Plus, this variant requires the [CH340 driver](https://www.sparkfun.com/ch340) to be installed. *For more information, check out our [How to Install CH340 Drivers Tutorial](https://www.sparkfun.com/ch340).*
+If the board doesn't appear on a COM port, double check the correct driver has been installed. Unlike previous versions of the ESP32 Thing Plus, this variant requires the [CH340 driver](https://www.sparkfun.com/ch340) to be installed. *For more information, check out our [How to Install CH340 Drivers Tutorial](https://www.sparkfun.com/ch340).*
 
 <center>
 [![How to Install CH340 Drivers](https://cdn.sparkfun.com/c/500-282/assets/learn_tutorials/9/0/8/USB-to-serial_converter_CH340-closeup.jpg)](https://learn.sparkfun.com/tutorials/908)<br>
 [**How to Install CH340 Drivers**](https://learn.sparkfun.com/tutorials/908)
 </center>
 
-Users can also check their USB cable; some cables are power only. Try testing the cable with a smart phone or tablet to see if it appears as a device on the computer. If the phone/tablet doesn't appear, then the USB cable is power only.
+Users can also check their USB cable; some cables are power only. Try testing the cable with a smartphone or tablet to see if it appears as a device on the computer. If the phone/tablet doesn't appear, then the USB cable is power only.
 
 ### `Serial` Stream Difficulties
-We have noticed that with the ESP32 Arduino core, `Serial.available()` does not operate instantaneously. This is due to an interrupt triggered by the UART, to empty the FIFO when the **`RX`** pin is inactive for two byte periods:
+We have noticed that with the ESP32 Arduino core, `Serial.available()` does not operate instantaneously. This is due to an interrupt triggered by the UART, to empty the FIFO when the **`RX`** pin is inactive for two-byte periods:
 
 * At 9600 baud, `hwAvailable` takes [`number of bytes received` + 2] x 1 ms = **11 ms** before the UART indicates that data was received from: `\r\nERROR\r\n`.
 * At 115200 baud, `hwAvailable` takes [`number of bytes received` +2] x .087 ms = **~1 ms** before the UART indicates that data was received from: `\r\nERROR\r\n`.

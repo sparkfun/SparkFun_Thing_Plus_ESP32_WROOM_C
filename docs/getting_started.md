@@ -5,7 +5,7 @@ To get started, users will need a few items. Now some users may have a few of th
 
 * [SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://www.sparkfun.com/products/20168)
 * [USB 3.1 Cable A to C - 3 Foot](https://www.sparkfun.com/products/14743) - The USB interface serves two purposes: it powers the board and allows users to upload programs. (*\*If your computer doesn't have a USB-A slot, then choose an appropriate cable or adapter.*)
-* Computer with the an operating system (OS) that is compatible with all the software installation requirements.
+* Computer with an operating system (OS) that is compatible with all the software installation requirements.
 
 <table style="border-style:none">
     <tr>

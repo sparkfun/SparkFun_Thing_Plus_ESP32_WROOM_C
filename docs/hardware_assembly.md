@@ -53,11 +53,11 @@ The pins for the ESP32-WROOM Thing Plus are broken out to 0.1"-spaced pins on th
 *Soldering headers to the ESP32-WROOM Thing Plus. (Click to enlarge)*
 </center>
 
-The [Feather Stackable Header Kit](https://www.sparkfun.com/products/15187) is a great option as it allows users to stack shields (*w/ Feather footprint*) or it can be placed on the a breadboard; while, the pins are still accessible from the female/male headers.
+The [Feather Stackable Header Kit](https://www.sparkfun.com/products/15187) is a great option as it allows users to stack shields (*w/ Feather footprint*) or it can be placed on a breadboard; while the pins are still accessible from the female/male headers.
 
 
 ### &micro;SD Card Slot
-The ESP32-WROOM Thing Plus (USB-C) includes a &micro;SD card slot on the back of the board. The card holder functions through a push/pull operation. *(The card slot doesn&apos;t include a spring retention mechanism; cards are held in place through friction.)*
+The ESP32-WROOM Thing Plus (USB-C) includes an &micro;SD card slot on the back of the board. The cardholder functions through a push/pull operation. *(The card slot doesn't include a spring retention mechanism; cards are held in place through friction.)*
 
 <center>
 [![Inseting an SD card](./img/hookup_guide/assembly_sd_card.jpg){ width="400" }](./img/hookup_guide/assembly_sd_card.jpg)<br>
