@@ -85,9 +85,9 @@ nav:
   - Product Resources:
     - Board Files: board_files.md
     - Hardware Datasheets: component_datasheets.md
-    - Espressif's Resources: manufacturer_resources.md
+    - Espressif's Resources: resources-manufacturer.md
+    - SparkFun's Resources: resources-sparkfun.md
     - Troubleshooting Tips: troubleshooting_tips.md
-    - SparkFun's Resources: sparkfun_pages.md
   - Contribution/Issues:
     - Issues: file_issue.md
     - Contribute: contribute.md
