@@ -78,7 +78,7 @@ extra:
 nav:
   - ESP32 Thing Plus (USB-C): index.md
   - Product Manual:
-    - Required Materials: getting_started.md
+    - Getting Started: getting_started.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
     - Software Overview: software_overview.md

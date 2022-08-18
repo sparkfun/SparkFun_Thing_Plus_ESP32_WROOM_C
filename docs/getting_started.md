@@ -1,5 +1,3 @@
-# Getting Started
-
 ## Required Materials
 To get started, users will need a few items. Now some users may have a few of these items, feel free to modify your cart accordingly.
 
