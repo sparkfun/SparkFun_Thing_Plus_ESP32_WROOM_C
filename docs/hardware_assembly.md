@@ -13,7 +13,7 @@ For remote IoT applications, a Li-Po battery can be connected. Additionally, use
 <table style="border-style:none">
     <tr>
         <td align="center" width="50%">
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/assembly_batt.jpg"><img alt="Battery connected to the ESP32-WROOM Thing Plus" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/assembly_batt.jpg"></a>
+            <a href="../img/hookup_guide/assembly_batt.jpg"><img alt="Battery connected to the ESP32-WROOM Thing Plus" src="../img/hookup_guide/assembly_batt.jpg"></a>
             <br>
             <i>The ESP32-WROOM Thing Plus with a battery connected. (Click to enlarge)</i>
         </td>
@@ -39,7 +39,7 @@ For remote IoT applications, a Li-Po battery can be connected. Additionally, use
 !!! note
     <p><b><span style="color:red">DO <u>NOT</u></span></b> remove batteries by pulling on their wires. Instead, it is recommended that pair of dikes (i.e. diagonal wire cutters), pliers, or tweezers be used to pull on the JST connector housing, to avoid damaging the battery wiring.</p>
     <p><center>
-        <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/assembly_batt_removal.jpg"><img alt="Disconnect battery w/ dikes" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/assembly_batt_removal.jpg"></a>
+        <a href="../img/hookup_guide/assembly_batt_removal.jpg"><img alt="Disconnect battery w/ dikes" src="../img/hookup_guide/assembly_batt_removal.jpg"></a>
         <br>
         <i>Using a pair of dikes to disconnect a battery. (Click to enlarge)</i>
     </center></p>

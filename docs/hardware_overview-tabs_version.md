@@ -6,7 +6,7 @@
             </td>
             <td>
                 <center>
-                    <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/thing_plus-device2.png"><img alt="Thing Plus device for pin layout" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/thing_plus-device2.png" width="100"></a>
+                    <a href="../img/hookup_guide/thing_plus-device.png"><img alt="Thing Plus device for pin layout" src="../img/hookup_guide/thing_plus-device.png" width="100"></a>
                     <br>
                     <i>(Click to enlarge)</i>
                 </center>
@@ -413,7 +413,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
             </ul>
         </td>
         <td align="center">
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/esp32_module.jpg"><img alt="ESP32-WROOM" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/esp32_module.jpg"></a><br>
+            <a href="../img/hookup_guide/esp32_module.jpg"><img alt="ESP32-WROOM" src="../img/hookup_guide/esp32_module.jpg"></a><br>
             <i>ESP32-WROOM module on the ESP32 Thing Plus (USB-C).<br>
             (Click to enlarge)</i>
         </td>
@@ -556,7 +556,7 @@ There are several pins that have special functionality in addition to general **
 <p><div class="row">
     <div class="col-md-5">
         <center>
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_adc2.jpg"></a>
+            <a href="../img/hookup_guide/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="../img/hookup_guide/pins_adc2.jpg"></a>
             <br>
             <i>Analog input pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </center>
@@ -583,7 +583,7 @@ There are several pins that have special functionality in addition to general **
 <p><div class="row">
     <div class="col-md-5">
         <center>
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_pwm_dac.jpg"></a>
+            <a href="../img/hookup_guide/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="../img/hookup_guide/pins_pwm_dac.jpg"></a>
             <br>
             <i>Any I/O pin can be used for a PWM output, but these are the DAC pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </center>
@@ -610,7 +610,7 @@ There are several pins that have special functionality in addition to general **
 <p><div class="row">
     <div class="col-md-5">
         <center>
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_serial.jpg"><img alt="Annotated image of UART pins" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_serial.jpg"></a>
+            <a href="../img/hookup_guide/pins_serial.jpg"><img alt="Annotated image of UART pins" src="../img/hookup_guide/pins_serial.jpg"></a>
             <br>
             <i>Default UART ports on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </center>
@@ -654,7 +654,7 @@ There are several pins that have special functionality in addition to general **
 <div class="row">
     <div class="col-md-5">
         <p><center>
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/pins_spi.jpg"></a>
+            <a href="../img/hookup_guide/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="../img/hookup_guide/pins_spi.jpg"></a>
             <br>
             <i>Default SPI bus connections on the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
         </center></p>
@@ -699,7 +699,7 @@ There are several pins that have special functionality in addition to general **
 <div class="row">
 <div class="col-md-5">
         <p><center>
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/I2C_connections.jpg"></a>
+            <a href="../img/hookup_guide/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="../img/hookup_guide/I2C_connections.jpg"></a>
             <br>
             <i>Default I<sup>2</sup>C bus connections for the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
         </center></p>
@@ -790,7 +790,7 @@ The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 ch
 <table style="width:100%">
     <tr>
         <td align="center">
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/LED_chg.jpg"><img alt="Charge LED" src="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/LED_chg.jpg"></a><br>
+            <a href="../img/hookup_guide/LED_chg.jpg"><img alt="Charge LED" src="../img/hookup_guide/LED_chg.jpg"></a><br>
             <i>The battery charging (<code>CHG</code>) LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </td>
         <td align="center" width="50%">
@@ -950,7 +950,7 @@ The [MAX17048 fuel gauge](./component_datasheets/MAX17048.pdf) measures the appr
 <table>
     <tr>
         <td>
-            <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/docs/img/hookup_guide/fuel_gauge.jpg"><img alt="MAX17048 Fuel Gauge" src="https://cdn.sparkfun.com/r/300-300/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"></a><br>
+            <a href="../img/hookup_guide/fuel_gauge.jpg"><img alt="MAX17048 Fuel Gauge" src="https://cdn.sparkfun.com/r/300-300/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"></a><br>
             <i>The MAX17048 fuel gauge on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
         </td>
         <td>
