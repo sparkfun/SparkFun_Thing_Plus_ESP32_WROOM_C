@@ -1,8 +1,8 @@
 # Contribute: Help Fix our Mistake!
-Spot something wrong? Feel free to contribute our open-source design and documentation.
+Spot something wrong? Feel free to contribute our open-source design and documentation. <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/pulls" alt="Pull Requests"><img src="https://img.shields.io/github/issues-pr/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
 
 ## Improve our Documentation
-All of this documentation can be modified by you! Please help us make it better. <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/pulls" alt="Pull Requests"><img src="https://img.shields.io/github/issues-pr/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
+All of this documentation can be modified by you! Please help us make it better.
 
 * These pages are contained in the [`docs` folder](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/tree/main/docs) of the [SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C) repository.
 
