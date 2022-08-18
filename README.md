@@ -40,6 +40,7 @@ Repository Contents
 Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/2353)** - Hookup guide for the ESP32 Thing Plus (USB-C).
+* **[Hookup Guide (mkdocs)](http://docs.sparkfun.com/SparkFun_Thing_Plus_ESP32_WROOM_C/)** - Hookup guide for the ESP32 Thing Plus (USB-C) hosted by GitHub pages.
 * **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
     * [Graphical Datasheet - ESP32 Thing Plus (USB-C)](/docs/board_files/graphical_datasheet.pdf) (.pdf)
 
