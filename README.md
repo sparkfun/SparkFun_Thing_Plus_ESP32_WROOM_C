@@ -1,21 +1,20 @@
 SparkFun Thing Plus - ESP32 WROOM (USB-C)
 ========================================
 
-[REPLACE ME![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com//assets/parts/1/7/2/3/9/18018-Thing_Plus_C_-_ESP32_WROOM-01.jpg)](https://www.sparkfun.com/products/18018)
+[![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com/assets/parts/1/9/9/6/8/20168Diagonal.jpg)](https://www.sparkfun.com/products/18018)
 
 *[SparkFun Thing Plus - ESP32 WROOM (USB-C) (WRL-20168)](https://www.sparkfun.com/products/20168)*
 
-The [SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://www.sparkfun.com/products/20168) is a comprehensive development platform for [Espressif's ESP32](https://espressif.com/en/products/hardware/esp32/overview). Like the 8266 and ESP32 Thing, the ESP32 Thing Plus is a **WiFi**-compatible microcontroller with support for both **Bluetooth Classic** (i.e. SPP) and **Bluetooth low-energy** (i.e. BLE, BT4.0, Bluetooth Smart), a Qwiic connector, and 21 I/O pins. Add to that a rich set of peripherals ranging from capacitive touch sensors, Hall sensors, SD card interface, Ethernet, high-speed SPIs, UARTs, I2S and I<sup>2</sup>C.
+The [SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://www.sparkfun.com/products/20168) is a comprehensive development platform for [Espressif's ESP32](https://espressif.com/en/products/hardware/esp32/overview). Thanks to the onboard ESP32 WROOM module, the SparkFun Thing Plus features 16MB of flash memory, 520kB of internal SRAM, an integrated 802.11 BGN WiFi transceiver and dual-mode Bluetooth capabilities, a JST connector to plug in a LiPo battery, a Qwiic connector, and 21 I/O pins. Add to that a rich set of peripherals ranging from capacitive touch sensors, Hall sensors, SD card interface, Ethernet, high-speed SPIs, UARTs, I2S, and I<sup>2</sup>C.
 
-We took all the good from the original [ESP32 Thing Plus](https://www.sparkfun.com/products/15663) and sprinkled on some more. We upgraded to a USB-C connector that provides up to 2A of power, added a fuel gauge IC will make sure you know your battery levels, included a NeoPixel (WS2812C) RGB LED is the perfect multi-status indicator, and threw a microSD connector on the back! Oh, and the new taller reset and boot buttons are **so** much easier to push! We dedicated a voltage regulator to the Qwiic connector, which enables software power control to the Qwiic bus - great for low power logging!
+We took all the good from the original [ESP32 Thing Plus](https://www.sparkfun.com/products/15663) and sprinkled on some more. We upgraded to a USB-C connector that provides up to 2A of power, added a fuel gauge IC that will make sure you know your battery levels, included a NeoPixel (WS2812C) RGB LED is the perfect multi-status indicator, and threw a microSD connector on the back! Oh, and the new taller reset and boot buttons are **so** much easier to push! We even dedicated a voltage regulator to the Qwiic connector, which enables software power control to the Qwiic bus - great for low power logging!
 
-The ESP32 Thing plus integrates a rich set of peripherals, ranging from capacitive touch sensors, Hall sensors, SD card interface, Ethernet, high-speed SPI, UART, I2S and I2C. Thanks to the onboard ESP32 WROOM module, the SparkFun Thing Plus features 16MB of flash memory, 520kB of internal SRAM, an integrated 802.11 BGN WiFi transceiver and dual-mode Bluetooth capabilities, and a JST connector to plug in a LiPo battery.
 
 Repository Contents
 -------------------
 
-* **/Hardware** - Eagle design files (.brd, .sch)
-* **/Firmware** - Example sketches demonstrating extra peripherals
+* **[/Hardware](/Hardware/)** - Eagle design files (.brd, .sch)
+* **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals
 
 Documentation
 --------------
@@ -26,7 +25,7 @@ Documentation
 Product Versions
 ----------------
 * ESP32 Thing Plus (USB-C variant)
-  * [WRL-20168](https://www.sparkfun.com/products/20168)- v1.0, Initial Release
+  * [WRL-20168](https://www.sparkfun.com/products/20168) - v1.0, Initial Release
   * [SPX-18018](https://www.sparkfun.com/products/18018) - SparkX Release
 * ESP32 Thing Plus
   * [WRL-17381](https://www.sparkfun.com/products/17381) (u.FL variant) - v1.0, Initial Release
