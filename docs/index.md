@@ -21,7 +21,9 @@ The [SparkFun ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/
 (WRL-20168)
 </center>
 
-## youtube
+<center>
+<iframe width="458" height="257" src="https://www.youtube.com/embed/g2MgO2fjqsw" title="Product Showcase: SparkFun Thing Plus ESP32 WROOM USB-C" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 The ESP32-WROOM module on the board provides a rich set of peripherals, ranging from capacitive touch sensors, Hall sensors, SD card interface, Ethernet, high-speed SPI, UART, I<sup>2</sup>S, and I<sup>2</sup>C. With [Espressif's ESP32](https://espressif.com/en/products/hardware/esp32/overview) comprehensive development platform and **Bluetooth low-energy** support (i.e BLE, BT4.0, Bluetooth Smart) these boards are jam-packed with possibilities!
 
