@@ -1,6 +1,6 @@
 * [Product Page](https://www.sparkfun.com/products/20168)
 * [Hookup Guide](https://learn.sparkfun.com/tutorials/2353)
-* [SFE Product Showcase](https://youtu.be/FoEmSkyTgjg)
+* [SFE Product Showcase](https://youtu.be/g2MgO2fjqsw)
 * [SparkFun Thing Plus Boards](https://www.sparkfun.com/thing_plus)
 * [SparkFun Qwiic Connect System](https://www.sparkfun.com/qwiic)
 * [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistance)

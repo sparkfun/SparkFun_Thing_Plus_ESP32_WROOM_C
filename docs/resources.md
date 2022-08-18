@@ -15,7 +15,7 @@ For more resources related to the ESP32 Thing Plus, check out the links listed h
     * [WS2812 (PDF)](./component_datasheets/WS2812C-2020.pdf)
 * [SparkFun Thing Plus Boards](https://www.sparkfun.com/thing_plus)
 * [SparkFun Qwiic Connect System](https://www.sparkfun.com/qwiic)
-* [SFE Product Showcase](https://youtu.be/FoEmSkyTgjg)
+* [SFE Product Showcase](https://youtu.be/g2MgO2fjqsw)
 
 
 Espressif also provides great resources for their ESP32 module: 
