@@ -13,7 +13,7 @@ SparkFun Thing Plus - ESP32 WROOM (USB-C)
 </p>
 
 
-[REPLACE ME![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com/assets/parts/1/9/9/6/8/20168Diagonal.jpg)](https://www.sparkfun.com/products/18018)
+[![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com/assets/parts/1/9/9/6/8/20168Diagonal.jpg)](https://www.sparkfun.com/products/20168)
 
 *[SparkFun Thing Plus - ESP32 WROOM (USB-C) (WRL-20168)](https://www.sparkfun.com/products/20168)*
 
@@ -25,18 +25,23 @@ We took all the good from the original [ESP32 Thing Plus](https://www.sparkfun.c
 Repository Contents
 -------------------
 
-* **[/Hardware](/Hardware/)**
-    * [Eagle design files](/Hardware/eagle_files.zip) (.brd, .sch)
-    * [Schematic (.pdf)](/Hardware/schematic.pdf)
-    * [Dimensions](/Hardware/dimensions.pdf) (.pdf)
-    * [Graphical Datasheet](/Hardware/graphical_datasheet.pdf) (.pdf)
+* **[/docs](/docs/)** - Online documentation files
+    * [board_files](/docs/board_files/) - Files for the product design
+        * [Eagle design files](/docs/board_files/eagle_files.zip) (.zip)
+        * [Schematic](/docs/board_files/schematic.pdf) (.pdf)
+        * [Dimensions](/docs/board_files/dimensions.pdf) (.pdf)
+        * [Graphical Datasheet](/docs/board_files/graphical_datasheet.pdf) (.pdf)
+    * [component_datasheets](/docs/component_datasheets/) - Datasheets for hardware components
+    * [graphical_datasheet](/docs/graphical_datasheet/) - Original graphical datasheet files
+    * [img/hookup_guide/](/docs/img/hookup_guide/) - Images for hookup guide documentation
 * **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals
+* **[/Hardware](/Hardware/)** - Eagle design files (.brd, .sch)
 
 Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/2353)** - Hookup guide for the ESP32 Thing Plus (USB-C).
-* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
 * **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
+    * [Graphical Datasheet - ESP32 Thing Plus (USB-C)](/docs/board_files/graphical_datasheet.pdf) (.pdf)
 
 Product Versions
 ----------------
