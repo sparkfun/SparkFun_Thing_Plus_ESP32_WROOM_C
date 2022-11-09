@@ -165,7 +165,7 @@ To get started, users will need a few items. Now some users may have a few of th
 
 
 !!! note
-    <p>New to jumpter pads? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces Tutorial</a> for a quick introduction!</p>
+    <p>New to jumpper pads? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces Tutorial</a> for a quick introduction!</p>
     <p align="center">
         <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
         <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
@@ -174,7 +174,7 @@ To get started, users will need a few items. Now some users may have a few of th
 
 ## Suggested Reading
 
-As a more professionally oriented product, we will skip over the more fundamental tutorials (i.e. [**Ohm's Law**](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) and [**What is Electricity?**](https://learn.sparkfun.com/tutorials/what-is-electricity)). However, below are a few tutorials that may help users familiarize themselves with various aspects of the board.
+As a more advanced development board, we will skip over the more fundamental tutorials (i.e. [**Ohm's Law**](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) and [**What is Electricity?**](https://learn.sparkfun.com/tutorials/what-is-electricity)). However, below are a few tutorials that may help users familiarize themselves with various aspects of the board.
 
 
 <table style="border-style:none">

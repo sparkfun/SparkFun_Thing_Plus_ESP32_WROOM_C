@@ -61,7 +61,7 @@ The ESP32-WROOM Thing Plus (USB-C) includes an &micro;SD card slot on the back o
 
 <center>
 [![Inseting an SD card](./img/hookup_guide/assembly_sd_card.jpg){ width="400" }](./img/hookup_guide/assembly_sd_card.jpg)<br>
-*Users can slide-in or pull-out a &micro;SD card from the card holder. (Click to enlarge)*
+*Users can slide-in or pull-out a &micro;SD card from the cardholder. (Click to enlarge)*
 </center>
 
 

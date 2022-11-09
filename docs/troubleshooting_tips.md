@@ -47,14 +47,14 @@ Make sure that the &micro;SD card is compatible with the Arduino library being u
 
 
 ### Qwiic Connector Power
-For users having issues with the power to their Qwiic devices, don't forget that <code>GPIO 0</code> controls the power output from the XC6222 LDO regulator to the Qwiic connector. Users must toggle <code>GPIO 0</code> high to enable power for the Qwiic connector. In order to conserve battery power or in low power applications, users will can toggle <code>GPIO 0</code> low, to disable the power to the Qwiic connector.
+For users having issues with the power to their Qwiic devices, don't forget that <code>GPIO 0</code> controls the power output from the XC6222 LDO regulator to the Qwiic connector. Users must toggle <code>GPIO 0</code> high to enable power for the Qwiic connector. In order to conserve battery power or in low-power applications, users will toggle <code>GPIO 0</code> low, to disable the power to the Qwiic connector.
 
 !!! note
     <code>GPIO 0</code> is also connected to the <kbd>BOOT</kbd> button. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
 
 
 ### Current Consumption
-For ultra low power projects, these are the current consumption of the individual components, as specified in their datasheet:
+For ultra-low power projects, these are the current consumption of the individual components, as specified in their datasheet:
 
 <table>
     <tr>
