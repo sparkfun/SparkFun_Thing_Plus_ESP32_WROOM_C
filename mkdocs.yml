@@ -1,5 +1,5 @@
 
-site_name: SparkFun Thing Plus - ESP32 WROOM (USB-C) Product Manual
+site_name: SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide
 site_description: A hookup guide for the ESP32-WROOM Thing Plus (USB-C)
 site_url: https://sparkfun.github.io/SparkFun_Thing_Plus_ESP32_WROOM_C
 
@@ -76,8 +76,8 @@ extra:
       link: https://twitter.com/sparkfun
   
 nav:
-  - ESP32 Thing Plus (USB-C): index.md
-  - Product Manual:
+  - Product Description: index.md
+  - Hookup Guide:
     - Getting Started: getting_started.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
@@ -88,6 +88,6 @@ nav:
     - Espressif's Resources: resources-manufacturer.md
     - SparkFun's Resources: resources-sparkfun.md
     - Troubleshooting Tips: troubleshooting_tips.md
-  - Contribution/Issues:
+  - Issues/Pull Requests:
     - Issues: file_issue.md
     - Contribute: contribute.md
