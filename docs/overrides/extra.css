@@ -1,0 +1,124 @@
+/* ================================================================================== */
+/* Parameters for PDF Rendering                                                       */
+/* ================================================================================== */
+
+/* Hides elemments with <class="pdf"> on webpage (used for the generated PDF) */
+* + .pdf {
+  display: none;
+}
+
+.md-typeset ul.pdf {
+  display: none;
+}
+
+@media print {
+  /* Shows elements with <class="pdf"> on webpage (used for the generated PDF) */
+  * + .pdf {
+    display: contents;
+  }
+
+  /* Limits images size in table */
+  .pdf img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .md-typeset ul.pdf {
+    display: flow-root;
+  }
+
+  /* Sets table to 100% of page width */
+  .md-typeset table:not([class]) {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+  .md-typeset table.pdf {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+  
+  /* Sets images size in tables */
+  .md-typeset table:not([class]) td img {
+    width: 100%;
+    max-height: 150px;
+  }
+
+  /* Hides grid cards on pdf */
+  .md-typeset .grid {
+	  display: none;
+  }
+
+  .md-typeset .grid.grid.cards.desc {
+	  display: none;
+  }
+
+  /* Sets grid card width (not working)
+  Works for File > Print function, but not valid for PDF generator due to issue with Weazy
+  * Refer to https://github.com/Kozea/WeasyPrint/issues/543
+  .md-typeset .grid {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+  } */
+  /* Shrinks card width to 25% and font to 8px (kind of works for PDF generator, but doesn't create columns)
+  .md-typeset :is(.cards) {
+	width: 25%;
+	font-size: 8px;
+  } */
+  
+  
+  /* Sets maximum image size */
+  .md-typeset img {
+    max-width:  200px;
+    max-height: 200px;
+  }
+  /* Fixes positioning of admonition icon */
+  .md-typeset :is(.admonition-title,summary):before {
+    top: 0.6rem;
+    left: 0.6rem; 
+  }
+  /* Fixes appearance of admonition icon */
+  .md-typeset :is(.admonition,details)>:last-child {
+	  background-color: transparent; 
+  }
+  /* Fixes margin spacing for lists */
+  .md-typeset ol,ul {
+	  margin-left: 1.5rem;
+  }
+
+  /* Adjusts page break for PDF generator */
+  article h2,h3,h4,h5,h6,ol,ul {
+	  page-break-before: avoid;
+  }
+  article div.admonition {
+	  page-break-before: avoid;
+  }
+  article table,ol,ul {
+    page-break-inside: auto !important;
+  }
+
+  /* Displays first tab (workaround to rendering issue) */
+  * + .tabbed-content {
+    display: contents;
+  }
+  * + .tabbed-content .tabbed-block {
+    display: contents;
+    page-break-after: always;
+  }
+
+  /* Prevents page break when tabs are embedded in an admonition*/
+  article details.note {
+    display: inline-block;
+    overflow: hidden;
+    /* Hardcode max height to match code block size, when tabbed (need to find better alternative) */
+    max-height: 138mm;
+  }
+
+  /* Limits size of code blocks in admonitions (workaround to rendering issue) */
+  .md-typeset :is(pre, code) {
+    display: inline-flexbox;
+    max-height: 120mm;
+    overflow: hidden;
+  }
+}

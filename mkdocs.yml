@@ -40,6 +40,9 @@ theme:
     # Sets icons for "view source" (commented out) and "edit this page" buttons
     edit: material/file-document-edit-outline
     # view: material/file-code-outline
+
+
+    # Admonition Icons
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -53,10 +56,22 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+  # Adds PDF icon to download hookup guide
+  custom_dir: docs/overrides
 
+
+# Included MkDocs plugins
+# Add the installation of any new plugins to the ./github/workflows/mkdocs.yml file also
 plugins:
   - search
   - monorepo
+  # For PDF rendering
+  # - with-pdf:
+  #     cover_subtitle: none
+  #     cover_logo: img/sfe_logo_sm.png
+  #     exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
+  #     output_path: board_files/hookup_guide.pdf
+  #     # debug_html: true
 
 
 markdown_extensions:
@@ -88,7 +103,13 @@ extra:
       link: https://www.facebook.com/SparkFun
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/sparkfun
-  
+
+
+# Configures styling for PDF rendering and webpage layout
+extra_css:
+  - overrides/extra.css
+
+
 # Configures Page/Tab Navigation
 nav:
   - Getting Started:
