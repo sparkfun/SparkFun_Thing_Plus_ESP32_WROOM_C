@@ -131,10 +131,10 @@ theme:
 plugins:
   - search
   - monorepo
-  # Add revision date
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
+  # # Add revision date
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
   # Add git commiters at bottom of the page
   - git-committers:
       repository: sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
