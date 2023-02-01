@@ -1,11 +1,20 @@
-# Resources
-
-For more resources related to the ESP32 Thing Plus, check out the links listed here: 
-
+## Product Resources
+* [Product Page](https://www.sparkfun.com/products/20168)
 * [Schematic](./board_files/schematic.pdf) (PDF)
 * [Eagle Files](./board_files/eagle_files.zip) (ZIP)
 * [Board Dimensions](./board_files/dimensions.pdf) (PDF)
 * [Graphical Datasheet](./board_files/graphical_datasheet.pdf) (PDF)
+* [SFE Product Showcase Video](https://youtu.be/g2MgO2fjqsw)
+* [GitHub Hardware Repo](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C)
+
+
+### Additional Resources
+* [SparkFun Learn - Hookup Guide](https://learn.sparkfun.com/tutorials/2353)
+* [SparkFun Thing Plus Boards](https://www.sparkfun.com/thing_plus)
+* [SparkFun Qwiic Connect System](https://www.sparkfun.com/qwiic)
+* [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistance)
+
+## Hardware Component Documentation
 * Datasheets:
     * [ESP32-WROOM Module (PDF)](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf)
         * [ESP32 SoC (PDF)](./component_datasheets/esp32_soc_datasheet_en.pdf)
@@ -13,11 +22,9 @@ For more resources related to the ESP32 Thing Plus, check out the links listed h
     * [MAX17048 (PDF)](./component_datasheets/MAX17048.pdf)
     * [XC6222 (PDF)](./component_datasheets/XC6222.pdf)
     * [WS2812 (PDF)](./component_datasheets/WS2812C-2020.pdf)
-* [SparkFun Thing Plus Boards](https://www.sparkfun.com/thing_plus)
-* [SparkFun Qwiic Connect System](https://www.sparkfun.com/qwiic)
-* [SFE Product Showcase](https://youtu.be/g2MgO2fjqsw)
 
 
+## Manufacturer's Resources
 Espressif also provides great resources for their ESP32 module: 
 
 * [ESP32 Product Resource Page](http://espressif.com/en/products/hardware/esp32/resources)

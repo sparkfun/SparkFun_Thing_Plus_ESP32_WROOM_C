@@ -82,11 +82,7 @@ nav:
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
     - Software Overview: software_overview.md
-  - Product Resources:
-    - Board Files: board_files.md
-    - Hardware Datasheets: component_datasheets.md
-    - Espressif's Resources: resources-manufacturer.md
-    - SparkFun's Resources: resources-sparkfun.md
+  - Resources: resources.md
     - Troubleshooting Tips: troubleshooting_tips.md
   - Issues/Pull Requests:
     - Issues: file_issue.md
