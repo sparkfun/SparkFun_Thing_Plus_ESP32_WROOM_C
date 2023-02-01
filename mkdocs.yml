@@ -1,11 +1,17 @@
-
+# Page information
 site_name: SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide
 site_description: A hookup guide for the ESP32-WROOM Thing Plus (USB-C)
 site_url: https://sparkfun.github.io/SparkFun_Thing_Plus_ESP32_WROOM_C
+site_author: SparkFun Electronics
 
-edit_uri: edit/main/docs/
+repo_url: https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
+repo_name: sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
 
+copyright: Copyright 2022 SparkFun Electronics (6333 Dry Creek Parkway, Niwot, Colorado 80503)
+
+# Configuration for webpage theme
 theme:
+  # Theme: https://squidfunk.github.io/mkdocs-material/
   name: material
   logo: img/sfe_logo_sm.png
   palette:
@@ -40,10 +46,6 @@ plugins:
   - search
   - monorepo
 
-repo_url: https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
-repo_name: sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
-
-copyright: Copyright 2022 SparkFun Electronics (6333 Dry Creek Parkway, Niwot, Colorado 80503)
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -75,6 +77,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/sparkfun
   
+# Configures Page/Tab Navigation
 nav:
   - Product Description: index.md
   - Hookup Guide:
