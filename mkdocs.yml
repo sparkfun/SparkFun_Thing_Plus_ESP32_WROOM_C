@@ -20,14 +20,26 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  
+  # Features to Include (ref. theme docsumentation)
   features:
     - content.code.annotate
+    # Enable "view source" and "edit this page" buttons
+    - content.action.edit
+    # - content.action.view
+
     - navigation.tracking
     - navigation.tabs.sticky
     - navigation.tabs    
 
+  # Configures icons of callout boxes
   icon:
+    # Sets repo icon to GitHub icon
     repo: fontawesome/brands/github
+    
+    # Sets icons for "view source" (commented out) and "edit this page" buttons
+    edit: material/file-document-edit-outline
+    # view: material/file-code-outline
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
