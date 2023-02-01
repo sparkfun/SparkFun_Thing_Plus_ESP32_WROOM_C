@@ -13,10 +13,10 @@ copyright: Copyright 2022 SparkFun Electronics (6333 Dry Creek Parkway, Niwot, C
 theme:
   # Theme: https://squidfunk.github.io/mkdocs-material/
   name: material
+
+  # Header Logo
   logo: img/sfe_logo_sm.png
-  palette:
-    primary: grey
-    accent: red
+  # Page Font
   font:
     text: Roboto
     code: Roboto Mono
@@ -31,6 +31,33 @@ theme:
     - navigation.tracking
     - navigation.tabs.sticky
     - navigation.tabs    
+  # Adds light/dark theme to webpage
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: grey
+      accent: red
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to dark mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: grey
+      accent: red
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to system preference
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: grey
+      accent: red
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode    
 
   # Configures icons of callout boxes
   icon:
