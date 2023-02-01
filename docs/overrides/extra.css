@@ -1,4 +1,30 @@
 /* ================================================================================== */
+/* General Customizations                                                             */
+/* ================================================================================== */
+
+/* Sets page to use screens full width (can also use initial; instead of 100%) */
+.md-grid {
+  max-width: 100%;
+}
+
+/* Center images in figure elements */
+.md-typeset figure {
+  text-align: -webkit-center;
+}
+
+/* Sets the maximum height size of the code blocks */
+/* (code block becomes scrollable, but not compatible when lines are displayed) */
+/* .md-typeset pre > code {
+  max-height: var(--md-codeblock-height, 800px);
+} */
+
+/* Failed workaround (lines are not scrollable)*/
+/* .highlighttable .linenodiv {
+  max-height: var(--md-codeblock-height, 800px);
+} */
+
+
+/* ================================================================================== */
 /* Custom Admonitions                                                                 */
 /* ================================================================================== */
 
@@ -149,6 +175,39 @@
     grid-template-columns: 100%;
   }
 }
+
+
+/* ================================================================================== */
+/* YoutTube Videos                                                                    */
+/* ================================================================================== */
+
+/* Auto adjust embedded youtube videos size */
+/* height: 47vw * (viewport/element) percentage */
+.video {
+  position: relative;
+  width: 100%;
+}
+.video iframe {
+  position: relative;
+  top: 0;
+  width: 90vh;
+  min-width: 200px;
+  height: 16.45vw;
+  min-height: 113px;
+  border: 0;
+  overflow: hidden;
+}
+
+
+/* Add compatibility for mobile devices */
+/* height: 47vw * (viewport) percentage */
+@media (max-width: 750px) {
+  .video iframe {
+    height: 47vw;
+  }
+}
+
+
 /* ================================================================================== */
 /* Parameters for PDF Rendering                                                       */
 /* ================================================================================== */

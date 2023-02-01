@@ -27,14 +27,41 @@ theme:
   
   # Features to Include (ref. theme docsumentation)
   features:
+
+    # Enable copy button on code blocks
+    - content.code.copy
+
+    # Enable annotations in code blocks
     - content.code.annotate
+
     # Enable "view source" and "edit this page" buttons
     - content.action.edit
     # - content.action.view
 
+    # Enable Navigation buttons in footer (i.e. previous/next)
+    - navigation.footer
+
+    # Enables anchor tracking (updates page url with the section user is on)
+    # i.e. https://docs.sparkfun.com/<page link>/#<sub-section>
     - navigation.tracking
+
+    # Enables tabs for navigating website
+    - navigation.tabs
+    # Keeps tabs visible in header when scrolling
     - navigation.tabs.sticky
-    - navigation.tabs    
+    
+    # Adds pop-up button just below header (when user starts to scroll up)
+    # Allows users to easily jump to the beginning of the page
+    - navigation.top
+
+    # Renders path for page navigation at top of the page (makes page navigation more mobile friendly)
+    - navigation.path
+
+    
+  
+  # Easter Egg: Animated Snow
+  ᴴₒᴴₒᴴₒ__button: true
+
   # Adds light/dark theme to webpage
   palette:
     # Palette toggle for automatic mode
@@ -104,6 +131,15 @@ theme:
 plugins:
   - search
   - monorepo
+  # # Add revision date
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
+  # # Add git commiters at bottom of the page
+  # - git-committers:
+  #     branch: main
+  # # Add git autors at bottom of the page
+  # - git-authors
   # For PDF rendering
   # - with-pdf:
   #     cover_subtitle: none
@@ -113,22 +149,40 @@ plugins:
   #     # debug_html: true
 
 
+# Included Markdown extensions
 markdown_extensions:
+  - toc:
+      permalink: True
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      # base_path: ['./docs']
+      url_download: true
+      url_max_size: 0
+      url_timeout: 0
+      url_request_headers: {}
   - pymdownx.superfences
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.mark
   - pymdownx.caret
   - pymdownx.tilde
+  - pymdownx.keys
   - tables
   - admonition
   - md_in_html
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
 
 # Configures social icons in footer
 extra:
