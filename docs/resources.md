@@ -15,13 +15,15 @@
 * [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistance)
 
 ## Hardware Component Documentation
-* Datasheets:
+* ESP32 Module
     * [ESP32-WROOM Module (PDF)](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf)
         * [ESP32 SoC (PDF)](./component_datasheets/esp32_soc_datasheet_en.pdf)
-    * [MCP73831 (PDF)](./component_datasheets/MCP73831.pdf)
-    * [MAX17048 (PDF)](./component_datasheets/MAX17048.pdf)
-    * [XC6222 (PDF)](./component_datasheets/XC6222.pdf)
-    * [WS2812 (PDF)](./component_datasheets/WS2812C-2020.pdf)
+* Power Components
+	* Voltage Regulator: [XC6222 (PDF)](./component_datasheets/XC6222.pdf)
+	* Battery:
+		* Charge Controller: [MCP73831 (PDF)](./component_datasheets/MCP73831.pdf)
+		* Fuel Gauge: [MAX17048 (PDF)](./component_datasheets/MAX17048.pdf)
+* LED: [WS2812 (PDF)](./component_datasheets/WS2812C-2020.pdf)
 
 
 ## Manufacturer's Resources
