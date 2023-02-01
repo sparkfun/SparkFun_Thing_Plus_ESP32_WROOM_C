@@ -79,9 +79,8 @@ extra:
   
 # Configures Page/Tab Navigation
 nav:
-  - Product Description: index.md
-  - Hookup Guide:
-    - Getting Started: getting_started.md
+  - Getting Started:
+    - Introduction: index.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
     - Software Overview: software_overview.md
