@@ -16,6 +16,10 @@ theme:
 
   # Header Logo
   logo: img/sfe_logo_sm.png
+
+  # Icon in Browser Tab (must be square img - i.e. 32x32 pixels)
+  favicon: img/sfe_logo_sq.png
+
   # Page Font
   font:
     text: Roboto
@@ -126,8 +130,11 @@ markdown_extensions:
   - md_in_html
   - attr_list
 
+# Configures social icons in footer
 extra:
   social:
+    - icon: sfe_logo # simple/sparkfun
+      link: https://www.sparkfun.com/products/21247
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/sparkfun
     - icon: fontawesome/brands/instagram
