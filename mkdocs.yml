@@ -131,22 +131,22 @@ theme:
 plugins:
   - search
   - monorepo
-  # Add revision date
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-  # Add git commiters at bottom of the page
-  - git-committers:
-      branch: main
-  # Add git autors at bottom of the page
-  - git-authors
+  # # Add revision date
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
+  # # Add git commiters at bottom of the page
+  # - git-committers:
+  #     branch: main
+  # # Add git autors at bottom of the page
+  # - git-authors
   # For PDF rendering
-  # - with-pdf:
-  #     cover_subtitle: none
-  #     cover_logo: img/sfe_logo_sm.png
-  #     exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
-  #     output_path: board_files/hookup_guide.pdf
-  #     # debug_html: true
+  - with-pdf:
+      cover_subtitle: none
+      cover_logo: img/sfe_logo_sm.png
+      exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
+      output_path: board_files/hookup_guide.pdf
+      # debug_html: true
 
 
 # Included Markdown extensions
@@ -219,5 +219,5 @@ nav:
   - Resources: resources.md
   - Support:
     - Troubleshooting Tips: troubleshooting_tips.md
-    - Issues: file_issue.md
-    - Contribute: contribute.md
+    - Issues: github/file_issue.md
+    - Contribute: github/contribute.md
