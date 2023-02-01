@@ -131,15 +131,15 @@ theme:
 plugins:
   - search
   - monorepo
-  # # Add revision date
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  #     type: timeago
-  # # Add git commiters at bottom of the page
-  # - git-committers:
-  #     branch: main
-  # # Add git autors at bottom of the page
-  # - git-authors
+  # Add revision date
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  # Add git commiters at bottom of the page
+  - git-committers:
+      branch: main
+  # Add git autors at bottom of the page
+  - git-authors
   # For PDF rendering
   # - with-pdf:
   #     cover_subtitle: none
@@ -212,7 +212,10 @@ nav:
     - Introduction: index.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
-    - Software Overview: software_overview.md
+    - Arduino IDE:
+      - Software Overview: software_overview.md
+      # - Blink:
+      # - WiFi:
   - Resources: resources.md
   - Support:
     - Troubleshooting Tips: troubleshooting_tips.md
