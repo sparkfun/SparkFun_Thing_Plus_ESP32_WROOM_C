@@ -20,13 +20,13 @@ jobs:
       - name: Install Python dependencies
         run: pip install mkdocs-material mkdocs-monorepo-plugin mkdocs-with-pdf mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2
 
-      - name: Install Insiders build
-        uses: actions/cache@v2
-        with:
-          key: ${{ github.ref }}
-          path: .cache
+      # - uses: actions/cache@v2
+      #   with:
+      #     key: ${{ github.ref }}
+      #     path: .cache
 
-      - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: mkdocs gh-deploy --force
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+      # - name: Install Insiders build
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+      #   run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+        run: mkdocs gh-deploy --force
