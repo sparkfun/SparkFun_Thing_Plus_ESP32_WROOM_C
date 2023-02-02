@@ -99,7 +99,6 @@ theme:
     edit: material/file-document-edit-outline
     # view: material/file-code-outline
 
-
     # Admonition Icons
     admonition:
       note: octicons/tag-16
@@ -141,13 +140,13 @@ plugins:
       branch: docs-test
   # Add git autors at bottom of the page
   - git-authors
-  # For PDF rendering
-  - with-pdf:
-      cover_subtitle: none
-      cover_logo: img/sfe_logo_sm.png
-      exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
-      output_path: board_files/hookup_guide.pdf
-      # debug_html: true
+  # # For PDF rendering
+  # - with-pdf:
+  #     cover_subtitle: none
+  #     cover_logo: img/sfe_logo_sm.png
+  #     exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
+  #     output_path: board_files/hookup_guide.pdf
+  #     # debug_html: true
 
 
 # Included Markdown extensions
