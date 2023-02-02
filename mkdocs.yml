@@ -129,7 +129,6 @@ theme:
 # Add the installation of any new plugins to the ./github/workflows/mkdocs.yml file also
 plugins:
   - search
-  - monorepo
   # Add revision date
   - git-revision-date-localized:
       enable_creation_date: true
@@ -147,6 +146,8 @@ plugins:
   #     exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
   #     output_path: board_files/hookup_guide.pdf
   #     # debug_html: true
+  # Enables use of Git submodules and larger code base
+  - monorepo
 
 
 # Included Markdown extensions
