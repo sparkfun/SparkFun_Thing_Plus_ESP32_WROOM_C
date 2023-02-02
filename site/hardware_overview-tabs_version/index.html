@@ -1,0 +1,2533 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A hookup guide for the ESP32-WROOM Thing Plus (USB-C)">
+      
+      
+        <meta name="author" content="SparkFun Electronics">
+      
+      
+        <link rel="canonical" href="https://sparkfun.github.io/SparkFun_Thing_Plus_ESP32_WROOM_C/hardware_overview-tabs_version/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../img/sfe_logo_sq.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.9+insiders-4.29.0">
+    
+    
+      
+        <title>Hardware overview tabs version - SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.b6d2c4d8.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13.274 9.537v-.001l-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074ZM4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75Z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.307 5.476c-.756.134-1.975-.615-2.59-1.362-.755-.922-.66-1.647-.071-2.29.883-.978 2.396-.6 2.396-.6s-2.772-2.432-5.658-.44c-2.571 1.77-1.833 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.443-.184-2.034-1.343-1.687-2.054.298-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044c-1.259.474-2.297 1.515-2.214 4.12V24s1.301-1.604 2.83-3.236c1.714-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.371-3.645 3.141-4.563.67-9.68-1.43-10.343 0 0 .34 1.438-.745 1.638z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.756 2.756 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6.24 6.24 0 0 0-.26.16.952.952 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661.103-.067.207-.132.313-.195l.007-.004c.1-.061.182-.11.258-.161a.969.969 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.612.612 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1.01 1.01 0 0 0-.34.398ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343h-.001a8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746Zm1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275ZM6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L6.94 8 4.97 6.03a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018Z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.249 1.249 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429Zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.036.036 0 0 0-.004-.009l-.006-.006-.008-.001c-.003 0-.006.002-.009.004Z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.488 3.488 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.036 5.036 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.677 1.677 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06Zm.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.172.172 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173Z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Zm4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0Z"/></svg>');--md-admonition-icon--github:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>');--md-admonition-icon--arduino:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.82 12a5.78 5.78 0 0 0-5.88-5.67c-.29 0-.6.02-.9.05-2.52.37-4.2 2.18-5.13 3.57-.95-1.39-2.64-3.2-5.14-3.57-.3-.03-.6-.05-.9-.05A5.78 5.78 0 0 0 0 12a5.78 5.78 0 0 0 5.87 5.67c.3 0 .6-.02.92-.06 2.52-.36 4.2-2.17 5.14-3.56.95 1.39 2.63 3.2 5.14 3.57.31.03.6.05.91.05A5.78 5.78 0 0 0 23.82 12zM6.48 15.6c-.2.04-.43.04-.63.04A3.77 3.77 0 0 1 2 11.98a3.78 3.78 0 0 1 3.86-3.66c.2 0 .42.02.63.04 2.37.35 3.82 2.67 4.31 3.62-.5.95-1.95 3.3-4.31 3.62zM13 12c.49-.93 1.94-3.27 4.31-3.62.2-.04.42-.04.62-.04A3.76 3.76 0 0 1 21.8 12a3.78 3.78 0 0 1-3.86 3.66c-.2 0-.42-.02-.62-.04-2.36-.35-3.82-2.69-4.31-3.62zm-8.79.59h3.54v-1.16H4.22v1.16zm14.13 0h1.19v-1.16h-1.2v-1.19H17.2v1.2H16v1.15h1.2v1.18h1.15V12.6zM24 7.06c0 .3-.22.51-.53.51a.51.51 0 0 1-.53-.5c0-.28.24-.52.53-.52.31 0 .53.22.53.51zm-.91 0c0 .22.16.4.4.4.22 0 .38-.18.38-.4s-.16-.4-.38-.4c-.24-.02-.4.16-.4.4zm.3.26h-.1V6.8l.2-.01c.09 0 .14.01.18.03.04.02.06.06.06.11 0 .06-.04.1-.11.11.05.02.07.06.09.13l.03.13h-.12c-.02-.02-.02-.07-.04-.13-.02-.05-.04-.07-.11-.07h-.05l-.02.22zm.02-.3h.06c.07 0 .1-.01.1-.07 0-.05-.03-.07-.1-.07h-.07v.14h.01z"/></svg>');--md-admonition-icon--python:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>');--md-admonition-icon--code:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M162.1 257.8c-7.812-7.812-20.47-7.812-28.28 0l-48 48c-7.812 7.812-7.812 20.5 0 28.31l48 48C137.8 386.1 142.9 388 148 388s10.23-1.938 14.14-5.844c7.812-7.812 7.812-20.5 0-28.31L128.3 320l33.86-33.84c6.94-7.86 6.94-20.46-.06-28.36zM365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0H64C28.65 0 0 28.65 0 64l.006 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6c0-16.9-6.7-33.2-18.7-45.22zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160V128c0 17.67 14.33 32 32 32h79.1v288zM221.9 257.8c-7.812 7.812-7.812 20.5 0 28.31L255.7 320l-33.86 33.84c-7.812 7.812-7.812 20.5 0 28.31C225.8 386.1 230.9 388 236 388s10.23-1.938 14.14-5.844l48-48c7.812-7.812 7.812-20.5 0-28.31l-48-48C242.3 250 229.7 250 221.9 257.8z"/></svg>');--md-admonition-icon--terminal:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM7.25 8a.749.749 0 0 1-.22.53l-2.25 2.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L5.44 8 3.72 6.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.25 2.25c.141.14.22.331.22.53Zm1.5 1.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5Z"/></svg>');--md-admonition-icon--serial:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h176l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h256c17.7 0 32-14.3 32-32s-14.3-32-32-32h-69.3L336 416h176c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm448 64v288H64V64h448z"/></svg>');}</style>
+
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../overrides/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#board-dimensions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide" class="md-header__button md-logo" aria-label="SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide" data-md-component="logo">
+      
+  <img src="../img/sfe_logo_sm.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Hardware overview tabs version
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Navigation tabs -->
+<nav
+  class="md-tabs"
+  aria-label="Tabs"
+  data-md-component="tabs"
+>
+  <div class="md-tabs__inner md-grid">
+
+    <!-- Adds tab on right side of header -->
+    
+    <ul class="md-tabs__list" style="float: right;">
+      <li class="md-tabs__item">
+        <a href="/SparkFun_Thing_Plus_ESP32_WROOM_C/hard_copy/" class="md-tabs__link">
+        Hard Copies&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.5 14.33c.79 0 1.63.08 2.5.24v1.5c-.62-.16-1.46-.24-2.5-.24-1.9 0-3.39.33-4.5.99v-1.69c1.17-.53 2.67-.8 4.5-.8M13 12.46c1.29-.53 2.79-.79 4.5-.79.79 0 1.63.07 2.5.23v1.5c-.62-.16-1.46-.24-2.5-.24-1.9 0-3.39.34-4.5.99m4.5-3.65c-1.9 0-3.39.32-4.5 1V9.84c1.23-.56 2.73-.84 4.5-.84.79 0 1.63.08 2.5.23v1.55c-.74-.19-1.59-.28-2.5-.28m3.5 8V7c-1.04-.33-2.21-.5-3.5-.5-2.05 0-3.88.5-5.5 1.5v11.5c1.62-1 3.45-1.5 5.5-1.5 1.19 0 2.36.16 3.5.5m-3.5-14c2.35 0 4.19.5 5.5 1.5v14.56c0 .12-.05.24-.16.35-.11.09-.23.17-.34.17-.11 0-.19-.02-.25-.05-1.28-.69-2.87-1.03-4.75-1.03-2.05 0-3.88.5-5.5 1.5-1.34-1-3.17-1.5-5.5-1.5-1.66 0-3.25.36-4.75 1.07-.03.01-.07.01-.12.03-.04.01-.08.02-.13.02-.11 0-.23-.04-.34-.12a.475.475 0 0 1-.16-.35V6c1.34-1 3.18-1.5 5.5-1.5 2.33 0 4.16.5 5.5 1.5 1.34-1 3.17-1.5 5.5-1.5Z"/></svg>
+        </a>
+      </li>
+    </ul>
+    
+
+    <!-- Original tabbed sections -->
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../resources/" class="md-tabs__link">
+        
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../troubleshooting_tips/" class="md-tabs__link">
+          
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Determine base classes -->
+
+
+  
+
+
+
+<!-- Navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href=".."
+      title="SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide"
+      class="md-nav__button md-logo"
+      aria-label="SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide"
+      data-md-component="logo"
+    >
+      
+  <img src="../img/sfe_logo_sm.png" alt="logo">
+
+    </a>
+    SparkFun Thing Plus - ESP32 WROOM (USB-C) Hookup Guide
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Navigation list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware_assembly/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Assembly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino IDE
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arduino IDE
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting_tips/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting Tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github/file_issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github/contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+
+    <!-- Add Hard Copies to NAV menu -->
+    <li class="md-nav__item">
+        <a href="/SparkFun_Thing_Plus_ESP32_WROOM_C/hard_copy/" class="md-nav__link">
+        <span class="md-ellipsis">
+            Hard Copies&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.5 14.33c.79 0 1.63.08 2.5.24v1.5c-.62-.16-1.46-.24-2.5-.24-1.9 0-3.39.33-4.5.99v-1.69c1.17-.53 2.67-.8 4.5-.8M13 12.46c1.29-.53 2.79-.79 4.5-.79.79 0 1.63.07 2.5.23v1.5c-.62-.16-1.46-.24-2.5-.24-1.9 0-3.39.34-4.5.99m4.5-3.65c-1.9 0-3.39.32-4.5 1V9.84c1.23-.56 2.73-.84 4.5-.84.79 0 1.63.08 2.5.23v1.55c-.74-.19-1.59-.28-2.5-.28m3.5 8V7c-1.04-.33-2.21-.5-3.5-.5-2.05 0-3.88.5-5.5 1.5v11.5c1.62-1 3.45-1.5 5.5-1.5 1.19 0 2.36.16 3.5.5m-3.5-14c2.35 0 4.19.5 5.5 1.5v14.56c0 .12-.05.24-.16.35-.11.09-.23.17-.34.17-.11 0-.19-.02-.25-.05-1.28-.69-2.87-1.03-4.75-1.03-2.05 0-3.88.5-5.5 1.5-1.34-1-3.17-1.5-5.5-1.5-1.66 0-3.25.36-4.75 1.07-.03.01-.07.01-.12.03-.04.01-.08.02-.13.02-.11 0-.23-.04-.34-.12a.475.475 0 0 1-.16-.35V6c1.34-1 3.18-1.5 5.5-1.5 2.33 0 4.16.5 5.5 1.5 1.34-1 3.17-1.5 5.5-1.5Z"/></svg>
+        </span>
+        </a>
+      </li>
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#board-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Board Dimensions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb-c-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        USB-C Connector
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="USB-C Connector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ch340-serial-to-uart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CH340 Serial-to-UART
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-status-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Status LED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#charging-circuit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Charging Circuit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#current-consumption" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Consumption
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esp32-wroom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ESP32-WROOM
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ESP32-WROOM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debugging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#firmware-download-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Firmware Download Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peripherals-and-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Peripherals and I/O
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Peripherals and I/O">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Buttons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Buttons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reset-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reset Button
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boot-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Boot Button
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indicator-leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicator LEDs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Indicator LEDs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power LED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-charging-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Charging LED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stat-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        STAT LED
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ws2812-rgb-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WS2812 RGB LED
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sd-slot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &micro;SD Slot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jumpers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-i2c-bus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Primary I2C Bus
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary I2C Bus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#battery-fuel-gauge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Fuel Gauge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qwiic-connector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qwiic Connector
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qwiic Connector">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-control_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+
+<!-- Adds scroll icon to view hookup guide as a single page -->
+
+    <a href="/SparkFun_Thing_Plus_ESP32_WROOM_C/single_page" title="View Guide as Single-Page" class="md-content__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+
+
+
+
+                  
+
+  
+    <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/edit/master/docs/hardware_overview-tabs_version.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 12h8v2H8v-2m2 8H6V4h7v5h5v3.1l2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4v-2m-2-2h4.1l.9-.9V16H8v2m12.2-5c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+
+  <h1>Hardware overview tabs version</h1>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><table>
+    <tr>
+        <td>
+            All mentions of <code>GPIO</code> in this section will refer to the I/O pins of the ESP32-WROOM module as represented in the datasheets and <a href="https://github.com/espressif/arduino-esp32/tree/master/variants/esp32thing_plus_c/pins_arduino.h">pin numbers</a> of the board definition in the ESP32 Arduino core. They do not correspond with the net names for the <i>ThingPlus Form Factor</i> device in the <a href="./d">schematic</a>. <i>(The device in the schematic is primarily, used internally to facilitate the board design process; just ignore the naming of the <code>GPIO0</code> - <code>GPIO6</code> nets.)</i>
+        </td>
+        <td>
+            <center>
+                <a href="../img/hookup_guide/thing_plus-device.png"><img alt="Thing Plus device for pin layout" src="../img/hookup_guide/thing_plus-device.png" width="100"></a>
+                <br>
+                <i>(Click to enlarge)</i>
+            </center>
+        </td>
+    </tr>
+</table></p>
+</div>
+<h2 id="board-dimensions">Board Dimensions<a class="headerlink" href="#board-dimensions" title="Permanent link">&para;</a></h2>
+<p>The board dimensions are illustrated in the drawing below. The listed measurements are in inches and the two mounting holes are compatible with 4-40 standoff screws.</p>
+<p><center>
+<a href="../img/hookup_guide/dimensions.png"><img alt="Board Dimensions" src="../img/hookup_guide/dimensions.png" width="400" /></a><br>
+<em><a href="../board_files/dimensions.pdf">Board dimensions (PDF)</a> for the ESP32-WROOM Thing Plus, in inches. (Click to enlarge)</em>
+</center></p>
+<h2 id="usb-c-connector">USB-C Connector<a class="headerlink" href="#usb-c-connector" title="Permanent link">&para;</a></h2>
+<p>The USB connector is provided to power and program the board. For most users, it will be the primary programing interface for the ESP32.</p>
+<p><center>
+<a href="../img/hookup_guide/usb_connector.jpg"><img alt="USB-C Connector" src="../img/hookup_guide/usb_connector.jpg" width="200" /></a><br>
+<em>USB-C connector on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<h3 id="ch340-serial-to-uart">CH340 Serial-to-UART<a class="headerlink" href="#ch340-serial-to-uart" title="Permanent link">&para;</a></h3>
+<p>The CH340 allows the ESP32-WROOM to communicate with a computer/host device through the board&apos;s USB-C connection. This allows the board to show up as a device on the serial (or COM) port of the computer. Users will need to install the latest drivers for the computer to recognize the board <em>(see <a href="/SparkFun_Thing_Plus_ESP32_WROOM_C/software_overview/#ch340-driver"><strong>Software Overview</strong></a> section)</em>.</p>
+<h2 id="power">Power<a class="headerlink" href="#power" title="Permanent link">&para;</a></h2>
+<p>The ESP32-WROOM Thing Plus only requires <strong>3.3V</strong> to power the board. However, the simplest method to power the board is through the USB-C connector. Alternatively, the <code>3V3</code>, <code>VBAT</code>, and <code>VUSB</code> pins can also be used to supply power to the board.</p>
+<ul>
+<li><code>VUSB</code>:<ul>
+<li>The maximum voltage for the LDOs and charge controller is <strong>6V</strong>.</li>
+<li>The minimum voltage for the charge controller is <strong>3.75V</strong>.</li>
+</ul>
+</li>
+<li><code>VBAT</code>:<ul>
+<li>Should not be connected to anything other than a single-cell LiPo battery.</li>
+</ul>
+</li>
+<li><code>3V3</code>:<ul>
+<li>Requires a <strong>regulated 3.3V</strong>.</li>
+<li>Only powers the board and not the Qwiic connector.</li>
+</ul>
+</li>
+</ul>
+<p><center>
+<a href="../img/hookup_guide/power_connections2.jpg"><img alt="Power connections" src="../img/hookup_guide/power_connections2.jpg" width="200" /></a><br>
+<em>ESP32-WROOM Thing Plus power connections. (Click to enlarge)</em>
+</center></p>
+<p>Below, is a general summary of the power circuitry on the board:</p>
+<ul>
+<li><strong><code>3V3</code></strong> - Provides a regulated 3.3V from the USB (5V) power and/or battery connections.<ul>
+<li>Used to power the ESP32-WROOM module, &micro;SD card slot, WS2812 RGB LED, CH340C Serial-to-UART bridge, and power LED.<ul>
+<li>The Qwiic connector is powered by its own voltage regulator, from the same power source(s).</li>
+</ul>
+</li>
+<li>The <strong>3.3V</strong> <a href="../component_datasheets/XC6222.pdf">XC6222</a> LDO regulator can source up to 700mA.<ul>
+<li>Output is controlled by the <code>EN</code> pin on the board.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>VUSB</code></strong> - The voltage from the USB-C connector, usually <strong>5V</strong>.<ul>
+<li>Power source for the entire board.<ul>
+<li>Powers the 3.3V voltage regulators and the battery charging circuit for <code>VBAT</code>.</li>
+</ul>
+</li>
+<li>Overides power from the battery through a P-channel MOSFET, when both are connected.</li>
+<li>Utilizes a <a href="../component_datasheets/BAT20J_datasheet.pdf">BAT20J protection diode</a> for the USB-C connection.</li>
+</ul>
+</li>
+<li><strong><code>VBAT</code></strong> - The voltage from the JST battery connector; meant for single cell LiPo batteries.<ul>
+<li>Provides power to the 3.3V voltage regulators and <a href="../component_datasheets/MAX17048.pdf">MAX17048</a> battery fuel gauge.</li>
+<li>The <a href="../component_datasheets/MCP73831.pdf">MCP73831</a> linear charge management controller is powered from the USB (5V) power supply.<ul>
+<li>The charge controller is configured for <strong>500mA</strong> <em>(max)</em> rate of charge to a connected battery.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>GND</code></strong> - The common ground or the 0V reference for the voltage supplies.</li>
+<li><strong>Qwiic Connector</strong> - Provides a regulated 3.3V voltage from the USB (5V) power and/or battery connections.<ul>
+<li>Operates independently from the <code>3V3</code> pin, with its own voltage regulator.</li>
+<li>The <strong>3.3V</strong> <a href="../component_datasheets/XC6222.pdf">XC6222</a> LDO regulator can source up to 700mA.<ul>
+<li>Output is controlled by <code>GPIO 0</code> of the ESP32-WROOM.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><em>For more details, users can reference the <a href="../board_files/schematic.pdf">schematic</a> and the datasheets of the individual components in the power circuitry.</em></p>
+<h3 id="power-status-led">Power Status LED<a class="headerlink" href="#power-status-led" title="Permanent link">&para;</a></h3>
+<p>The red, <code>PWR</code> LED will light up once <strong>3.3V</strong> is supplied to the board; however, for most users, it will light up when <strong>5V</strong> is supplied through the USB connection or when a LiPo battery is connected to the JST connector.</p>
+<p><center>
+<a href="../img/hookup_guide/LED_pwr.jpg"><img alt="Power LED" src="../img/hookup_guide/LED_pwr.jpg" width="200" /></a><br>
+<em>ESP32-WROOM Thing Plus <code>PWR</code> status LED indicator. (Click to enlarge)</em>
+</center></p>
+<h3 id="charging-circuit">Charging Circuit<a class="headerlink" href="#charging-circuit" title="Permanent link">&para;</a></h3>
+<p>The charging circuit utilizes the <a href="../component_datasheets/MCP73831.pdf">MCP73831 linear charge management controller</a> and is powered directly from the USB-C connector or <code>VUSB</code>. The controller is configured for a <strong>500mA</strong> charge rate and active charging is indicated by the yellow, <code>CHG</code> LED. If the charge controller is shutdown or charging is complete, the <code>CHG</code> LED will turn off. For more information, please refer to the <a href="../component_datasheets/MCP73831.pdf">MCP73831 datasheet</a> and the <strong>Indicator LEDs</strong> section below.</p>
+<h3 id="power-control">Power Control<a class="headerlink" href="#power-control" title="Permanent link">&para;</a></h3>
+<p>The power source for the <a href="../component_datasheets/XC6222.pdf">XC6222 LDO voltage regulators</a> is controlled by a P-channel MOSFET. In addition, the <strong>3.3V</strong> regulated output from the XC6222 LDOs are enabled by the control pin (<code>CE</code>).</p>
+<p><center>  <br />
+<a href="../img/hookup_guide/power_control_circuits.png"><img alt="3V3 Power Supply Circuits" src="../img/hookup_guide/power_control_circuits.png" width="200" /></a><br>
+<em>Circuits for the 3.3V power on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<p>The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate and source pins. Depending on the power supplies connected to the board, the MOSFET will switch between the battery and USB-C connection as power sources for the XC6222 voltage regulators.</p>
+<table  style="font-size:12.25px;width:100%">
+    <tr>
+        <th rowspan="2" style="text-align:center; vertical-align:middle; min-width:1rem;">
+            Power<br>
+            Source
+        </th>
+        <th colspan="4" style="text-align:center; vertical-align:middle">MOSFET</th>
+        <th rowspan="2" style="text-align:center; vertical-align:middle">Power Control Description</th>
+    </tr>
+    <tr>
+        <th style="text-align:center; vertical-align:middle; min-width:1rem;" width="11.4%">Gate</th>
+        <th style="text-align:center; vertical-align:middle; min-width:1rem;" width="14.8%">Source</th>
+        <th style="text-align:center; min-width:1rem;" width="18.4%">
+            V<sub>GS</sub><br>
+            (V<sub>Gate</sub> - V<sub>Source</sub>)</sub>
+        </th>
+        <th style="text-align:center; min-width:1rem;" width="14.3%">
+            MOSFET<br>
+            Operation
+        </th>
+    </tr>
+    <tr>
+        <td style="vertical-align:middle" align="center">USB Only</td>
+        <td style="vertical-align:middle" align="center">V<sub>USB</sub> = 5V</td>
+        <td style="vertical-align:middle" align="center">V<sub>USB</sub> - V<sub>f</sub></td>
+        <td style="vertical-align:middle" align="center">
+            V<sub>USB</sub> - (V<sub>USB</sub> - V<sub>f</sub>)<br>
+            V<sub>GS</sub> = V<sub>f</sub>
+        </td>
+        <td style="vertical-align:middle">
+            MOSFET Off<br>
+            R<sub>GS</sub> = &infin;<br>
+            Switch Open
+        </td>
+        </td>
+        <td>
+            <b>Power to the XC6222 is supplied by the USC-C connection.</b><br>
+            Power from the USB-C connection is passed through the Schottky diode. Due to the voltage drop from the Schottky diode, the gate threshold voltage for the MOSFET is positive and equivalent to the diode's forward voltage (<b>V<sub>f</sub></b>).Therefore, the MOSFET behaves as an open switch.
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:middle" align="center">Battery Only</td>
+        <td style="vertical-align:middle" align="center">V<sub>USB</sub> = 0V</td>
+        <td style="vertical-align:middle" align="center">
+            <u>Dep. Mode</u>:<br>
+            V<sub>Source</sub> = 0<br>
+            <br>
+            <u>Charged Cap.</u>:<br>
+            V<sub>Batt</sub> = 3 - 4.2V
+        </td>
+        <td style="vertical-align:middle" align="center">
+            <u>Dep. Mode</u>:<br>
+            V<sub>GS</sub> = 0<br>
+            <br>
+            <u>Charged Cap.</u>:<br>
+            V<sub>USB</sub> - V<sub>Batt</sub> = -V<sub>Batt</sub><br>
+            -3V > V<sub>GS</sub> > -4.2V
+        </td>
+        <td style="vertical-align:middle">
+            MOSFET On<br>
+            R<sub>GS</sub> = Low<br>
+            Switch Closed
+        </td>
+        <td>
+            <b>Power to the XC6222 is supplied from the battery connection.</b><br>
+            As a depletion type P-channel MOSFET, the mosfet acts as a normally closed switch when the gate threshold voltage is zero. Therefore, power from the battery is able to charge the capacitor and create a negative gate threshold voltage. The MOSFET remains behaving as a closed switch and power to the XC6222 is provided from the battery.
+        </td>
+    </tr>
+    </tr>
+    <tr>
+        <td style="vertical-align:middle" align="center">USB & Battery</td>
+        <td style="vertical-align:middle" align="center">V<sub>USB</sub> = 5V</td>
+        <td style="vertical-align:middle" align="center">V<sub>USB</sub> - V<sub>f</sub></td>
+        <td style="vertical-align:middle" align="center">V<sub>GS</sub> = V<sub>f</sub></td>
+        <td style="vertical-align:middle">
+            MOSFET Off<br>
+            R<sub>GS</sub> = &infin;<br>
+            Switch Open
+        </td>
+        <td>
+            <b>Power to the XC6222 is supplied by the USC-C connection.</b><br>
+            Power from the USB-C connection is passed through the Schottky diode. Due to the voltage drop from the Schottky diode, the gate threshold voltage for the MOSFET is positive and equivalent to the diode's forward voltage (<b>V<sub>f</sub></b>).Therefore, the MOSFET behaves as an open switch.
+        </td>
+    </tr>
+</table>
+
+<p>The control pin (<code>CE</code>) of the XC6222 LDOs also provides an additional amount of control for the board's power. By default, the regulated 3.3V output is enabled. To disable and shutdown the output voltage from the XC6222, the control pin needs to be pulled low (i.e. shorted to ground (<code>GND</code>)). For more information, please refer to the <a href="../component_datasheets/XC6222.pdf">XC6222 datasheet</a>.</p>
+<ul>
+<li>The 3.3V power for the board (<code>3V3</code>) is controlled by the <code>EN</code> pin, which is broken out on the board.</li>
+<li>The 3.3V power for the Qwiic connector is controlled by <code>GPIO 0</code> of the ESP32-WROOM.</li>
+</ul>
+<p><center>
+<a href="../img/hookup_guide/power_control.jpg"><img alt="Control Pins" src="../img/hookup_guide/power_control.jpg" width="200" /></a><br>
+<em>XC6222 control pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><b>&#9889; Note:</b> The <kbd>BOOT</kbd> button is also connected to <code>GPIO 0</code>. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.</p>
+</div>
+<h3 id="current-consumption">Current Consumption<a class="headerlink" href="#current-consumption" title="Permanent link">&para;</a></h3>
+<p>According to the specifications, the ESP32-WROOM draws about <strong>240 mA</strong> during RF transmissions. With the WiFi example in this tutorial, have measured it to average around <strong>140 mA</strong> and peak at <em>300 mA</em> while actively transceiving. The table below, summarizes the approximate current draw of the <a href="https://www.sparkfun.com/products/20168">ESP32-WROOM Thing Plus (USB-C)</a> for various operational conditions. The measurements in the table below, were made with the <a href="https://www.sparkfun.com/products/17816">Nordic Power Profiler Kit II</a>.</p>
+<table style="font-size:13.6px">
+    <tr>
+        <th rowspan="2" style="vertical-align:middle; text-align:center">Operation</th>
+        <th colspan="4" style="text-align:center">Avg. Current Draw</th>
+    </tr>
+    <tr>
+        <td style="text-align:center">
+            LiPo: <b>3.5V</b><br>
+            <i>(Low < 5%)</i>
+        </td>
+        <td style="text-align:center">
+            LiPo: <b>3.7V</b><br>
+            <i>(~15%)</i>
+        </td>
+        <td style="text-align:center">
+            LiPo: <b>4.2V</b><br>
+            <i>(~100%)</i>
+        </td>
+        <td style="text-align:center; vertical-align:middle">
+            USB-C: <b>5V</b><br>
+            <i>(No Battery)</i>
+        </td>
+    </tr>
+    <tr>
+        <th style="vertical-align:middle">Idle (Blank Code)</th>
+        <td style="vertical-align:middle; text-align:center;">
+            63 mA<br>
+            <i>86 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            63.5 mA<br>
+            <i>89 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            64 mA<br>
+            <i>88.6 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            67 mA<br>
+            <i>89.9 mA (peak)</i>
+        </td>
+    </tr>
+    <tr>
+        <th style="vertical-align:middle">Idle: USB + Battery Power</th>
+        <td style="vertical-align:middle; text-align:center;">
+            --
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            --
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            90.5 &micro;A<br>
+            <i>721 &micro;A (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            N/A
+        </td>
+    </tr>
+    <tr>
+        <th style="vertical-align:middle">
+            Idle: Battery Charging<br>
+            <i>(Current from USB-C)</i>
+        </th>
+        <td style="vertical-align:middle; text-align:center;">
+            395 mA<br>
+            <i>420 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            590 mA<br>
+            <i>600 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            &gt; 110 mA<br>
+            <i>(before shutdown)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            N/A
+        </td>
+    </tr>
+    <tr>
+        <th style="vertical-align:middle">RGB <i>(White @ 100%)</i></th>
+        <td style="vertical-align:middle; text-align:center;">
+            78.4 mA<br>
+            <i>105.9 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            79 mA<br>
+            <i>106.8 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            79.9 mA<br>
+            <i>105.3 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            82.5 mA<br>
+            <i>108.2 mA (peak)</i>
+        </td>
+    </tr>
+    <tr>
+        <th style="vertical-align:middle">
+            WiFi Example<br>
+            <i>(Transceiving)</i>
+        </th>
+        <td style="vertical-align:middle; text-align:center;">
+            135 mA<br>
+            <i>295 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            137 mA<br>
+            <i>310 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            137 mA<br>
+            <i>307 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            140 mA<br>
+            <i>300 mA (peak)</i>
+        </td>
+    </tr>
+    <tr>
+        <th style="vertical-align:middle">
+            <a href="https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/DeepSleep/TouchWakeUp/TouchWakeUp.ino">Deep Sleep Example</a><br>
+            <i>(MCU Inactive)</i>
+        </th>
+        <td style="vertical-align:middle; text-align:center;">
+            2.5 mA<br>
+            <i>2.95 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            2.5 mA<br>
+            <i>3 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            2.55 mA<br>
+            <i>3 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            2.85 mA<br>
+            <i>3.3 mA (peak)</i>
+        </td>
+    </tr>
+    <tr>
+        <th style="vertical-align:middle">
+            <a href="https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/DeepSleep/TouchWakeUp/TouchWakeUp.ino">Deep Sleep Example</a><br>
+            <i>(MCU Inactive + Jumpers Cut)</i>
+        </th>
+        <td style="vertical-align:middle; text-align:center;">
+            842 &micro;A<br>
+            <i>1.24 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            848 &micro;A<br>
+            <i>1.23 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            866 &micro;A<br>
+            <i>1.24 mA (peak)</i>
+        </td>
+        <td style="vertical-align:middle; text-align:center;">
+            1.19 mA<br>
+            <i>1.58 mA (peak)</i>
+        </td>
+    </tr>
+</table>
+
+<p>It is possible for users to reach sub-mA power consumption levels with the deep sleep power modes. Using the <a href="https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/DeepSleep/TimerWakeUp/TimerWakeUp.ino"><code>TimerWakeUp</code> Deep Sleep example code</a>, the LED jumpers cut, and powering the board through the LiPo battery connection we measured a power consumption of <strong>845 &micro;A</strong> <em>(990 &micro;A peak)</em> @ <strong>3.7V</strong> while the MCU was inactive.</p>
+<p><center>
+<a href="../img/charge_profiles/measurement-ulp-from_batt.png"><img alt="Deep Sleep Power Consumption Profile" src="../img/charge_profiles/measurement-ulp-from_batt.png" width="200" /></a><br>
+<em>The current measurement from <code>VBAT</code> at <strong>3.7V</strong> during deep sleep. (Click to enlarge)</em>
+</center></p>
+<h2 id="esp32-wroom">ESP32-WROOM<a class="headerlink" href="#esp32-wroom" title="Permanent link">&para;</a></h2>
+<p>This variant of the ESP32 Thing Plus is designed around the <a href="../component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module</a> with 16MB of flash memory. Espressif&apos;s ESP32-WROOM module is a versitile, WiFi+BT+BLE MCU module that targets a wide variety of applications. At the core of this module is the ESP32-D0WDQ6 system on a chip (SoC) which is designed to be both scalable and adaptive. Its laundry list of features include:</p>
+<table>
+    <tr>
+        <td>
+            <ul>
+                <li>Xtensa® Dual-Core 32-bit LX6 Microprocessor <i>(up to 240MHz)</i></li>
+                    <ul>
+                        <li>448KB ROM and 520KB SRAM</li>
+                        <li>16MB of Embedded SPI Flash Storage</li>
+                    </ul>
+                <li>Cryptographic Hardware Accelerators</li>
+                    <ul>
+                        <li>AES, SHA2, ECC, RSA-4096</li>
+                    </ul>
+                <li>Integrated 802.11 b/g/n WiFi 2.4GHz Transceiver <i>(up to 150Mbps)</i></li>
+                <li>Integrated dual-mode Bluetooth (Bluetooth v4.2 and BLE) </li>
+                <li>26 GPIO <i>(including strapping pins)</i></li>
+                    <ul>
+                        <li>8x Capacitive Touch Electrodes</li>
+                    </ul>
+                <li>Operating Voltage: <b>3.0 to 3.6V</b></li>
+                    <ul>
+                        <li>WiFi: 380mA <i>(peak)</i></li>
+                    <li>Light-Sleep: 800&micro;A</li>
+                        <li>Deep-Sleep: 10 - 150&micro;A</li>
+                    </ul>
+            </ul>
+        </td>
+        <td align="center">
+            <a href="../img/hookup_guide/esp32_module.jpg"><img alt="ESP32-WROOM" src="../img/hookup_guide/esp32_module.jpg"></a><br>
+            <i>ESP32-WROOM module on the ESP32 Thing Plus (USB-C).<br>
+            (Click to enlarge)</i>
+        </td>
+    <tr>
+</table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><p>Users should be aware of the following nuances and details of this board</p>
+<ul>
+    <li>The ESP32-WROOM is only compatible with <b>2.4GHz WiFi</b> networks; it will not work on the 5GHz bands.</li>
+    <li>For details on the boot mode configuration, please refer to <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf#8">section <b>3.3 Strapping Pins</b></a> of the ESP32-WROOM module datasheet.</li>
+</ul></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><p>The ESP32-WROOM module has various power modes:</p>
+<ul>
+    <li><b>Active</b> -  The chip radio is powered on. The chip can receive, transmit, or listen.</li>
+    <li><b>Modem Sleep</b> - The CPU is operational and the clock is configurable. The Wi-Fi/Bluetooth
+baseband and radio are disabled.</li>
+    <li><b>Light Sleep</b> - The CPU is paused. The RTC memory and RTC peripherals, as well as the ULP
+coprocessor are running.</li>
+    <li><b>Deep Sleep</b> - Only the RTC memory and RTC peripherals are powered on. The ULP coprocessor is functional.
+    <li><b>Hibernation</b> - Only one RTC timer on the slow clock and certain RTC GPIOs are
+active.</li>
+    <li><b>Off</b> - Chip is powered off</li>
+</ul></p>
+<p><p><i>For more information on the power management of the ESP32-WROOM module, pleaser refer to <b>Section 3.7</b> and <b>Tables: 8 and 17</b> of the <a href="./component_datasheets/esp32_soc_datasheet_en.pdf">ESP32 SoC Datasheet</a>.</i></p></p>
+</div>
+<h3 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h3>
+<p>For users interested in debugging their code, the <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/configure-other-jtag.html#configure-hardware">JTAG pins</a> are broken out on the board. However, the debugging feature is only available through the <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/jtag-debugging/index.html?highlight=jtag">ESP-IDF</a>.</p>
+<ul>
+<li><strong><code>TMS</code></strong>: <code>GPIO 14</code></li>
+<li><strong><code>TDI</code></strong>: <code>GPIO 12</code></li>
+<li><strong><code>TCK</code></strong>: <code>GPIO 13</code></li>
+<li><strong><code>TDO</code></strong>: <code>GPIO 15</code></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Users should be aware that <code>GPIO 13</code> is connected to the <code>STAT</code> LED with a pull down resistor.</p>
+</div>
+<h3 id="firmware-download-mode">Firmware Download Mode<a class="headerlink" href="#firmware-download-mode" title="Permanent link">&para;</a></h3>
+<p>Users can manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the <kbd>BOOT</kbd> button. Please, refer to the <strong>Boot Button</strong> section below for more information.</p>
+<h2 id="peripherals-and-io">Peripherals and I/O<a class="headerlink" href="#peripherals-and-io" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><p><b>Note:</b> Users should be aware of the following nuances of this board
+<ul>
+    <li>&#9889; All the GPIO on the ESP32-WROOM Thing Plus are <b>3.3V</b> pins.
+        <ul>
+            <li>The I/O pins are <strong>not 5V-tolerant</strong>! To interface with higher voltage components, a <a href="https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide"><b>logic level adapter</b></a> is recommended.</li>
+        </ul>
+    </li>
+    <li>&#9889;  There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.</li>
+    <li>There are some limitations to the ADC performance, see the <b>Note</b> from the <a href="./component_datasheets/esp32_soc_datasheet_en.pdf"><b>ADC Characteristics</b> section of the ESP32 SoC datasheet</a>.
+</ul></p>
+</div>
+<p>The ESP32-WROOM module has <em>26 multifunctional GPIO</em>, of which, <strong>21 I/O pins</strong> broken out into a feather form factor layout on this board. All of the <a href="https://www.sparkfun.com/products/20168">ESP32-WROOM Thing Plus (USB-C)</a> pins have a .1&#x22; pitch spacing for headers. With the <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#id1">pin multiplexing</a> capabilities of the ESP32 SoC, various pins can have several functionalities. For more technical specifications on the <strong>I/O</strong> pins, please refer to the <a href="../component_datasheets/esp32_soc_datasheet_en.pdf">ESP32 SoC datasheet</a>.</p>
+<ul>
+<li>13x 12-bit analog to digital converter (ADC) channels</li>
+<li>3x UARTs (only two are configured by default in the Arduino IDE, one UART is used for bootloading/debug)<br></li>
+<li>3x SPI (only one is configured by default in the Arduino IDE)</li>
+<li>2x I<sup>2</sup>C (only one is configured by default in the Arduino IDE)</li>
+<li>2x I<sup>2</sup>S Audio</li>
+<li>2x digital-to-analog converter (DAC) channels</li>
+<li>16x 20-bit PWM outputs</li>
+<li>8x Capacitive Touch Inputs</li>
+</ul>
+<p><center>
+<a href="../board_files/graphical_datasheet.pdf"><img alt="Graphical datasheet" src="../img/hookup_guide/graphical_datasheet.png" width="500" /></a><br>
+<em>Graphical datasheet for the ESP32-WROOM Thing Plus (USB-C). (Click to enlarge)</em>
+</center></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Users should be aware of the following limitations for the board in the Arduino IDE.
+<ul>
+    <li>Not all of the features, listed above, are available in the Arduino IDE. For the full capabilities of the ESP32, the Espressif IDF should be utilized.</li>
+    <li>Only one I<sup>2</sup>C bus is defined.</li>
+    <li>Only two UART interfaces are available.</li>
+    <ul>
+        <li><b>UART (USB):</b> <code>Serial</code></li>
+        <li><b><code>RX</code>/<code>TX</code> Pins:</b> <code>Serial1</code></li>
+    </ul>
+    <li>Only one SPI bus is defined.</li>
+</ul></p>
+</div>
+<p>For digital pins, users will need to declare the <a href="https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/"><strong><code>pinMode()</code></strong> <em>(link)</em></a> in the setup of their <b>sketch</b> (programs written in the Arduino IDE) for the pins used.</p>
+<h4 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h4>
+<p>When configured properly, an <b>input</b> pin will be looking for a <b>HIGH</b> or <b>LOW</b> state. <b>Input</b> pins are <b>High Impedance</b> and takes very little current to move the input pin from one state to another.</p>
+<h4 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h4>
+<p>When configured as an <b>output</b> the pin will be at a <b>HIGH</b> or <b>LOW</b> voltage. <b>Output</b> pins are <b>Low Impedance</b>: This means that they can provide a relatively substantial amount of current to other circuits.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><b>&#9889;</b> There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.</p>
+</div>
+<h3 id="additional-functions">Additional Functions<a class="headerlink" href="#additional-functions" title="Permanent link">&para;</a></h3>
+<p>There are several pins that have special functionality in addition to general <strong>digital I/O</strong>. These pins and their additional functions are listed in the tabs below. For more technical specifications on the <strong>I/O</strong> pins, you can refer to the <a href="../board_files/schematic.pdf">schematic</a>, <a href="../component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>, <a href="../component_datasheets/esp32_soc_datasheet_en.pdf">ESP32 SoC datasheet</a>, and <a href="https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#peripherals">documentation for the ESP32 Arduino core</a>.</p>
+<!-- Tabs -->
+
+<div class="col-tabs">
+    <ul class="nav nav-tabs" role="tablist" style="border-bottom-color:dimgrey">
+        <li role="presentation" class="active">
+        <a href="#Analog-Input-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
+            Analog Input</a></li>
+        <li role="presentation">
+        <a href="#PWM-Output-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
+            PWM/Analog Output</a></li>
+        <li role="presentation">
+        <a href="#Serial-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
+            Serial Comm.</a></li>
+        <li role="presentation">
+        <a href="#SPI-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
+            SPI</a></li>
+        <li role="presentation">
+        <a href="#I2C-tab" aria-control="Digital-IO" role="tab" data-toggle="tab">
+            I<sup>2</sup>C</a></li>
+    </ul>
+<!--Analog Input Tab-->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="Analog-Input-tab">
+            <div class="col-sm-12">
+<H4>Analog Input Pins</H4>
+
+<p>The ESP32-WROOM module provides a <b>12-bit ADC</b> input on thirteen of its I/O pins. This functionality is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/"><code>analogRead(pin)</code> function</a>. <i>(*The available ADC pins are highlighted in the image below.)</i></p>
+
+<p><div class="row">
+    <div class="col-md-5">
+        <center>
+            <a href="../img/hookup_guide/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="../img/hookup_guide/pins_adc2.jpg"></a>
+            <br>
+            <i>Analog input pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+        </center>
+    </div>
+    <div class="col-md-7">
+        <div class="alert alert-info">
+            <b>Note:</b> By default, in the Arduino IDE, <code>analogRead()</code> returns a 10-bit value. To change the resolution of the value returned by the <code>analogRead()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/"><code>analogReadResolution(bits)</code> function</a>.
+        </div>
+        <div class="alert alert-info">
+            <p><b>Note:</b> To learn more about analog vs. digital signals, check out this great <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">tutorial</a>.</p>
+            <br>  
+            <!-- tutorial_big(89) -->
+        </div>
+    </div>
+</div></p>
+            </div>
+        </div>
+<!--PWM Tab-->
+        <div role="tabpanel" class="tab-pane fade" id="PWM-Output-tab">
+            <div class="col-sm-12">
+<H4>Pulse Width Modulation (PWM) and Analog (DAC) Output Pins</H4>
+<p>The ESP32-WROOM module supports up to sixteen channels of <b>20-bit PWM</b> outputs on any of its I/O pins. This is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/"><code>analogWrite(pin, value)</code> function</a> or the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/ledc.html">LED Control API</a>. <i>(*Any I/O pin can be used for the PWM outputs; the available DAC pins, with true analog outputs, are highlighted in the image below.)</i></p>
+
+<p><div class="row">
+    <div class="col-md-5">
+        <center>
+            <a href="../img/hookup_guide/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="../img/hookup_guide/pins_pwm_dac.jpg"></a>
+            <br>
+            <i>Any I/O pin can be used for a PWM output, but these are the DAC pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+        </center>
+    </div>
+    <div class="col-md-7">
+        <div class="alert alert-info">
+            <p><b>Note:</b> By default, in the Arduino IDE, <code>analogWrite()</code> accepts an 8-bit value. To change the resolution of the PWM signal for the <code>analogWrite()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogwriteresolution/"><code>analogWriteResolution(bits)</code> function</a>.</p>
+            <p><i>(*The PWM output is not a true analog signal. For a true analog output, please refer to the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/dac.html">DAC API</a> for <code>GPIO 25</code> and <code>GPIO 26</code>.)</i></p>
+        </div>
+        <div class="alert alert-info">
+            <p><b>Note:</b> To learn more about pulse width modulation (PWM), check out this great <a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation">tutorial</a>.</p>
+            <br>
+            <!-- tutorial_big(51) -->
+        </div>
+    </div>
+</div></p>
+            </div>
+        </div>
+<!--Serial Communication Tab-->
+        <div role="tabpanel" class="tab-pane fade" id="Serial-tab">
+            <div class="col-sm-12">
+<H4>Serial Communication Pins</H4>
+<p>The ESP32-WROOM module provides three UART ports. By default, the UART port for the USB connection (<code>Serial</code>) and the labeled UART I/O pins on the board (<code>Serial1</code>) can be accessed through the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">serial communication class</a>.</p>
+<p><div class="row">
+    <div class="col-md-5">
+        <center>
+            <a href="../img/hookup_guide/pins_serial.jpg"><img alt="Annotated image of UART pins" src="../img/hookup_guide/pins_serial.jpg"></a>
+            <br>
+            <i>Default UART ports on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+        </center>
+    </div>
+    <div class="col-md-7">
+        <div class="alert alert-info"><b>Note:</b> By default, in the Arduino IDE, the <b>SparkFun ESP32 Thing Plus C</b> board definition supports:        
+        <ul>
+            <li><code>Serial</code> - <b>UART (USB)</b></li>
+            <li><code>Serial1</code> - <b>Pins: <code>RX</code>/<code>TX</code> (<code>GPIO 16</code>/<code>GPIO 17</code>)</b></li>
+        </ul>
+        In order to utilize the serial communication on the strapping pins, users will need to create a custom serial port object and declare which pins to access.</div>
+        <div class="alert alert-info">
+            <p><b>Note:</b> To learn more about serial communication, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-communication">tutorial</a>.</p>
+            <br>
+            <!-- tutorial_big(8) -->
+        </div>
+    </div>
+</div></p>
+
+<div class="alert alert-info">
+    <p><b>Note:</b> We have noticed that with the ESP32 Arduino core, <code>Serial.available()</code> does not operate instantaneously. This is due to an interrupt triggered by the UART, to empty the FIFO when the <b><code>RX</code></b> pin is inactive for two byte periods:
+        <ul>
+            <li>At 9600 baud, <code>hwAvailable</code> takes [<code>number of bytes received</code> + 2] x 1 ms = <b>11 ms</b> before the UART indicates that data was received from: <code>\r\nERROR\r\n</code>.</li>
+            <li>At 115200 baud, <code>hwAvailable</code> takes [<code>number of bytes received</code> + 2] x .087 ms = <b>~1 ms</b> before the UART indicates that data was received from: <code>\r\nERROR\r\n</code>.</li>
+        </ul>
+    </p>
+    <p><i>For more information, please refer to this <a href="https://gitter.im/espressif/arduino-esp32?at=5e25d6370a1cf54144909c85"> chatroom discussion</a>.</i></p>
+</div>
+            </div>
+        </div>
+<!--SPI Tab-->
+        <div role="tabpanel" class="tab-pane fade" id="SPI-tab">
+            <div class="col-sm-12">
+<H4>SPI Communication</H4>
+<p>The ESP32-WROOM module provides three SPI buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/SPI">SPI class</a> is configured to utilize pins <code>GPIO 18</code> (SCK), <code>GPIO 19</code> (POCI), <code>GPIO 23</code> (PICO). These pins share the same SPI bus as the &micro;SD card slot, which utilizes pin <code>5</code> (<code>SS</code>) for its chip select. In order to utilize the other SPI ports or objects, users will need to create a custom SPI object and declare which pins to access.</p>
+
+<div class="alert alert-info"><b>Note:</b> To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. The <code>MOSI</code> signal on a controller has been replaced with <code>SDO</code> or <code>PICO</code>. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to deprecate the <b>MOSI</b>/<b>MISO</b> terminology and transition to the <b>SDO</b>/<b>SDI</b> naming convention</a>.</p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-5">
+        <p><center>
+            <a href="../img/hookup_guide/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="../img/hookup_guide/pins_spi.jpg"></a>
+            <br>
+            <i>Default SPI bus connections on the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
+        </center></p>
+    </div>
+    <div class="col-md-7">
+        <center>
+            <table>
+                <tr>
+                    <th style="text-align:center">SCK</th>
+                    <td style="text-align:center"><code>GPIO 18</code> (<code>SCK</code>)</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center">SDI or POCI</th>
+                    <td style="text-align:center"><code>GPIO 19</code> (<code>MISO</code>)</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center">SDO or PICO</th>
+                    <td style="text-align:center"><code>GPIO 23</code> (<code>MOSI</code>)</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center">CS (&micro;SD Card)</th>
+                    <td style="text-align:center"><code>GPIO 5</code> (<code>SS</code>)</td>
+                </tr>
+            </table>
+        </center>
+        <div class="alert alert-info">
+            <p><b>Note:</b> To learn more about the serial peripheral interface (SPI) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">tutorial</a>.</p>
+            <br>
+            <!-- tutorial_big(16) -->
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+<!--I2C Tab-->
+        <div role="tabpanel" class="tab-pane fade" id="I2C-tab">
+            <div class="col-sm-12">
+
+<H4>I<sup>2</sup>C Communication Pins</H4>
+<p>The ESP32-WROOM module module can support up to two I<sup>2</sup>C buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/wire">Wire class</a> is configured to utilize pins <code>GPIO 21</code> (SDA) and <code>GPIO 22</code> (SCL). These pins share the same I<sup>2</sup>C bus with the Qwiic connector and MAX17048 fuel gauge. In order to utilize the other  I<sup>2</sup>C ports, users will need to create a custom Wire object and declare which pins to access.</p>
+
+<div class="row">
+<div class="col-md-5">
+        <p><center>
+            <a href="../img/hookup_guide/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="../img/hookup_guide/I2C_connections.jpg"></a>
+            <br>
+            <i>Default I<sup>2</sup>C bus connections for the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
+        </center></p>
+    </div>
+    <div class="col-md-7">
+        <center>
+            <table>
+                <tr>
+                    <th style="text-align:center">SCL</th>
+                    <td  style="text-align:center"><code>GPIO 22</code> (<code>SCL</code>)</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center">SDA</th>
+                    <td style="text-align:center"><code>GPIO 21</code> (<code>SDA</code>)</td>
+                </tr>
+            </table>
+        </center>
+        <div class="alert alert-info">
+            <p><b>Note:</b> To learn more about the inter-integrated circuit (I<sup>2</sup>C) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/i2c">tutorial</a>.</p>
+            <br>
+            <!-- tutorial_big(82) -->
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 id="buttons">Buttons<a class="headerlink" href="#buttons" title="Permanent link">&para;</a></h2>
+<p>There are two buttons on ESP32-WROOM Thing Plus; a <kbd>RST</kbd> and <kbd>BOOT</kbd> button.</p>
+<h3 id="reset-button">Reset Button<a class="headerlink" href="#reset-button" title="Permanent link">&para;</a></h3>
+<p>The <kbd>RST</kbd> <em>(reset)</em> button allows users to reset the program running on the ESP32-WROOM module without unplugging the board.</p>
+<p><center>
+<a href="../img/hookup_guide/button_reset.jpg"><img alt="Reset Button" src="../img/hookup_guide/button_reset.jpg" width="200" /></a><br>
+<em><kbd>RST</kbd> button on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<h3 id="boot-button">Boot Button<a class="headerlink" href="#boot-button" title="Permanent link">&para;</a></h3>
+<p>The <kbd>BOOT</kbd> button can be used to force the board into the serial bootloader. Holding down the <kbd>BOOT</kbd> button, while connecting the board to a computer through its USB-C connector or resetting the board will cause it to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a>. The board will remain in this mode until it power cycles (happens automatically after uploading new firmware) or the <kbd>RST</kbd> button is pressed.</p>
+<ol>
+<li>Hold the <kbd>BOOT</kbd> button down.</li>
+<li>Reset the MCU.<ul>
+<li>While unpowered, connect the board to a computer with through the USB-C connection.</li>
+<li>While powered, press the <kbd>RST</kbd> button.</li>
+</ul>
+</li>
+<li>Release the <kbd>BOOT</kbd> button.</li>
+<li>After programming is completed, reboot the MCU.<ul>
+<li>Press the <kbd>RST</kbd> button.</li>
+<li>Power cycle the board. </li>
+</ul>
+</li>
+</ol>
+<p><center>
+<a href="../img/hookup_guide/button_boot.jpg"><img alt="Boot Button" src="../img/hookup_guide/button_boot.jpg" width="200" /></a><br>
+<em><kbd>BOOT</kbd> button on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><b>&#9889;</b> The <kbd>BOOT</kbd> button is also connected to <code>GPIO 0</code>, which controls the voltage output to the Qwiic connector. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.</p>
+</div>
+<h2 id="indicator-leds">Indicator LEDs<a class="headerlink" href="#indicator-leds" title="Permanent link">&para;</a></h2>
+<p>There are four indicator LEDs on the ESP32-WROOM Thing Plus:</p>
+<ul>
+<li><strong><code>PWR</code>:</strong> Power (Red)</li>
+<li><strong><code>CHG</code>:</strong> Battery Charging (Yellow)</li>
+<li><strong><code>13</code>:</strong> <code>GPIO 13</code> (Blue)</li>
+<li><strong><code>WS2812</code>:</strong> <code>GPIO 02</code> (RGB)</li>
+</ul>
+<h3 id="power-led">Power LED<a class="headerlink" href="#power-led" title="Permanent link">&para;</a></h3>
+<p>The red, power (<code>PWR</code>) LED will light up once <strong>3.3V</strong> is supplied to the board. For most users, it will light up when <strong>5V</strong> is supplied through the USB connection and/or when a LiPo battery is attached to the JST connector. </p>
+<p><center>
+<a href="../img/hookup_guide/LED_pwr.jpg"><img alt="Power LED" src="../img/hookup_guide/LED_pwr.jpg" width="200" /></a><br>
+<em>ESP32-WROOM Thing Plus <code>PWR</code> status LED indicator. (Click to enlarge)</em>
+</center></p>
+<h3 id="battery-charging-led">Battery Charging LED<a class="headerlink" href="#battery-charging-led" title="Permanent link">&para;</a></h3>
+<p>The yellow, battery charging (<code>CHG</code>) LED indicates the status of the MCP73831 charge management controller. The LED will shut off when no battery is present, when the charge management controller is in standby (<em>after the battery charging has been completed</em>), or when the charge management controller is shutdown. The LED will illuminate when the charge management controller is in the process of charging the battery. For more information, please refer to the <a href="../component_datasheets/MCP73831.pdf">MCP73831 datasheet</a>.</p>
+<table style="width:100%">
+    <tr>
+        <td align="center">
+            <a href="../img/hookup_guide/LED_chg.jpg"><img alt="Charge LED" src="../img/hookup_guide/LED_chg.jpg"></a><br>
+            <i>The battery charging (<code>CHG</code>) LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+        </td>
+        <td align="center" width="50%">
+            <table>
+                <tr>
+                    <th style="text-align:center">Charge Cycle State</th>
+                    <th style="text-align:center">LED</th>
+                </tr>
+                <tr>
+                    <td>
+                        Shutdown
+                        <ul>
+                            <li>Thermal Shutdown</li>
+                            <li>V<sub>DD</sub> < V<sub>BAT</sub></li>
+                        </ul>
+                    </td>
+                    <td align="center" style="vertical-align:middle"><b>Off</b> (High Z)</td>
+                </tr>
+                <tr>
+                    <td>No Battery Present</td>
+                    <td align="center"><b>Off</b> (High Z)</td>
+                </tr>
+                <tr>
+                    <td>Charge Complete – Standby</td>
+                    <td align="center"><b>Off</b> (H)</td>
+                </tr>
+                <tr>
+                    <td>Preconditioning</td>
+                    <td align="center"><b>On</b> (L)</td>
+                </tr>
+                <tr>
+                    <td>Constant-Current Fast Charge</td>
+                    <td align="center"><b>On</b> (L)</td>
+                </tr>
+                <tr>
+                    <td>Constant Voltage</td>
+                    <td align="center"><b>On</b> (L)</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<h3 id="stat-led">STAT LED<a class="headerlink" href="#stat-led" title="Permanent link">&para;</a></h3>
+<p>The blue, status (<code>STAT</code>) LED is typically used as a test or status LED to make sure that a board is working or for basic debugging. This indicator is connected to <code>GPIO 13</code>.</p>
+<p><center>
+<a href="../img/hookup_guide/LED_stat.jpg"><img alt="Status LED" src="../img/hookup_guide/LED_stat.jpg" width="200" /></a><br>
+<em>The status (<code>STAT</code>) LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<h3 id="ws2812-rgb-led">WS2812 RGB LED<a class="headerlink" href="#ws2812-rgb-led" title="Permanent link">&para;</a></h3>
+<p>The WS2812 RGB LED is controlled with a 24-bit (GRB) data signal. This indicator is connected to <code>GPIO 02</code> and the digital output pin from the LED is available through a test point. For more information, please refer to the <a href="../component_datasheets/WS2812C-2020.pdf">WS2812C datasheet</a>.</p>
+<p><center>
+<a href="../img/hookup_guide/LED_WS2812.jpg"><img alt="RGB LED" src="../img/hookup_guide/LED_WS2812.jpg" width="200" /></a><br>
+<em><code>WS2812</code> LED indicator on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The latest ESP32 Arduino core, now provides a basic RGB LED driver for a WS2812 <i>(or NeoPixel)</i> LED populated the board. For an example of how to utilize the RGB LED driver check out the <a href="https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/GPIO/BlinkRGB/BlinkRGB.ino">BlinkRGB example code</a>, which can be accessed from the File drop down menu <i>(i.e <b>File</b> &gt; <b>Examples</b> &gt; <b>ESP32</b> &gt; <b>GPIO</b> &gt; <b>BlinkRGB</b>)</i>.</p>
+</div>
+<h2 id="sd-slot">&micro;SD Slot<a class="headerlink" href="#sd-slot" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to transition to the new naming convention</a>.</p>
+</div>
+<p>The <a href="https://www.sparkfun.com/products/20168">ESP32-WROOM Thing Plus (USB-C)</a> includes an &micro;SD card slot. This is great for data logging applications or storing files. The &micro;SD card slot is connected to the following dedicated GPIO:</p>
+<ul>
+<li><strong><code>GPIO 5</code></strong>: <code>DATA 3</code>/<code>CS</code></li>
+<li><strong><code>N/A</code></strong>: <code>DATA 2</code></li>
+<li><strong><code>N/A</code></strong>: <code>DATA 1</code></li>
+<li><strong><code>GPIO 19</code></strong>: <code>DATA 0</code>/<code>POCI</code> (or Peripheral's <code>SDO</code>)</li>
+<li><strong><code>GPIO 18</code></strong>: <code>CLK</code>/<code>SCK</code></li>
+<li><strong><code>GPIO 23</code></strong>: <code>CMD</code>/<code>PICO</code> (or Peripheral's <code>SDI</code>)</li>
+</ul>
+<p><center>
+<a href="../img/hookup_guide/SD_card_slot.jpg"><img alt="SD card slot" src="../img/hookup_guide/SD_card_slot.jpg" width="200" /></a><br>
+<em>&micro;SD card slot on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<h2 id="jumpers">Jumpers<a class="headerlink" href="#jumpers" title="Permanent link">&para;</a></h2>
+<p>There are two jumpers on the back of the board that can be used to easily modify the hardware connections on the board.</p>
+<ul>
+<li><strong>SHLD</strong> - This jumper can be used to disconnect the USB shield from <code>GND</code>.</li>
+<li><strong>PWR</strong> - This jumper can be used to remove power to the <code>PWR</code> LED. </li>
+<li><strong>CHG LED</strong> - This jumper can be used to remove power to the <code>CHG</code> LED.<ul>
+<li>Avoid cutting the box&apos;s silkscreen; there are traces under it:
+<center>
+<a href="../img/hookup_guide/jumper_caution.gif"><img alt="traces around jumper" src="../img/hookup_guide/jumper_caution_small.gif" width="200" /></a><br>
+<em>Traces around the <strong><code>CHG LED</code></strong> jumper. (Click to enlarge)</em>
+</center></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><p>Never modified a jumper before? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces tutorial</a> for a quick introduction!</p>
+<p align="center">
+    <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
+    <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
+</p></p>
+</div>
+<p><center>
+<a href="../img/hookup_guide/jumpers.jpg"><img alt="Jumpers" src="../img/hookup_guide/jumpers.jpg" width="200" /></a><br>
+<em>The jumpers on the back of the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<h2 id="primary-i2c-bus">Primary I<sup>2</sup>C Bus<a class="headerlink" href="#primary-i2c-bus" title="Permanent link">&para;</a></h2>
+<p>The Qwiic connector and battery fuel gauge are attached to the primary I<sup>2</sup>C bus. The primary I<sup>2</sup>C bus for this board utilizes the pin connections, detailed in the table below:</p>
+<p><center>
+    <table>
+        <tr>
+            <th style="text-align:center">
+                Connection
+            </th>
+            <td align="center"><code>VDD</code></td>
+            <td align="center"><code>GND</code></td>
+            <td align="center"><code>SCL</code></td>
+            <td align="center"><code>SDA</code></td>
+        </tr>
+        <tr>
+            <th style="text-align:center; vertical-align:middle">
+                Battery Fuel Gauge<br>
+                <i>(MAX17048)</i>
+            </th>
+            <td style="text-align:center; vertical-align:middle"><code>VBAT</code></td>
+            <td style="text-align:center; vertical-align:middle"><b>GND</b></td>
+            <td style="text-align:center; vertical-align:middle"><code>GPIO 22</code></td>
+            <td style="text-align:center; vertical-align:middle"><code>GPIO 21</code></td>
+        </tr>
+        <tr>
+            <th style="text-align:center; vertical-align:middle">
+                Qwiic Connector
+            </th>
+            <td style="text-align:center; vertical-align:middle">
+                <code>GPIO 0</code><br>
+                <i>(Enables 3.3V)</i>
+            </td>
+            <td style="text-align:center; vertical-align:middle"><b>GND</b></td>
+            <td style="text-align:center; vertical-align:middle"><code>GPIO 22</code></td>
+            <td style="text-align:center; vertical-align:middle"><code>GPIO 21</code></td>
+        </tr>
+    </table>
+</center></p>
+
+<h3 id="battery-fuel-gauge">Battery Fuel Gauge<a class="headerlink" href="#battery-fuel-gauge" title="Permanent link">&para;</a></h3>
+<p>The <a href="../component_datasheets/MAX17048.pdf">MAX17048 fuel gauge</a> measures the approximate charge or discharge rate, state of charge (SOC) (based on ModelGauge algorithm), and voltage of a connected battery. Additionally, the chip is powered directly from <code>VBAT</code>, when a LiPo battery is connected. For more information, please refer to the <a href="../component_datasheets/MAX17048.pdf">MAX17048 datasheet</a>.</p>
+<table>
+    <tr>
+        <td>
+            <a href="../img/hookup_guide/fuel_gauge.jpg"><img alt="MAX17048 Fuel Gauge" src="https://cdn.sparkfun.com/r/300-300/assets/learn_tutorials/2/3/5/3/fuel_gauge.jpg"></a><br>
+            <i>The MAX17048 fuel gauge on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>I<sup>2</sup>C Address</td>
+                    <td>
+                        <b>0x36</b> (7-bit)<br>
+                        <b>0x6C</b> (write)/<b>0x6D</b> (read)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Voltage Measurement</td>
+                    <td>
+                        Range: 2.5 - 5 V<br>
+                        Precision: &PlusMinus;7.5 mV/Cell<br>
+                        Resolution 1.25 mV/Cell
+                    </td>
+                </tr>
+                <tr>
+                    <td>Current Consumption</td>
+                    <td>
+                        Sleep: .5 - 2 µA<br>
+                        Hibernate: 3 - 5 µA<br>
+                        Active: 23 - 40 µA
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>Alert</code> pin for the MAX17048 is not connected and cannot be utilized.</p>
+</div>
+<h3 id="qwiic-connector">Qwiic Connector<a class="headerlink" href="#qwiic-connector" title="Permanent link">&para;</a></h3>
+<p>A Qwiic connector is provided for users to seamlessly integrate with <a href="https://www.sparkfun.com/qwiic">SparkFun's Qwiic Ecosystem</a>.</p>
+<p><center>
+<a href="../img/hookup_guide/I2C_connections.jpg"><img alt="Qwiic connector and I2C pins" src="../img/hookup_guide/I2C_connections.jpg" width="200" /></a><br>
+<em>Qwiic connector and I<sup>2</sup>C pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</em>
+</center></p>
+<h4 id="power-control_1">Power Control<a class="headerlink" href="#power-control_1" title="Permanent link">&para;</a></h4>
+<p>In order to enable power for the Qwiic connector, users must toggle <code>GPIO 0</code> high. This enables the power output from the XC6222 LDO regulator to the Qwiic connector, which can sources up to <strong>700mA</strong> at <strong>3.3V</strong> . In order to conserve battery power or in low power applications, users will can toggle <code>GPIO 0</code> low, to disable the power to the Qwiic connector.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><b>&#9889;</b> <code>GPIO 0</code> is also connected to the <kbd>BOOT</kbd> button. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.</p>
+</div>
+<p><strong>What is Qwiic?</strong></p>
+<p>The Qwiic system is intended a quick, hassle-free cabling/connector system for I<sup>2</sup>C devices. Qwiic is actually a play on words between "quick" and I<sup>2</sup>C or "iic".
+<br>
+<br></p>
+<!-- youtube(https://youtu.be/x0RDEHqFIF8) -->
+
+<H4>Features of the Qwiic System</H4>
+
+<div class="col-tabs">
+    <ul class="nav nav-tabs" role="tablist" style="border-bottom-color:dimgrey">
+        <li role="presentation" class="active">
+        <a href="#Soldering-tab" aria-control="Soldering-tab" role="tab" data-toggle="tab">
+            No Soldering</a></li>
+        <li role="presentation">
+        <a href="#Connector-tab" aria-control="Connector-tab" role="tab" data-toggle="tab">
+            Polarized Connector</a></li>
+        <li role="presentation">
+        <a href="#Daisy-tab" aria-control="Daisy-tab" role="tab" data-toggle="tab">
+            Daisy Chain</a></li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="Soldering-tab">
+            <div class="col-sm-12">
+              <h4 style="margin-bottom:10px;">Keep your soldering iron at bay.</h4>
+            </div>
+            <div class="col-sm-8">
+              <p>Cables plug easily between boards making quick work of setting up a new prototype. We currently offer three different lengths of Qwiic cables as well as a breadboard friendly cable to connect any Qwiic enabled board to anything else. Initially you may need to solder headers onto the shield to connect your platform to the Qwiic system but once that’s done it’s plug and go!</p>
+            </div>
+            <div class="col-sm-4 col-sm-4"> <img src="https://cdn.sparkfun.com/assets/8/d/9/2/a/jst-board.jpg" alt="Qwiic Cable and Board">
+              <p class="small" align="center">Qwiic cables connected to <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout</a></p>
+            </div>
+        <div class="clearfix"></div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Connector-tab">
+            <div class="col-sm-12">
+              <h4 style="margin-bottom:10px;">Minimize your mistakes.</h4>
+            </div>
+            <div class="col-sm-8">
+              <p>How many times have you swapped the SDA and SCL wires on your breadboard hoping the sensor will start working? The Qwiic connector is polarized so you know you’ll have it wired correctly, every time, from the start.</p>
+              <p>The PCB connector is part number SM04B-SRSS (<a href="https://cdn.sparkfun.com/assets/parts/1/2/2/8/9/Qwiic_Connector_Datasheet.pdf">Datasheet</a>) or equivalent. The mating connector used on cables is part number SHR04V-S-B or equivalent. This is a common and low cost connector.</p>
+            </div>
+            <div class="col-sm-4 col-sm-4"> <img src="https://cdn.sparkfun.com/assets/d/a/2/e/6/jst-connector_1.jpg" alt="JST Connector">
+              <p class="small" align="center">1mm pitch, 4-pin JST connector</p>
+            </div>
+        <div class="clearfix"></div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="Daisy-tab">
+            <div class="col-sm-12">
+              <h4 style="margin-bottom:10px;">Expand with ease.</h4>
+            </div>
+            <div class="col-sm-12">
+              <p>It’s time to leverage the power of the I<sup>2</sup>C bus! Most Qwiic boards will have two or more connectors on them allowing multiple devices to be connected.</p>
+            </div>
+            <div class="col-sm-12"> <img src="https://cdn.sparkfun.com/assets/b/d/0/1/0/daisy-chain_2.png" alt="Daisy Chain" class="img-responsive">
+              <p class="small" align="center">Shown above: <a href="https://www.sparkfun.com/products/14352">Qwiic Shield for Arduino</a> on <a href="https://www.sparkfun.com/products/13975">RedBoard</a>, <a href="https://www.sparkfun.com/products/14351">Spectral Sensor Breakout - NIR</a>, <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout - Visible</a> and <a href="https://www.sparkfun.com/products/14414">SparkFun GPS Breakout</a>
+     </p>
+            </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>  
+</div>
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2022 SparkFun Electronics (6333 Dry Creek Parkway, Niwot, Colorado 80503)
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://www.sparkfun.com/products/21247" target="_blank" rel="noopener" title="www.sparkfun.com" class="md-social__link">
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="97.333336"
+   height="133.33333"
+   viewBox="0 0 97.333336 133.33333"
+   sodipodi:docname="sfe_logo_sm.png"
+   inkscape:export-filename="sfe_logo.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8">
+    <image
+       width="97.333336"
+       height="133.33333"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEkAAABkCAYAAADKQR00AAAAAXNSR0IArs4c6QAAAAlwSFlzAAAL
+EwAACxMBAJqcGAAABBlpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDUuNC4wIj4KICAgPHJkZjpSREYg
+eG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4K
+ICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6eG1w
+TU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iCiAgICAgICAgICAgIHhtbG5zOnN0
+UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIgogICAg
+ICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iCiAgICAgICAg
+ICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj4KICAgICAgICAg
+PHhtcE1NOkRlcml2ZWRGcm9tIHJkZjpwYXJzZVR5cGU9IlJlc291cmNlIj4KICAgICAgICAgICAg
+PHN0UmVmOmluc3RhbmNlSUQ+eG1wLmlpZDo5REVGNDBGQzgyOUYxMUU2ODlERkU5ODFGMkYxMjgw
+Mjwvc3RSZWY6aW5zdGFuY2VJRD4KICAgICAgICAgICAgPHN0UmVmOmRvY3VtZW50SUQ+eG1wLmRp
+ZDo5REVGNDBGRDgyOUYxMUU2ODlERkU5ODFGMkYxMjgwMjwvc3RSZWY6ZG9jdW1lbnRJRD4KICAg
+ICAgICAgPC94bXBNTTpEZXJpdmVkRnJvbT4KICAgICAgICAgPHhtcE1NOkRvY3VtZW50SUQ+eG1w
+LmRpZDo5REVGNDBGRjgyOUYxMUU2ODlERkU5ODFGMkYxMjgwMjwveG1wTU06RG9jdW1lbnRJRD4K
+ICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+eG1wLmlpZDo5REVGNDBGRTgyOUYxMUU2ODlERkU5
+ODFGMkYxMjgwMjwveG1wTU06SW5zdGFuY2VJRD4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5B
+ZG9iZSBQaG90b3Nob3AgQ0MgMjAxNS41IChNYWNpbnRvc2gpPC94bXA6Q3JlYXRvclRvb2w+CiAg
+ICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRm
+OkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo7mgEAAAARJElEQVR4Ae1d
+C4xcVRk+5947u9snbaWiEbVgm9KdbvdVHkYIW4svxJiGroImCCkJJaBQjRpJhAU1xEQUFAmvAFEk
+yAJBDWjElikYsbazs9vuLJQ+fNAKtNj3a3fuPcfvO3PvZnb2zuzc2Zktu9uTbM+9555z/vN/9z//
++f//nDsV4lQaEQE5Yo0xqqCFkKK93Urs3Svb5s7VnZ2dol0IFCO1t0uW83J9IqE6hFC8njTpqfZ2
++6W2NicKw0EbA2yUhmXWPWmSBAatRFubtSyRcDn2niVLptkydp4l9blaioVSizO0FnVSyn4t9B6t
+9Q4trZRw+zc19Pa+E/CrCXAi4YGRrNQFDyqYnxSQyJj0wXl9ydKFylKrweGKmJQfrbMsw17ufMqW
+CJEBaieUt08Kud7T4vHFPV3PgQFTldIYAF5BfExXYwoSp0cn9M6XOju9Ta2tp0/x1B0ounambceO
+K0UQyHAuPvn8WraU1hQA6RrAVC8q3BXv7nqMFdl/NSRqzEDqwPTCnwEg3bx0pdDqPoAz97DnsdDF
+QCgwgdDgsmDy8IRTtOY025aUvHcymR2Qrpvqu5PP+63IV8Wm35iAhNFaIGQA6mtq+fE02/7OACRn
+QOsMmKHSLnUcriOlQ0kCuARrO/TVWwCoFh3EhNS/qE+lfoXyiqZSB1c20dwpkG5qeXSO41y9z3UJ
+GN+0HaFjF+A6Rz31DmblvdISz4qBge3xdHog6OO1885739tTpx6stG6qOkhcrqmDIEE/ne04awBQ
+VOkhBu50AHREeX8QA7VXx9Ov7guAQS47sn9GUnPKK3ZZVZCCVSzd1No+zbKeOqrMFKHeiUI3C5Dn
+PQcFvYKcp+PxmnR9vdfe2anQ0aDuyZXaiiEUcbCR6AYD3nb++TMH+t10TIozsSJh5Y4yxbSqkZYF
+3bXzuC0bliaTx6q51BdisJTVpFDbouWJtjajbzL9metm2taZWN4z0QBi91LHoKSR/YgAUYIqrW+K
+MuE/jCL2pfQX1GG/wARTo6mlC8t08wmluBpFUdTagrmttD4qbFkfTyb/gw4HV0n2PVapKpIEZgz4
+fU1NC8BIfT+We6SotLSP6EFvYOAwO7id/5yEFHXgpQ0RXjsraik/UiNlLUAjSqastA5MLenBqkaj
+2ULU4U+I2yI0rmTVqoAUhDW0J6fC+ON4gVPkJIGsB9toiu24bWydbG2NMl0NQRC2NMwQc1PmP1UB
+ifEgjsey9XE3C09UKTLsEF/6aFLLm1gA5U3lX3JfrIvKSsJOo70Wpa0ZgP9PVUASnZ0GGk/K3QNa
+ZTBQ0jFlucRHugY+NhQ+Le0l6cbm21kf0hQp9pRubr21t7F1GQ1ajEMTrJHo5j+vDkg+IFZ//w4Q
+3FmDZZwLVT7xEu/tI56n0cetNEopTYggxEaSCjznSgjXTn9yTsxeB7DuYhuCFXX6VQUkDo5Gn/Gr
+pHgRyltgKY8sST6I6E5ouv0SgtDX2LKCQPG2NKmQexmHmmlZ30Tb9a8vXDgjmH5+/yNmVQGJVPf6
+ekl48vGj8EbAKcW8XKAsgOzBbhIxSz4LP/Bm9Kf8uBSlKowPQwuiNI96DVGD46c5zkVqyrR1kMSp
+RqLC2w0DjW+paomDJzMwKF+AXvkcpg3jRpF0Su7g0Na4NTNsWxx2vWdsS3/jnFTqv6xjphA2CxK4
+ngcaZyUSJ7a0tCyCtt6CV0OlTdAGZjlO7QHXfR5+4GW4ZyGVO58VTHhevcSBU7T7WlousLR8FXZP
+MJjR0GUfnokKeN4BsPgzW6iHA7ACbujC6Fjtn6Za1jJEPXOtfQJVc8D1bol3J+8sxRcczWCD8RTN
+g0FgitwLcb8Bb5Hxn5qijUp4CKRMAA4gCEjoQYQD1kJn/Q0M7YGBPw8LxVVwh+YjJo4FA9EnP+E5
+FxAL7bWWunlxKtUTvMygTn5edZA6MCD8qX/Oa6s7NutQN5haeEwpKt5Y/mCi3pNhMKsQ9zbRSjJD
+MSMiMB0YMy8UdchgysYwZdfGe7ouQZuiU24Q4agDLLV+B5igNJ31r8QJXF4BgFwwRYA4BUaVwBzH
+73AaU99BObvIvUPIEV4hgIVsohgCeN5U21qebmr6IsA1q3GhwVRdkgLCtG24dKebm1dOkXYnwOKK
+Z0Q/qDPGuYtAoHNUqb9CiV9UjHbVJSkgToCM7ZRKPY2pcCNXKP8NlWtkBl2Xm9sASGOv78J0S4sB
+ieML62zMQCJxBsyoJOu7u355xHW/BbOA9PFn9tvCxlfNMmwSC49bUpiYVxUjNKrpRoXXCSbb29tF
+4PmTGA3JPvhvHVk9impDkgRQljENmluvhzV+H7eXUOlkTD0FSbJgbO6O1cbqF2zYcIg8AZQhY44M
+Ejvh6Q+AI2i1DmG/xBv2kUB4l5KVbmy5pta2HvEDcxxc5DGVSLZQNVVrIY6u9GXc3AxMltzKoXMw
+t0Lu9aA94YNDg82rqzvbUepMreQc0LJdpQ5bUu06btu70Pag72fldkMUtMYhB6OjEolH4XyeAR11
+J1YnSlOhFWlIH5W6wVvBZoO0+oX6FPoMdoCHdF/SW+ObD/bw2Ror1HLYzldg5/Ri3M7DvI5RDcNP
+MnOGDi2W4d1otgZWLeMmw0SY/bCcOUFLN7f8cbplf5bLOO4jvTz2MYrkYUfYhlW+AavcBWH9jKi4
+n8KbJROcWohZXwo/7O910v7LLDt2LcBZgA5iWK007A4Xyzr4FgDIfVpZ4lICxHu2Z56fWM5pZ8q1
++p7vCBOg0Pr57St0zy0rdCUXpOPnfoB9dmTtL16aVBQks/uKFaADjXqbmh+aYjnPw2I+H6Cog56b
+gR7h/CAFTasXuTzheavi3an2hq6uzYbCCP+YFQ/9x7u7uyGJL8InY4uydN0IpAo9ZixdA4g5ru3N
+Y6V6P0YfNCgIEjg3R2SoN9obW/48x4ldC0nxaDGjMdsxRBHoDyAEuRDyq/Ge1CNsQ/0VEBkphzSZ
+ceCFruUFUR/jpHgIw7Hkh0l3rn/0MBhDoblPjs1Y37//0JOzYs7y/VnHlO4En+Um3yNXv8P0ekLT
+ICvz5Bn0505q7nwCucSqdI09PjKsPxTWf6gkgVGjh+C53zDTsS+H506HlJ576PhNoVRrSSCRrVSW
+MCDCW7L0kValEgdLHhDUmxPW5zCQOlgX9stWnERD4w76WEgjDl5pyOuokxUnobIQHiVtrNSwvNXU
+sG6GMXaxrx88V63CSbTTYY1SiobVy+8MB0I/nl9Wyj0Akb7ylnDcV3ClAbFQiS2lv9HUwWZqKJ/D
+CjlgEkKDL3PAGO2wOnkD4W4GrENxOcOlbE8jM69Owdvt8+ebuq81t66eYTtxRhEB3IiSW7DDsh/g
+5Ug5eCAst5shAGBw5r5vydLFqLSEgaugLLdR3jUdRRN2sDzxCK4ld0kIFE0I3ufX7wAdKng+X7B9
+e3+6sfVCBPrvgVfOqvn185pX5xbjxIvWh8J6H7K6maUYJ+6VpVvhJlBCKFVD6oR1wjo0DaY59gUw
+Nl/uUe6V8c2bd4l02lTvACj1YJ4n/IEAHV/VATp8iL20r6DoYVjpMUxt2kdjLkV8K9lVVe7hmPJT
+KABSqwYLQkV0I7xWnGf0KFEXHhNOb19z68+1cn+7Z/bsrcEUDohvbmiYHYvFID3iBpxm/wz3rgkQ
+sjEHKDsmzUgA9wbf5H2wTR+MdwgGGKS/BdTaOcO2VtKPQsVQIIMOQnKGZx2ARf+NfspWENkJ520f
+ZhMiE+KDkJxzplj2GdxHA7BGotDPkKkf0m+1iijdVBn9trIaz9m8aWuAQ0AwHwA8Z9JzgWr2Mvq/
+jDnDbfHgvgkH/t0iILPIvA0UEBGGRaCgeckzj2F6KzrV8lswOimxSO2qnTP93343Q5jPfXu5nvp0
+v5bhrQz6lEgHfWj6d5RIgGb+qOf8k/+kzTrl0ihjWKFNFM8qQLd0n4UNTS4mGNAQkPIlye9F8u1W
+IlGMjZ452UgUY4ZjgzC9wjr5fhvLciWJ937C8avgcmLnlAWHwT5pi3VkdfAMQw7fBUAyqiOn2oS9
+NN4/uNu4KJncQi7DQtKFQJqwqOQxpnlcEbPmSZZzbzDvubktoJPCqk64MrM9jqm2X2RsA1JrMhka
+7JvMkuTRloMY/Sae3vj2S3CTIFGBzTZEIiarJDFcG4OxO4AzeD8nImEKO0BqUkoSljR3pgP5kOLB
++u7ubZSiMIUdgDTpJAl62sPXg7EDbmafcjM/JBBtvrMdgJKfTzpJgjOpGfSXwvouvwovposCsCab
+JGX4UfQhfFyIjciHMe2k9IOMASBh+WSSJA+OLE+3vV0j9CofjJIci8kCEpd2Oxt2sK5ckErtZWS0
+0JKfL02TAST6Z5qHxhD+ubGhe1OClnUp0ywAa6KDxKiYhw+kbVjWP+HhMYZCwk66BICE5RMWJH8q
+efjE3sHu84NQ1N8mAPy4OQyIYmUTEiQAxHi5PM0GQJ57LwC6jiCgLLubXQyRkGcTEaQMYuw2wsYS
+0dBb4qmur+cAFFmK2HYi2UkEgIc3YggRH3CF+hqOAP2+ww8slrqSEZT8NBFA4o6Mx307WNLWYc99
+UbnOqobejW9ymS/3hEsuUOMVJOBiPpnQAMfhUWecfHk3o9zvQ3ruJ4P+Ms9zDKNO40UnGVDALRUy
+9wIlTtzZ+GkgBzsv/4Ozeqdjy0XxVOp+PDcfC0Zd5osheTIkiQwHTOeODWpjMJldP7+AmY0wK37/
+xxI0kw9jyw7b6kkEXn/dL/UTLbCg2dI4q/TFyjw6PUg972IsQSIwDI86ODctwTTjgiZR4wafwjHi
+zA1APgvQxEYmt8Hf9bTqhROfcIR6YVF398Zs6yw46xHuWFaCsxq0iZKPFUjm2LH/IZ/AwfI3cG56
+Bxg+AEiwL6en4yhFLfabCRyPBhwDE/shPLvxScNOJdXWGtt+Y2Ey+W4uc5ScaoIT0Ko2SBQGHKKw
+Y/hZoAzCpQ/hQ7xH+y3ZszTZFVmpojMpeKSZ3/fyZ4GqJDkBOEFeNZAwY8wsmmk7sYPKfQVHElbj
+K8W+gDAYtvgjm+Y++zsCBDR7K9qtuW34UU7/3geFBxsUlnRzyCx4NBZ5dpBZSrw2A8UZo39g9TgX
+yrHc80IEyOKZbDiWdy/u7lpDElyWW88+Wxkp8Gmx/L2eqiFJBiC4BQRoDQC6myD436VkRDL5Xsdk
+2PiCBWbYgzILBgE64anVBIjgUJfw060y+zzpzSoJkpmqsH5x/kjfjA+AH+DqM96mVtgbqRRIJriF
+ILuFLyLvwHdj9zC4ha0a8yMqYYTHU1lFdBJEyEX0L3bAcx9Y3JO6jdNrIkhQ8CIrIUkDs7jMe+6z
+iN2sZse3UweNo9UrAKNQPipJgsRk4GTWwA5aB4AuJxGUmcOphQiOx/LRSFL2Vxo8b1PN4UOXGoCy
+5w25wk2oVC5IGRibiACqN1wv82me6jce+Dhe5ou91cjTjUoaEcAYrPG3XBVb3rgluZ+W9NJEIrIv
+Vmxg76VnUSXJZSQQ35wcgS92SePmDbsMQNlfxnov8VXRsZQsSVit8Dt20uHnBVLqz+N3r/smA0BE
+u1RJYrDdxrkeHOHXKwHQy5MFoFJBAj5CICYk+oV3PcIdz0wmgEoBiQB5xt3w3B+YQHsZe+kkNJ5T
+8emmhcsdCUQUH4O7cSsQM+7GeGa4nLGHggQlLfnbjNNsqw5bxS9hL/0av/MJ5W6UClgoSJAYuBuO
+wOee2+psaX5y3gTNCpxzLpXYeK03BCQzncAJ8mk4jYGjYdYXPpZMHpzI1nTUF4dZlk3ppuaU+Q9Y
+cMuVLCg/lfsIbJs/v/b1pqWf4C0kaoiknQIpD4Fg6uUVn7oNEDglQQESp/KSEfg/3jJ9Zi1HfN8A
+AAAASUVORK5CYII=
+"
+       id="image10" />
+  </g>
+</svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/sparkfun" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/sparkfun" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.github.com/sparkfun" target="_blank" rel="noopener" title="www.github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/SparkFun" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/sparkfun" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.action.edit", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path"], "search": "../assets/javascripts/workers/search.6c7302c4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.125978b2.min.js"></script>
+      
+    
+  </body>
+</html>
