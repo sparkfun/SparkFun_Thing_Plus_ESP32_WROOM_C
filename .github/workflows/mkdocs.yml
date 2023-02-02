@@ -21,10 +21,11 @@ jobs:
         run: pip install mkdocs-material mkdocs-monorepo-plugin mkdocs-with-pdf mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2
 
       - name: Install Insiders build
-      - uses: actions/cache@v2
+        uses: actions/cache@v2
         with:
           key: ${{ github.ref }}
           path: .cache
+
       - run: apt-get install pngquant 
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: mkdocs gh-deploy --force
