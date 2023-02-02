@@ -18,7 +18,7 @@ jobs:
           python-version: 3.x
 
       - name: Install Python dependencies
-        run: pip install mkdocs-material mkdocs-monorepo-plugin mkdocs-with-pdf weasyprint
+        run: pip install mkdocs-material mkdocs-monorepo-plugin mkdocs-with-pdf weasyprint mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2
 
       # - uses: actions/cache@v2
       #   with:
