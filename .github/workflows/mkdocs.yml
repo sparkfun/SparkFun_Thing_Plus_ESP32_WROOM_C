@@ -26,8 +26,8 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
-      # - name: Install Insiders build
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GH_TOKEN }} 
-      #   run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - name: Install Insiders build
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+        run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: mkdocs gh-deploy --force
