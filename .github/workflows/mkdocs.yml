@@ -9,8 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: apt-get install pngquant 
-
       - name: Checkout repository
         uses: actions/checkout@v3
 
