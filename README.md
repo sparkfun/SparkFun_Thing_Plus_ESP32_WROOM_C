@@ -44,7 +44,7 @@ Documentation
 * **[SparkFun Graphical Datasheets](https://github.com/sparkfun/Graphical_Datasheets)** -Graphical Datasheets for various SparkFun products.
     * [Graphical Datasheet - ESP32 Thing Plus (USB-C)](/docs/board_files/graphical_datasheet.pdf) (.pdf)
 
-Product Versions
+Product Variants
 ----------------
 * ESP32 Thing Plus (USB-C variant)
   * [WRL-20168](https://www.sparkfun.com/products/20168)- v1.0, Initial Release
@@ -53,6 +53,10 @@ Product Versions
   * [WRL-17381](https://www.sparkfun.com/products/17381) (u.FL variant) - v1.0, Initial Release
   * [WRL-15663](https://www.sparkfun.com/products/15663)- v2.0, Slight hardware update that includes a 10&ohm; series resistor between VUSB and CP2102
   * [WRL-14689](https://www.sparkfun.com/products/14689)- v1.0, Initial Release
+
+Product Versions
+----------------
+* [v01](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/tree/b49a8a67c697a0e4b83bd7077b59e9f83cbbc87a) - Initial Release
 
 License Information
 -------------------
