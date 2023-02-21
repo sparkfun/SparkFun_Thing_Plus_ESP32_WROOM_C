@@ -1,27 +1,31 @@
-    <p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> <strong>Not working as expected and need help? </strong></p>
-    <p>If you need technical assistance and more information on a product that is not working as you expected, we recommend heading on over to the <a href="https://www.sparkfun.com/technical_assistance">SparkFun Technical Assistance</a> page for some initial troubleshooting.</p>
 !!! warning "Need Help?"
+    If you need technical assistance or more information on a product that is not working as you expected, we recommend heading on over to the [SparkFun Technical Assistance](https://www.sparkfun.com/technical_assistanc) page for some initial troubleshooting.
+
     <center>
     [SparkFun Technical Assistance Page](https://www.sparkfun.com/technical_assistance){ .md-button .md-button--primary }
     </center>
-    <p>If you can't find what you need there, you'll need a <a href="https://forum.sparkfun.com/ucp.php?mode=register">Forum Account</a> to search product forums and post questions.<p>
-
+    
+    If you can't find what you need there, the [SparkFun Forums](https://forum.sparkfun.com/index.php) is a great place to search product forums and ask questions.
+    
+    !!! info "Account Registration Required"
+        If this is your first visit to our forum, you'll need to create a [Forum Account](https://forum.sparkfun.com/ucp.php?mode=register) to post questions.
 
 ### Upload Issues
-If users have issues during the uploading process, they can try to manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the <kbd>BOOT</kbd> button. Holding down the <kbd>BOOT</kbd> button, while connecting the board to a computer through its USB-C connector or resetting the board will cause the MCU to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a> and its serial bootloader. The board will remain in this mode until it power cycles (which happens automatically after uploading new firmware) or the <kbd>RST</kbd> button is pressed.
+If users have issues during the uploading process, they can try to manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the ++"BOOT"++ button. Holding down the ++"BOOT"++ button, while connecting the board to a computer through its USB-C connector or resetting the board will cause the MCU to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a> and its serial bootloader. The board will remain in this mode until it power cycles (which happens automatically after uploading new firmware) or the ++"RST"++ button is pressed.
 
+1. Hold the ++"BOOT"++ button down.
 2. Reset the MCU.
     * While unpowered, connect the board to a computer through the USB-C connection.
-    * While powered, press the <kbd>RST</kbd> button.
-3. Release the <kbd>BOOT</kbd> button.
     * While powered, press the ++"RST"++ button.
 3. Release the ++"BOOT"++ button.
 4. After programming is completed, reboot the MCU.
-    * Press the <kbd>RST</kbd> button.
+    * Press the ++"RST"++ button.
     * Power cycle the board. 
 
+<figure markdown>
 [![Boot Button](./img/hookup_guide/button_boot.jpg){ width="200" }](./img/hookup_guide/button_boot.jpg "Click to enlarge")
-<figcaption markdown><kbd>BOOT</kbd> button on the ESP32-WROOM Thing Plus. (Click to enlarge)*
+<figcaption markdown>++"BOOT"++ button on the ESP32-WROOM Thing Plus.</figcaption>
+</figure>
 
 
 ### COM Port Not Shown
@@ -48,10 +52,10 @@ Make sure that the &micro;SD card is compatible with the Arduino library being u
 
 
 ### Qwiic Connector Power
-For users having issues with the power to their Qwiic devices, don't forget that <code>GPIO 0</code> controls the power output from the XC6222 LDO regulator to the Qwiic connector. Users must toggle <code>GPIO 0</code> high to enable power for the Qwiic connector. In order to conserve battery power or in low-power applications, users will toggle <code>GPIO 0</code> low, to disable the power to the Qwiic connector.
+For users having issues with the power to their Qwiic devices, don't forget that `GPIO 0` controls the power output from the XC6222 LDO regulator to the Qwiic connector. Users must toggle `GPIO 0` high to enable power for the Qwiic connector. In order to conserve battery power or in low-power applications, users will toggle `GPIO 0` low, to disable the power to the Qwiic connector.
 
 !!! note
-    <code>GPIO 0</code> is also connected to the <kbd>BOOT</kbd> button. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
+    `GPIO 0` is also connected to the ++"BOOT"++ button. Therefore, pressing the ++"BOOT"++ button will momentarily disable power to the Qwiic connector.
 
 
 ### Current Consumption

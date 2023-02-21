@@ -1,15 +1,6 @@
-    <table>
-        <tr>
-            <td>
-                All mentions of <code>GPIO</code> in this section will refer to the I/O pins of the ESP32-WROOM module as represented in the datasheets and <a href="https://github.com/espressif/arduino-esp32/tree/master/variants/esp32thing_plus_c/pins_arduino.h">pin numbers</a> of the board definition in the ESP32 Arduino core. They do not correspond with the net names for the <i>ThingPlus Form Factor</i> device in the <a href="./board_files/schematic.pdf">schematic</a>. <i>(The device in the schematic is primarily, used internally to facilitate the board design process; just ignore the naming of the <code>GPIO0</code> - <code>GPIO6</code> nets.)</i>
-            </td>
-            <td align="center">
-                <a href="../img/hookup_guide/thing_plus-device.png"><img alt="Thing Plus device for pin layout" src="../img/hookup_guide/thing_plus-device.png" width="200"></a><br>
-                <i>(Click to enlarge)</i>
-            </td>
-        </tr>
-    </table>
 !!! info
+    [![Thing Plus device for pin layout](../img/hookup_guide/thing_plus-device.png){ width="160" align=right }](../img/hookup_guide/thing_plus-device.png "Click to enlarge")
+    All mentions of `GPIO` in this section will refer to the I/O pins of the ESP32-WROOM module as represented in the datasheets and [pin numbers](https://github.com/espressif/arduino-esp32/tree/master/variants/esp32thing_plus_c/pins_arduino.h) of the board definition in the ESP32 Arduino core. They do not correspond with the net names for the *ThingPlus Form Factor* device in the [schematic](./board_files/schematic.pdf). *(The device in the schematic is primarily, used internally to facilitate the board design process; just ignore the naming of the `GPIO0` - `GPIO6` nets.)*
 
 
 ## Board Dimensions
@@ -200,7 +191,7 @@ The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of 
 </figure>
 
 !!! warning
-    <b>&#9889; Note:</b> The <kbd>BOOT</kbd> button is also connected to <code>GPIO 0</code>. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
+    <b>&#9889; Note:</b> The ++"BOOT"++ button is also connected to `GPIO 0`. Therefore, pressing the ++"BOOT"++ button will momentarily disable power to the Qwiic connector.
 
 ### Current Consumption
 According to the specifications, the ESP32-WROOM draws about **240 mA** during RF transmissions. With the WiFi example in this tutorial, have measured it to average around **140 mA** and peak at *300 mA* while actively transceiving. The table below, summarizes the approximate current draw of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) for various operational conditions. The measurements in the table below, were made with the [Nordic Power Profiler Kit II](https://www.sparkfun.com/products/17816).
@@ -461,7 +452,7 @@ For users interested in debugging their code, the <a href="https://docs.espressi
 
 
 ### Firmware Download Mode
-Users can manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the <kbd>BOOT</kbd> button. Please, refer to the **Boot Button** section below for more information.
+Users can manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the ++"BOOT"++ button. Please, refer to the **Boot Button** section below for more information.
 
 
 ## Peripherals and I/O
@@ -481,7 +472,7 @@ Users can manually force the board into the <a href="https://docs.espressif.com/
 The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** broken out into a feather form factor layout on this board. All of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) pins have a .1&#x22; pitch spacing for headers. With the [pin multiplexing](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#id1) capabilities of the ESP32 SoC, various pins can have several functionalities. For more technical specifications on the **I/O** pins, please refer to the [ESP32 SoC datasheet](./component_datasheets/esp32_soc_datasheet_en.pdf).
 
 * 13x 12-bit analog to digital converter (ADC) channels
-* 3x UARTs (only two are configured by default in the Arduino IDE, one UART is used for bootloading/debug)<br>
+* 3x UARTs (only two are configured by default in the Arduino IDE, one UART is used for bootloading/debug)
 * 3x SPI (only one is configured by default in the Arduino IDE)
 * 2x I<sup>2</sup>C (only one is configured by default in the Arduino IDE)
 * 2x I<sup>2</sup>S Audio
@@ -502,8 +493,8 @@ The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** 
         <li>Only one I<sup>2</sup>C bus is defined.</li>
         <li>Only two UART interfaces are available.</li>
         <ul>
-            <li><b>UART (USB):</b> <code>Serial</code></li>
-            <li><b><code>RX</code>/<code>TX</code> Pins:</b> <code>Serial1</code></li>
+            <li><b>UART (USB):</b> `Serial`</li>
+            <li><b>`RX`/`TX` Pins:</b> `Serial1`</li>
         </ul>
         <li>Only one SPI bus is defined.</li>
     </ul>
@@ -685,37 +676,37 @@ The ESP32-WROOM module module can support up to two I<sup>2</sup>C buses. By def
 
 
 ## Buttons
-There are two buttons on ESP32-WROOM Thing Plus; a <kbd>RST</kbd> and <kbd>BOOT</kbd> button.
+There are two buttons on ESP32-WROOM Thing Plus; a ++"RST"++ and ++"BOOT"++ button.
 
 ### Reset Button
-The <kbd>RST</kbd> *(reset)* button allows users to reset the program running on the ESP32-WROOM module without unplugging the board.
+The ++"RST"++ *(reset)* button allows users to reset the program running on the ESP32-WROOM module without unplugging the board.
 
 <figure markdown>
 [![Reset Button](./img/hookup_guide/button_reset.jpg){ width="200" }](./img/hookup_guide/button_reset.jpg "Click to enlarge")
-<figcaption markdown><kbd>RST</kbd> button on the ESP32-WROOM Thing Plus.</figcaption>
+<figcaption markdown>++"RST"++ button on the ESP32-WROOM Thing Plus.</figcaption>
 </figure>
 
 
 ### Boot Button
-The <kbd>BOOT</kbd> button can be used to force the board into the serial bootloader. Holding down the <kbd>BOOT</kbd> button, while connecting the board to a computer through its USB-C connector or resetting the board will cause it to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a>. The board will remain in this mode until it power cycles (happens automatically after uploading new firmware) or the <kbd>RST</kbd> button is pressed.
+The ++"BOOT"++ button can be used to force the board into the serial bootloader. Holding down the ++"BOOT"++ button, while connecting the board to a computer through its USB-C connector or resetting the board will cause it to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a>. The board will remain in this mode until it power cycles (happens automatically after uploading new firmware) or the ++"RST"++ button is pressed.
 
-1. Hold the <kbd>BOOT</kbd> button down.
+1. Hold the ++"BOOT"++ button down.
 2. Reset the MCU.
     * While unpowered, connect the board to a computer with through the USB-C connection.
-    * While powered, press the <kbd>RST</kbd> button.
-3. Release the <kbd>BOOT</kbd> button.
+    * While powered, press the ++"RST"++ button.
+3. Release the ++"BOOT"++ button.
 4. After programming is completed, reboot the MCU.
-    * Press the <kbd>RST</kbd> button.
+    * Press the ++"RST"++ button.
     * Power cycle the board. 
 
 <figure markdown>
 [![Boot Button](./img/hookup_guide/button_boot.jpg){ width="200" }](./img/hookup_guide/button_boot.jpg "Click to enlarge")
-<figcaption markdown><kbd>BOOT</kbd> button on the ESP32-WROOM Thing Plus.</figcaption>
+<figcaption markdown>++"BOOT"++ button on the ESP32-WROOM Thing Plus.</figcaption>
 </figure>
 
 
 !!! warning
-    <b>&#9889;</b> The <kbd>BOOT</kbd> button is also connected to <code>GPIO 0</code>, which controls the voltage output to the Qwiic connector. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
+    <b>&#9889;</b> The ++"BOOT"++ button is also connected to `GPIO 0`, which controls the voltage output to the Qwiic connector. Therefore, pressing the ++"BOOT"++ button will momentarily disable power to the Qwiic connector.
 
 
 ## Indicator LEDs
@@ -935,8 +926,8 @@ The [MAX17048 fuel gauge](./component_datasheets/MAX17048.pdf) measures the appr
     </tr>
 </table>
 
-    The <code>Alert</code> pin for the MAX17048 is not connected and cannot be utilized.
 !!! info
+    The `Alert` pin for the MAX17048 is not connected and cannot be utilized.
 
 
 ### Qwiic Connector
@@ -949,10 +940,10 @@ A Qwiic connector is provided for users to seamlessly integrate with <a href="ht
 
 
 #### Power Control
-In order to enable power for the Qwiic connector, users must toggle <code>GPIO 0</code> high. This enables the power output from the XC6222 LDO regulator to the Qwiic connector, which can sources up to **700mA** at **3.3V** . In order to conserve battery power or in low power applications, users will can toggle <code>GPIO 0</code> low, to disable the power to the Qwiic connector.
+In order to enable power for the Qwiic connector, users must toggle `GPIO 0` high. This enables the power output from the XC6222 LDO regulator to the Qwiic connector, which can sources up to **700mA** at **3.3V** . In order to conserve battery power or in low power applications, users will can toggle `GPIO 0` low, to disable the power to the Qwiic connector.
 
 !!! warning
-    <b>&#9889;</b> <code>GPIO 0</code> is also connected to the <kbd>BOOT</kbd> button. Therefore, pressing the <kbd>BOOT</kbd> button will momentarily disable power to the Qwiic connector.
+    <b>&#9889;</b> `GPIO 0` is also connected to the ++"BOOT"++ button. Therefore, pressing the ++"BOOT"++ button will momentarily disable power to the Qwiic connector.
 
 
 #### What is Qwiic?
@@ -965,34 +956,46 @@ The Qwiic system is intended a quick, hassle-free cabling/connector system for I
 
 <b>Features of the Qwiic System</b>
 
-<table>
-    <tr>
-        <td>
-            <p><b>No Soldering</b> - <i>Keep your soldering iron at bay<i></p>
-            <p>Cables plug easily between boards making quick work of setting up a new prototype. We currently offer three different lengths of Qwiic cables as well as a breadboard friendly cable to connect any Qwiic enabled board to anything else. Initially you may need to solder headers onto the shield to connect your platform to the Qwiic system but once that’s done it’s plug and go!</p>
-        </td>
-        <td>
-            <img src="https://cdn.sparkfun.com/assets/8/d/9/2/a/jst-board.jpg" alt="Qwiic Cable and Board"><br>
-            <i>Qwiic cables connected to <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout</a></i>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p><b>Polarized Connector</b> - <i>Minimize your mistakes</i></p>
-            <p>How many times have you swapped the SDA and SCL wires on your breadboard hoping the sensor will start working? The Qwiic connector is polarized so you know you’ll have it wired correctly, every time, from the start.</p>
-            <p>The PCB connector is part number SM04B-SRSS (<a href="https://cdn.sparkfun.com/assets/parts/1/2/2/8/9/Qwiic_Connector_Datasheet.pdf">Datasheet</a>) or equivalent. The mating connector used on cables is part number SHR04V-S-B or equivalent. This is a common and low cost connector.</p>
-        </td>
-        <td>
-            <img src="https://cdn.sparkfun.com/assets/d/a/2/e/6/jst-connector_1.jpg" alt="JST Connector"><br>
-            <i>1mm pitch, 4-pin JST connector</i>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <p><b>Daisy Chain</b> - </i>Expand with ease</i></p>
-            <p>It’s time to leverage the power of the I<sup>2</sup>C bus! Most Qwiic boards will have two or more connectors on them allowing multiple devices to be connected.</p>
-            <p align="center"><img src="https://cdn.sparkfun.com/assets/b/d/0/1/0/daisy-chain_2.png" alt="Daisy Chain"><br>
-            <i>Shown above: <a href="https://www.sparkfun.com/products/14352">Qwiic Shield for Arduino</a> on <a href="https://www.sparkfun.com/products/13975">RedBoard</a>, <a href="https://www.sparkfun.com/products/14351">Spectral Sensor Breakout - NIR</a>, <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout - Visible</a> and <a href="https://www.sparkfun.com/products/14414">SparkFun GPS Breakout</a></i></p>
-        </td>
-    </tr>
-</table>
+=== "No Soldering"
+
+    <table>
+        <tr>
+            <td>
+                <p><i>Keep your soldering iron at bay<i></p>
+                <p>Cables plug easily between boards making quick work of setting up a new prototype. We currently offer three different lengths of Qwiic cables as well as a breadboard friendly cable to connect any Qwiic enabled board to anything else. Initially you may need to solder headers onto the shield to connect your platform to the Qwiic system but once that’s done it’s plug and go!</p>
+            </td>
+            <td>
+                <img src="https://cdn.sparkfun.com/assets/8/d/9/2/a/jst-board.jpg" alt="Qwiic Cable and Board"><br>
+                <i>Qwiic cables connected to <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout</a></i>
+            </td>
+        </tr>
+    </table>
+
+=== "Polarized Connector"
+
+    <table>
+        <tr>
+            <td>
+                <p><b>Polarized Connector</b> - <i>Minimize your mistakes</i></p>
+                <p>How many times have you swapped the SDA and SCL wires on your breadboard hoping the sensor will start working? The Qwiic connector is polarized so you know you’ll have it wired correctly, every time, from the start.</p>
+                <p>The PCB connector is part number SM04B-SRSS (<a href="https://cdn.sparkfun.com/assets/parts/1/2/2/8/9/Qwiic_Connector_Datasheet.pdf">Datasheet</a>) or equivalent. The mating connector used on cables is part number SHR04V-S-B or equivalent. This is a common and low cost connector.</p>
+            </td>
+            <td>
+                <img src="https://cdn.sparkfun.com/assets/d/a/2/e/6/jst-connector_1.jpg" alt="JST Connector"><br>
+                <i>1mm pitch, 4-pin JST connector</i>
+            </td>
+        </tr>
+    </table>
+
+=== "Daisy Chain"
+
+    <table>
+        <tr>
+            <td colspan="2">
+                <p><b>Daisy Chain</b> - </i>Expand with ease</i></p>
+                <p>It’s time to leverage the power of the I<sup>2</sup>C bus! Most Qwiic boards will have two or more connectors on them allowing multiple devices to be connected.</p>
+                <p align="center"><img src="https://cdn.sparkfun.com/assets/b/d/0/1/0/daisy-chain_2.png" alt="Daisy Chain"><br>
+                <i>Shown above: <a href="https://www.sparkfun.com/products/14352">Qwiic Shield for Arduino</a> on <a href="https://www.sparkfun.com/products/13975">RedBoard</a>, <a href="https://www.sparkfun.com/products/14351">Spectral Sensor Breakout - NIR</a>, <a href="https://www.sparkfun.com/products/14347">Spectral Sensor Breakout - Visible</a> and <a href="https://www.sparkfun.com/products/14414">SparkFun GPS Breakout</a></i></p>
+            </td>
+        </tr>
+    </table>
