@@ -290,13 +290,8 @@ As a more advanced development board, we will skip over the more fundamental tut
 
 
 <center>
-<div align="center">
-    <div style="top:5px;left:5px;background-color:Gray;position:relative">
-        <div style="top:-5px;left:-5px;background-color:#ffffff;position:relative;border:1px solid black;">
-            <a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a>
-        </div>
-    </div>
-</div>
+![Qwiic Logo - light theme](https://docs.sparkfun.com/SparkFun_Thing_Plus_ESP32_WROOM_C/img/qwiic_logo-light.png#only-light){ width=400 }
+![Qwiic Logo - dark theme](https://docs.sparkfun.com/SparkFun_Thing_Plus_ESP32_WROOM_C/img/qwiic_logo-dark.png#only-dark){ width=400 }
 </center>
 
 One of the new, advanced features of the board is that it takes advantage of the [Qwiic connect system](https://www.sparkfun.com/qwiic). We recommend familiarizing yourself with the **Logic Levels** and **I<sup>2</sup>C** tutorials.  Click on the banner above to learn more about [Qwiic products](https://www.sparkfun.com/qwiic).
