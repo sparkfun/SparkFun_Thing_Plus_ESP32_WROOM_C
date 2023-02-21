@@ -1,4 +1,4 @@
-!!! note
+!!! info
 
     This guide is specific to the <a href="https://www.sparkfun.com/products/20168">ESP32 Thing Plus (USB-C)</a> board variant. For the variants with the USB micro-B connector, please refer to the <a href="https://learn.sparkfun.com/tutorials/852">ESP32 Thing Plus hookup guide</a>.
 
@@ -28,7 +28,7 @@ The [SparkFun ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/
 The ESP32-WROOM module on the board provides a rich set of peripherals, ranging from capacitive touch sensors, Hall sensors, SD card interface, Ethernet, high-speed SPI, UART, I<sup>2</sup>S, and I<sup>2</sup>C. With [Espressif's ESP32](https://espressif.com/en/products/hardware/esp32/overview) comprehensive development platform and **Bluetooth low-energy** support (i.e BLE, BT4.0, Bluetooth Smart) these boards are jam-packed with possibilities!
 
 
-!!! note
+!!! tip
     The CH340C serial-to-UART bridge is used on this board. Therefore, a different driver installation is required from previous versions of the ESP32 Thing Plus.
 
 !!! warning
@@ -125,7 +125,7 @@ To get started, users will need a few items. Now some users may have a few of th
     </tr>
 </table>
 
-!!! note
+!!! tip
     <p>New to soldering? Check out our <a href="https://learn.sparkfun.com/tutorials/5">Through-Hole Soldering Tutorial</a> for a quick introduction!</p>
     <p align="center">
         <a href="https://learn.sparkfun.com/tutorials/5">How to Solder: Through-Hole Soldering<br>
@@ -216,8 +216,8 @@ To get started, users will need a few items. Now some users may have a few of th
 </table>
 
 
-!!! note
     <p>New to jumpper pads? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces Tutorial</a> for a quick introduction!</p>
+!!! tip
     <p align="center">
         <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
         <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>

@@ -36,7 +36,7 @@ For remote IoT applications, a Li-Po battery can be connected. Additionally, use
     </tr>
 </table>
 
-!!! note
+!!! warning
     <p><b><span style="color:red">DO <u>NOT</u></span></b> remove batteries by pulling on their wires. Instead, it is recommended that pair of dikes (i.e. diagonal wire cutters), pliers, or tweezers be used to pull on the JST connector housing, to avoid damaging the battery wiring.</p>
     <p><center>
         <a href="../img/hookup_guide/assembly_batt_removal.jpg"><img alt="Disconnect battery w/ dikes" src="../img/hookup_guide/assembly_batt_removal.jpg"></a>

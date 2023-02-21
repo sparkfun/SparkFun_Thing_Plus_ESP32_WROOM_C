@@ -1,4 +1,3 @@
-!!! note
     <table>
         <tr>
             <td>
@@ -10,6 +9,7 @@
             </td>
         </tr>
     </table>
+!!! info
 
 
 ## Board Dimensions
@@ -426,7 +426,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
     </ul>
 
 
-!!! note
+!!! info
     <p>The ESP32-WROOM module has various power modes:</p>
     <ul>
         <li><b>Active</b> -  The chip radio is powered on. The chip can receive, transmit, or listen.</li>
@@ -451,8 +451,8 @@ For users interested in debugging their code, the <a href="https://docs.espressi
 * **`TCK`**: `GPIO 13`
 * **`TDO`**: `GPIO 15`
 
-!!! note
-    Users should be aware that <code>GPIO 13</code> is connected to the <code>STAT</code> LED with a pull down resistor.
+!!! info
+    Users should be aware that `GPIO 13` is connected to the `STAT` LED with a pull down resistor.
 
 
 ### Firmware Download Mode
@@ -490,7 +490,7 @@ The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** 
 </figure>
 
 
-!!! note
+!!! info
     Users should be aware of the following limitations for the board in the Arduino IDE.
     <ul>
         <li>Not all of the features, listed above, are available in the Arduino IDE. For the full capabilities of the ESP32, the Espressif IDF should be utilized.</li>
@@ -800,13 +800,13 @@ The WS2812 RGB LED is controlled with a 24-bit (GRB) data signal. This indicator
 </figure>
 
 
-!!! note
+!!! info
     The latest ESP32 Arduino core, now provides a basic RGB LED driver for a WS2812 <i>(or NeoPixel)</i> LED populated the board. For an example of how to utilize the RGB LED driver check out the <a href="https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/GPIO/BlinkRGB/BlinkRGB.ino">BlinkRGB example code</a>, which can be accessed from the File drop down menu <i>(i.e <b>File</b> > <b>Examples</b> > <b>ESP32</b> > <b>GPIO</b> > <b>BlinkRGB</b>)</i>.
 
 
 ## &micro;SD Slot
 
-!!! note
+!!! info
     To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to transition to the new naming convention</a>.
 
 The [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) includes an &micro;SD card slot. This is great for data logging applications or storing files. The &micro;SD card slot is connected to the following dedicated GPIO:
@@ -836,7 +836,7 @@ There are two jumpers on the back of the board that can be used to easily modify
     *Traces around the **`CHG LED`** jumper. (Click to enlarge)*
     </center>
 
-!!! note
+!!! info
     <p>Never modified a jumper before? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces tutorial</a> for a quick introduction!</p>
     <p align="center">
         <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
@@ -930,8 +930,8 @@ The [MAX17048 fuel gauge](./component_datasheets/MAX17048.pdf) measures the appr
     </tr>
 </table>
 
-!!! note
     The <code>Alert</code> pin for the MAX17048 is not connected and cannot be utilized.
+!!! info
 
 
 ### Qwiic Connector
