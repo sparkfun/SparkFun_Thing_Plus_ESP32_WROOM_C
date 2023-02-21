@@ -2,7 +2,7 @@
 
     This guide is specific to the <a href="https://www.sparkfun.com/products/20168">ESP32 Thing Plus (USB-C)</a> board variant. For the variants with the USB micro-B connector, please refer to the <a href="https://learn.sparkfun.com/tutorials/852">ESP32 Thing Plus hookup guide</a>.
 
-<p align="center">
+<p class="pdf" align="center">
   <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/issues" alt="Issues">
     <img src="https://img.shields.io/github/issues/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
   <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/blob/master/LICENSE.md" alt="License">
@@ -12,21 +12,33 @@
 </p>
 
 # SparkFun Thing Plus - ESP32 WROOM (USB-C)
-The [SparkFun ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) enjoys all the features of our previous [ESP32 Thing Plus (Micro-B) boards](https://learn.sparkfun.com/tutorials/852), but with a few improvements. For this variant, we have included an SD card slot, upgraded to a USB-C connector, integrated an RGB status LED and battery fuel gauge, and provided two voltage regulators; offering separate 700mA current sources for the board and Qwiic connector. The board still retains its standardized 28-pin Feather footprint, 2-pin JST battery connector, and Qwiic connector like our other [Thing Plus boards](https://www.sparkfun.com/thing_plus).
 
-<center>
-[![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com/r/500-500/assets/parts/1/9/9/6/8/20168Diagonal.jpg)](https://www.sparkfun.com/products/20168)
-<br>
-### [SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://www.sparkfun.com/products/20168)
-(WRL-20168)
-</center>
+<div class="grid cards desc" markdown>
 
-<center>
-<iframe width="458" height="257" src="https://www.youtube.com/embed/g2MgO2fjqsw" title="Product Showcase: SparkFun Thing Plus ESP32 WROOM USB-C" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+-   [**SKU:** DEV-20168](https://www.sparkfun.com/products/20168)
+	
+	---
+	
+	<figure markdown>
+	[![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com/r/500-500/assets/parts/1/9/9/6/8/20168Diagonal.jpg)](https://cdn.sparkfun.com/assets/parts/1/9/9/6/8/20168Diagonal.jpg)
+	</figure>
 
-The ESP32-WROOM module on the board provides a rich set of peripherals, ranging from capacitive touch sensors, Hall sensors, SD card interface, Ethernet, high-speed SPI, UART, I<sup>2</sup>S, and I<sup>2</sup>C. With [Espressif's ESP32](https://espressif.com/en/products/hardware/esp32/overview) comprehensive development platform and **Bluetooth low-energy** support (i.e BLE, BT4.0, Bluetooth Smart) these boards are jam-packed with possibilities!
+    <center>
+    <section class="video">
+	<iframe src="https://www.youtube.com/embed/g2MgO2fjqsw" title="Product Showcase: SparkFun Thing Plus ESP32 WROOM USB-C" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+	</center>
 
+
+-	The [SparkFun ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) enjoys all the features of our previous [ESP32 Thing Plus (Micro-B) boards](https://learn.sparkfun.com/tutorials/852), but with a few improvements. For this variant, we have included an SD card slot, upgraded to a USB-C connector, integrated an RGB status LED and battery fuel gauge, and provided two voltage regulators; offering separate 700mA current sources for the board and Qwiic connector. The board still retains its standardized 28-pin Feather footprint, 2-pin JST battery connector, and Qwiic connector like our other [Thing Plus boards](https://www.sparkfun.com/thing_plus).
+
+    The ESP32-WROOM module on the board provides a rich set of peripherals, ranging from capacitive touch sensors, Hall sensors, SD card interface, Ethernet, high-speed SPI, UART, I<sup>2</sup>S, and I<sup>2</sup>C. With [Espressif's ESP32](https://espressif.com/en/products/hardware/esp32/overview) comprehensive development platform and **Bluetooth low-energy** support (i.e BLE, BT4.0, Bluetooth Smart) these boards are jam-packed with possibilities!
+
+	<center>
+	[Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/20168){ .md-button .md-button--primary }
+	</center>
+
+</div>
 
 !!! tip
     The CH340C serial-to-UART bridge is used on this board. Therefore, a different driver installation is required from previous versions of the ESP32 Thing Plus.
@@ -216,8 +228,8 @@ To get started, users will need a few items. Now some users may have a few of th
 </table>
 
 
-    <p>New to jumpper pads? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces Tutorial</a> for a quick introduction!</p>
 !!! tip
+    <p>New to jumper pads? Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces Tutorial</a> for a quick introduction!</p>
     <p align="center">
         <a href="https://learn.sparkfun.com/tutorials/664">How to Work with Jumper Pads and PCB Traces<br>
         <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg"></a>
