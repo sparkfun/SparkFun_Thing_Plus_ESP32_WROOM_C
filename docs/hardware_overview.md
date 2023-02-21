@@ -480,7 +480,7 @@ The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** 
 * 8x Capacitive Touch Inputs
 
 <figure markdown>
-[![Graphical datasheet](./img/hookup_guide/graphical_datasheet.png){ width="500" }](./board_files/graphical_datasheet.pdf "Click to enlarge")
+[![Graphical datasheet](./img/hookup_guide/graphical_datasheet.jpg){ width="500" }](./board_files/graphical_datasheet.pdf "Click to enlarge")
 <figcaption markdown>Graphical datasheet for the ESP32-WROOM Thing Plus (USB-C).</figcaption>
 </figure>
 
