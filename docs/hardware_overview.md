@@ -99,22 +99,22 @@ The power source for the [XC6222 LDO voltage regulators](./component_datasheets/
 
 The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate and source pins. Depending on the power supplies connected to the board, the MOSFET will switch between the battery and USB-C connection as power sources for the XC6222 voltage regulators.
 
-
-<table  style="font-size:12.25px;width:100%">
+<center>
+<table>
+<tbody class="verbose">
     <tr>
         <th rowspan="2" style="text-align:center; vertical-align:middle; min-width:1rem;">
             Power<br>
             Source
         </th>
-        <th colspan="4" style="text-align:center; vertical-align:middle">MOSFET</th>
+        <th colspan="4" style="text-align:center;">MOSFET</th>
         <th rowspan="2" style="text-align:center; vertical-align:middle">Power Control Description</th>
     </tr>
     <tr>
         <th style="text-align:center; vertical-align:middle; min-width:1rem;" width="11.4%">Gate</th>
         <th style="text-align:center; vertical-align:middle; min-width:1rem;" width="14.8%">Source</th>
-        <th style="text-align:center; min-width:1rem;" width="18.4%">
-            V<sub>GS</sub><br>
-            (V<sub>Gate</sub> - V<sub>Source</sub>)</sub>
+        <th style="text-align:center; vertical-align:middle; min-width:1rem;" width="18.4%">
+            V<sub>GS</sub> = V<sub>Gate</sub> - V<sub>Source</sub></sub>
         </th>
         <th style="text-align:center; min-width:1rem;" width="14.3%">
             MOSFET<br>
@@ -129,13 +129,13 @@ The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate an
             V<sub>USB</sub> - (V<sub>USB</sub> - V<sub>f</sub>)<br>
             V<sub>GS</sub> = V<sub>f</sub>
         </td>
-        <td style="vertical-align:middle">
+        <td style="vertical-align:middle; padding-left: 8px;">
             MOSFET Off<br>
             R<sub>GS</sub> = &infin;<br>
             Switch Open
         </td>
         </td>
-        <td>
+        <td style="padding-left: 8px;">
             <b>Power to the XC6222 is supplied by the USC-C connection.</b><br>
             Power from the USB-C connection is passed through the Schottky diode. Due to the voltage drop from the Schottky diode, the gate threshold voltage for the MOSFET is positive and equivalent to the diode's forward voltage (<b>V<sub>f</sub></b>).Therefore, the MOSFET behaves as an open switch.
         </td>
@@ -158,12 +158,12 @@ The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate an
             V<sub>USB</sub> - V<sub>Batt</sub> = -V<sub>Batt</sub><br>
             -3V > V<sub>GS</sub> > -4.2V
         </td>
-        <td style="vertical-align:middle">
+        <td style="vertical-align:middle; padding-left: 8px;">
             MOSFET On<br>
             R<sub>GS</sub> = Low<br>
             Switch Closed
         </td>
-        <td>
+        <td style="padding-left: 8px;">
             <b>Power to the XC6222 is supplied from the battery connection.</b><br>
             As a depletion type P-channel MOSFET, the mosfet acts as a normally closed switch when the gate threshold voltage is zero. Therefore, power from the battery is able to charge the capacitor and create a negative gate threshold voltage. The MOSFET remains behaving as a closed switch and power to the XC6222 is provided from the battery.
         </td>
@@ -174,18 +174,19 @@ The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate an
         <td style="vertical-align:middle" align="center">V<sub>USB</sub> = 5V</td>
         <td style="vertical-align:middle" align="center">V<sub>USB</sub> - V<sub>f</sub></td>
         <td style="vertical-align:middle" align="center">V<sub>GS</sub> = V<sub>f</sub></td>
-        <td style="vertical-align:middle">
+        <td style="vertical-align:middle; padding-left: 8px;">
             MOSFET Off<br>
             R<sub>GS</sub> = &infin;<br>
             Switch Open
         </td>
-        <td>
+        <td style="padding-left: 8px;">
             <b>Power to the XC6222 is supplied by the USC-C connection.</b><br>
             Power from the USB-C connection is passed through the Schottky diode. Due to the voltage drop from the Schottky diode, the gate threshold voltage for the MOSFET is positive and equivalent to the diode's forward voltage (<b>V<sub>f</sub></b>).Therefore, the MOSFET behaves as an open switch.
         </td>
     </tr>
+</tbody>
 </table>
-
+</center>
 
 
 The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of control for the board's power. By default, the regulated 3.3V output is enabled. To disable and shutdown the output voltage from the XC6222, the control pin needs to be pulled low (i.e. shorted to ground (`GND`)). For more information, please refer to the [XC6222 datasheet](./component_datasheets/XC6222.pdf).
@@ -204,7 +205,9 @@ The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of 
 ### Current Consumption
 According to the specifications, the ESP32-WROOM draws about **240 mA** during RF transmissions. With the WiFi example in this tutorial, have measured it to average around **140 mA** and peak at *300 mA* while actively transceiving. The table below, summarizes the approximate current draw of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) for various operational conditions. The measurements in the table below, were made with the [Nordic Power Profiler Kit II](https://www.sparkfun.com/products/17816).
 
-<table style="font-size:13.6px">
+<center>
+<table>
+<tbody>
     <tr>
         <th rowspan="2" style="vertical-align:middle; text-align:center">Operation</th>
         <th colspan="4" style="text-align:center">Avg. Current Draw</th>
@@ -368,7 +371,9 @@ According to the specifications, the ESP32-WROOM draws about **240 mA** during R
             <i>1.58 mA (peak)</i>
         </td>
     </tr>
+</tbody>
 </table>
+</center>
 
 It is possible for users to reach sub-mA power consumption levels with the deep sleep power modes. Using the [`TimerWakeUp` Deep Sleep example code](https://github.com/espressif/arduino-esp32/blob/master/libraries/ESP32/examples/DeepSleep/TimerWakeUp/TimerWakeUp.ino), the LED jumpers cut, and powering the board through the LiPo battery connection we measured a power consumption of **845 &micro;A** *(990 &micro;A peak)* @ **3.7V** while the MCU was inactive.
 
@@ -381,7 +386,7 @@ It is possible for users to reach sub-mA power consumption levels with the deep 
 ## ESP32-WROOM
 This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf) with 16MB of flash memory. Espressif&apos;s ESP32-WROOM module is a versitile, WiFi+BT+BLE MCU module that targets a wide variety of applications. At the core of this module is the ESP32-D0WDQ6 system on a chip (SoC) which is designed to be both scalable and adaptive. Its laundry list of features include:
 
-
+<center>
 <table>
     <tr>
         <td>
@@ -416,7 +421,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
         </td>
     <tr>
 </table>
-
+</center>
 
 !!! warning
     <p>Users should be aware of the following nuances and details of this board</p>

@@ -16,7 +16,7 @@ Users will need to install the appropriate driver for their computer to recogniz
 Most users may already be familiar with the Arduino IDE and its use. However, for those of you who have never heard the name *Arduino* before, feel free to check out the [Arduino website](https://www.arduino.cc/en/Guide/HomePage). To get started with using the Arduino IDE, check out our tutorials below:
 
 
-<table style="border-style:none">
+<table class="pdf">
     <tr>
         <td align="center">
             <a class="thumb" href="https://learn.sparkfun.com/tutorials/50">

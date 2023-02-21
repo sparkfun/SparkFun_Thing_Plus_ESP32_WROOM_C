@@ -12,6 +12,7 @@
   text-align: -webkit-center;
 }
 
+/* Commented out - Disabling based on planned changes to MkDocs-Material theme */
 /* Sets the maximum height size of the code blocks */
 /* (code block becomes scrollable, but not compatible when lines are displayed) */
 /* .md-typeset pre > code {
@@ -140,7 +141,7 @@
 
 
 /* ================================================================================== */
-/* Introduction                                                                       */
+/* Tables                                                                             */
 /* ================================================================================== */
 
 /* Sets table width for introduction */
@@ -152,7 +153,20 @@
   font-size: .85rem;
 }
 
+/* Data Table - Reduced font size for larger tables */
+.md-typeset table>tbody.verbose {
+  font-size: .6rem;
+  width:100%;
+}
 
+/* Data Table - Set default font size on print */
+@media print {
+  .md-typeset table>tbody.verbose {
+    font-size: 8px;
+    width:100%;
+    padding: 5px;
+  }
+}
 
 /* ================================================================================== */
 /* Grid Cards                                                                     */
@@ -225,6 +239,11 @@
   /* Shows elements with <class="pdf"> on webpage (used for the generated PDF) */
   * + .pdf {
     display: contents;
+  }
+
+  /* Removes borders on tables with <class="pdf"> */
+  table + .pdf {
+    border-style:none;
   }
 
   /* Limits images size in table */

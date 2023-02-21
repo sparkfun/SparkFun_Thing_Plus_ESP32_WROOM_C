@@ -57,7 +57,7 @@ To get started, users will need a few items. Now some users may have a few of th
 * [USB 3.1 Cable A to C - 3 Foot](https://www.sparkfun.com/products/14743) - The USB interface serves two purposes: it powers the board and allows users to upload programs. (*\*If your computer doesn't have a USB-A slot, then choose an appropriate cable or adapter.*)
 * Computer with an operating system (OS) that is compatible with all the software installation requirements.
 
-<table style="border-style:none">
+<table class="pdf">
     <tr>
         <td>
             <a href="https://www.sparkfun.com/products/14743">
@@ -81,7 +81,7 @@ To get started, users will need a few items. Now some users may have a few of th
 ### Headers & Accessories
 <p><a href="https://www.sparkfun.com/categories/381">Headers</a> are great for development purposes, letting users swap parts with just a set of jumper wires. If you would like to add headers to your board, check out some of the options for the Thing Plus or Feather form factor boards below. For a full selection of our available <a href="https://www.sparkfun.com/categories/381"><b>Headers</b></a> or <a href="https://www.sparkfun.com/categories/49"><b>Soldering Tools</b></a>, click on the associated links.</p>
 
-<table style="border-style:none">
+<table class="pdf">
     <tr>
         <td>
             <a href="https://www.sparkfun.com/products/116">
@@ -137,7 +137,7 @@ To get started, users will need a few items. Now some users may have a few of th
 ### Li-Po Battery
 <p>For mobile applications, users will want to pick up a <a href="https://www.sparkfun.com/categories/54">single-cell LiPo battery</a> from our catalog. Below, are a few available options:</p>
 
-<table style="border-style:none">
+<table class="pdf">
     <tr>
         <td>
             <a href="https://www.sparkfun.com/products/13855">
@@ -179,7 +179,7 @@ To get started, users will need a few items. Now some users may have a few of th
 <p>To modify the jumpers, users will need <a href="https://www.sparkfun.com/categories/49">soldering equipment</a> and/or a <a href="https://www.sparkfun.com/categories/379">knife</a>.</p>
 
 
-<table style="border-style:none">
+<table class="pdf">
     <tr>
         <td>
             <a href="https://www.sparkfun.com/products/9325">
@@ -229,7 +229,7 @@ To get started, users will need a few items. Now some users may have a few of th
 As a more advanced development board, we will skip over the more fundamental tutorials (i.e. [**Ohm's Law**](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) and [**What is Electricity?**](https://learn.sparkfun.com/tutorials/what-is-electricity)). However, below are a few tutorials that may help users familiarize themselves with various aspects of the board.
 
 
-<table style="border-style:none">
+<table class="pdf">
     <tr>
         <td align="center">
             <a href="https://learn.sparkfun.com/tutorials/8">Serial Communication<br>
