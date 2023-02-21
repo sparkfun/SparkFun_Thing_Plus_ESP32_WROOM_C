@@ -10,11 +10,12 @@
 ### Upload Issues
 If users have issues during the uploading process, they can try to manually force the board into the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#select-bootloader-mode">serial bootloader</a> with the <kbd>BOOT</kbd> button. Holding down the <kbd>BOOT</kbd> button, while connecting the board to a computer through its USB-C connector or resetting the board will cause the MCU to enter the <a href="https://docs.espressif.com/projects/esptool/en/latest/esp32/advanced-topics/boot-mode-selection.html#manual-bootloader">Firmware Download mode</a> and its serial bootloader. The board will remain in this mode until it power cycles (which happens automatically after uploading new firmware) or the <kbd>RST</kbd> button is pressed.
 
-1. Hold the <kbd>BOOT</kbd> button down.
 2. Reset the MCU.
     * While unpowered, connect the board to a computer through the USB-C connection.
     * While powered, press the <kbd>RST</kbd> button.
 3. Release the <kbd>BOOT</kbd> button.
+    * While powered, press the ++"RST"++ button.
+3. Release the ++"BOOT"++ button.
 4. After programming is completed, reboot the MCU.
     * Press the <kbd>RST</kbd> button.
     * Power cycle the board. 
