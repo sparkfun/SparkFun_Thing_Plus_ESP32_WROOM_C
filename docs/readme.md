@@ -1,1 +1,1 @@
-This folder contains the assets and markdown files for the [SparkFun Thing Plus - ESP32 WROOM (USB-C) Product Manual](https://sparkfun.github.io/SparkFun_Thing_Plus_ESP32_WROOM_C/) that are rendered with [mkdocs](https://www.mkdocs.org/).
+
