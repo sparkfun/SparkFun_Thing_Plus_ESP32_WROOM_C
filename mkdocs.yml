@@ -211,10 +211,7 @@ nav:
     - Introduction: index.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
-    # - Software Overview: software_overview.md
-    - Software Overview:
-      - UART Driver: software-driver.md
-      - Arduino IDE: software-arduino.md
+    - Software Overview: software_overview.md
       # - Examples:
         # - Blink:
         # - WiFi:
