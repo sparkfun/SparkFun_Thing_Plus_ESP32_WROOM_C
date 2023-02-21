@@ -406,9 +406,8 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
             </ul>
         </td>
         <td align="center">
-            <a href="../img/hookup_guide/esp32_module.jpg"><img alt="ESP32-WROOM" src="../img/hookup_guide/esp32_module.jpg"></a><br>
-            <i>ESP32-WROOM module on the ESP32 Thing Plus (USB-C).<br>
-            (Click to enlarge)</i>
+            <a href="../img/hookup_guide/esp32_module.jpg"><img alt="ESP32-WROOM" title="Click to enlarge" src="../img/hookup_guide/esp32_module.jpg" width="200px"></a><br>
+            <i>ESP32-WROOM module on the ESP32 Thing Plus (USB-C).</i>
         </td>
     <tr>
 </table>
@@ -518,160 +517,156 @@ When configured as an <b>output</b> the pin will be at a <b>HIGH</b> or <b>LOW</
 There are several pins that have special functionality in addition to general **digital I/O**. These pins and their additional functions are listed in the tabs below. For more technical specifications on the **I/O** pins, you can refer to the [schematic](./board_files/schematic.pdf), [ESP32-WROOM module datasheet](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf), [ESP32 SoC datasheet](./component_datasheets/esp32_soc_datasheet_en.pdf), and [documentation for the ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#peripherals).
 
 
-#### Analog Input Pins
-The ESP32-WROOM module provides a <b>12-bit ADC</b> input on thirteen of its I/O pins. This functionality is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/"><code>analogRead(pin)</code> function</a>. <i>(*The available ADC pins are highlighted in the image below.)</i>
 
-<a href="../img/hookup_guide/pins_adc2.jpg"><img alt="Annotated image of analog inputs" src="../img/hookup_guide/pins_adc2.jpg" width="200" align="right"></a>
-            
-!!! note
-    By default, in the Arduino IDE, <code>analogRead()</code> returns a 10-bit value. To change the resolution of the value returned by the <code>analogRead()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/"><code>analogReadResolution(bits)</code> function</a>.
+=== "Analog Inputs"
 
-!!! note
-    <p>To learn more about analog vs. digital signals, check out this great <a href="https://learn.sparkfun.com/tutorials/analog-vs-digital">tutorial</a>.</p>
-    <p align="center">
-        <a href="https://learn.sparkfun.com/tutorials/89">Analog vs. Digital<br>
-        <img src="https://cdn.sparkfun.com/c/264-148/assets/3/7/6/6/0/51c48875ce395f745a000000.png"></a>
-    </p>
-
-<br>
-
-<p align="center">
-    <i>Analog input pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-</p>
-
-
-
-####  PWM and Analog (DAC) Output Pins
-The ESP32-WROOM module supports up to sixteen channels of <b>20-bit PWM</b> (Pulse Width Modulation) outputs on any of its I/O pins. This is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/"><code>analogWrite(pin, value)</code> function</a> or the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/ledc.html">LED Control API</a>. <i>(*Any I/O pin can be used for the PWM outputs; the available DAC pins, with true analog outputs, are highlighted in the image below.)</i>
-
-<a href="../img/hookup_guide/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="../img/hookup_guide/pins_pwm_dac.jpg" width="200" align="right"></a>
-
-!!! note
-    <p>By default, in the Arduino IDE, <code>analogWrite()</code> accepts an 8-bit value. To change the resolution of the PWM signal for the <code>analogWrite()</code> function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogwriteresolution/"><code>analogWriteResolution(bits)</code> function</a>.</p>
-    <p><i>(*The PWM output is not a true analog signal. For a true analog output, please refer to the <a href="https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/api/dac.html">DAC API</a> for <code>GPIO 25</code> and <code>GPIO 26</code>.)</i></p>
-
-!!! note
-    <p><b>Note:</b> To learn more about pulse width modulation (PWM), check out this great <a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation">tutorial</a>.</p>
-    <p align="center">
-        <a href="https://learn.sparkfun.com/tutorials/51">Pulse Width Modulation<br>
-        <img src="https://cdn.sparkfun.com/c/264-148/assets/f/9/c/8/a/512e869bce395fbc64000002.JPG"></a>
-    </p>
-
-<p align="center">
-    <i>Any I/O pin can be used for a PWM output, but these are the DAC pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-</p>
-
-
-
-#### Serial Communication Pins
-The ESP32-WROOM module provides three UART ports. By default, the UART port for the USB connection (<code>Serial</code>) and the labeled UART I/O pins on the board (<code>Serial1</code>) can be accessed through the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">serial communication class</a>.
-
-<a href="../img/hookup_guide/pins_serial.jpg"><img alt="Annotated image of UART pins" src="../img/hookup_guide/pins_serial.jpg" width="200" align="right"></a>
-
-!!! note
-    By default, in the Arduino IDE, the <b>SparkFun ESP32 Thing Plus C</b> board definition supports:        
-    <ul>
-        <li><code>Serial</code> - <b>UART (USB)</b></li>
-        <li><code>Serial1</code> - <b>Pins: <code>RX</code>/<code>TX</code> (<code>GPIO 16</code>/<code>GPIO 17</code>)</b></li>
-    </ul>
-    In order to utilize the serial communication on the strapping pins, users will need to create a custom serial port object and declare which pins to access.
+    The <Microcontroller/Module> provides a <b>12-bit ADC</b> input on thirteen of its I/O pins. This functionality is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogread/">`analogRead(pin)` function</a>. <i>(*The available ADC pins are highlighted in the image below.)</i>
     
-!!! note
-    <p><b>Note:</b> To learn more about serial communication, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-communication">tutorial</a>.</p>
-    <p align="center">
-        <a href="https://learn.sparkfun.com/tutorials/8">Serial Communication<br>
-        <img src="https://cdn.sparkfun.com/c/264-148/assets/7/d/f/9/9/50d24be7ce395f1f6c000000.jpg"></a>
+    [![Annotated image of analog inputs](../img/hookup_guide/pins_adc.jpg){ width="200" align=right }](../img/hookup_guide/pins_adc.jpg "Click to enlarge")
+
+    !!! info
+        By default, in the Arduino IDE, `analogRead()` returns a 10-bit value. To change the resolution of the value returned by the `analogRead()` function, use the [`analogReadResolution(bits)` function](https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogreadresolution/).
+    
+    !!! tip
+        To learn more about analog vs. digital signals, check out this great [tutorial](https://learn.sparkfun.com/tutorials/analog-vs-digital).
+        
+        <p align="center">
+            <a href="https://learn.sparkfun.com/tutorials/89">Analog vs. Digital<br>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/3/7/6/6/0/51c48875ce395f745a000000.png"></a>
+        </p>
+        
+    <p align="right">
+        <i>Analog input pins on the ESP32-WROOM Thing Plus.</i>
     </p>
 
-<p align="center">
-    <i>Default UART ports on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
-</p>
+=== "PWM & Analog (DAC) Outputs"
 
-!!! note
-    <p>We have noticed that with the ESP32 Arduino core, <code>Serial.available()</code> does not operate instantaneously. This is due to an interrupt triggered by the UART, to empty the FIFO when the <b><code>RX</code></b> pin is inactive for two byte periods:
+    The <Microcontroller/Module> supports up to sixteen channels of <b>20-bit PWM</b> (Pulse Width Modulation) outputs on any of its I/O pins. This is accessed in the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/">`analogWrite(pin, value)` function</a>. <i>(*Any I/O pin can be used for the PWM outputs; the available DAC pins, with true analog outputs, are highlighted in the image below.)</i>
+    
+    <a href="../img/hookup_guide/pins_pwm_dac.jpg"><img alt="Annotated image of DAC pins" src="../img/hookup_guide/pins_pwm_dac.jpg" width="200" align="right"></a>
+    
+    !!! info
+        <p>By default, in the Arduino IDE, `analogWrite()` accepts an 8-bit value. To change the resolution of the PWM signal for the `analogWrite()` function, use the <a href="https://www.arduino.cc/reference/en/language/functions/zero-due-mkr-family/analogwriteresolution/">`analogWriteResolution(bits)` function</a>.</p>
+        <p><i>(*The PWM output is not a true analog signal.)</i></p>
+    
+    !!! tip
+        <p><b>Note:</b> To learn more about pulse width modulation (PWM), check out this great <a href="https://learn.sparkfun.com/tutorials/pulse-width-modulation">tutorial</a>.</p>
+        <p align="center">
+            <a href="https://learn.sparkfun.com/tutorials/51">Pulse Width Modulation<br>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/f/9/c/8/a/512e869bce395fbc64000002.JPG"></a>
+        </p>
+    
+    <p align="center">
+        <i>Any I/O pin can be used for a PWM output, but these are the DAC pins on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
+    </p>
+
+=== "Serial Pins"
+    The <Microcontroller/Module> provides three UART ports. By default, the UART port for the USB connection (`Serial`) and the labeled UART I/O pins on the board (`Serial1`) can be accessed through the Arduino IDE using the <a href="https://www.arduino.cc/reference/en/language/functions/communication/serial/">serial communication class</a>.
+    
+    <a href="../img/hookup_guide/pins_serial.jpg"><img alt="Annotated image of UART pins" src="../img/hookup_guide/pins_serial.jpg" width="200" align="right"></a>
+    
+    !!! info
+        By default, in the Arduino IDE, the <b><Dev Board Name></b> board definition supports:        
         <ul>
-            <li>At 9600 baud, <code>hwAvailable</code> takes [<code>number of bytes received</code> + 2] x 1 ms = <b>11 ms</b> before the UART indicates that data was received from: <code>\r\nERROR\r\n</code>.</li>
-            <li>At 115200 baud, <code>hwAvailable</code> takes [<code>number of bytes received</code> + 2] x .087 ms = <b>~1 ms</b> before the UART indicates that data was received from: <code>\r\nERROR\r\n</code>.</li>
+            <li>`Serial` - <b>UART (USB)</b></li>
+            <li>`Serial1` - <b>Pins: `RX`/`TX` (`GPIO 16`/`GPIO 17`)</b></li>
         </ul>
-    </p>
-    <p><i>For more information, please refer to this <a href="https://gitter.im/espressif/arduino-esp32?at=5e25d6370a1cf54144909c85"> chatroom discussion</a>.</i></p>
-
-
-
-#### SPI Communication
-The ESP32-WROOM module provides three SPI buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/SPI">SPI class</a> is configured to utilize pins <code>GPIO 18</code> (SCK), <code>GPIO 19</code> (POCI), <code>GPIO 23</code> (PICO). These pins share the same SPI bus as the &micro;SD card slot, which utilizes pin <code>5</code> (<code>SS</code>) for its chip select. In order to utilize the other SPI ports or objects, users will need to create a custom SPI object and declare which pins to access.
-
-!!! note
-    To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. The <code>MOSI</code> signal on a controller has been replaced with <code>SDO</code> or <code>PICO</code>. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to deprecate the <b>MOSI</b>/<b>MISO</b> terminology and transition to the <b>SDO</b>/<b>SDI</b> naming convention</a>.</p>
-
-<a href="../img/hookup_guide/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="../img/hookup_guide/pins_spi.jpg" width="200" align="right"></a>
-
-<center>
-    <table>
-        <tr>
-            <th style="text-align:center">SCK</th>
-            <td style="text-align:center"><code>GPIO 18</code> (<code>SCK</code>)</td>
-        </tr>
-        <tr>
-            <th style="text-align:center">SDI or POCI</th>
-            <td style="text-align:center"><code>GPIO 19</code> (<code>MISO</code>)</td>
-        </tr>
-        <tr>
-            <th style="text-align:center">SDO or PICO</th>
-            <td style="text-align:center"><code>GPIO 23</code> (<code>MOSI</code>)</td>
-        </tr>
-        <tr>
-            <th style="text-align:center">CS (&micro;SD Card)</th>
-            <td style="text-align:center"><code>GPIO 5</code> (<code>SS</code>)</td>
-        </tr>
-    </table>
-</center>
-
-!!! note
-    To learn more about the serial peripheral interface (SPI) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">tutorial</a>.
+        In order to utilize the serial communication on the strapping pins, users will need to create a custom serial port object and declare which pins to access.
+        
+    !!! tip
+        <p><b>Note:</b> To learn more about serial communication, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-communication">tutorial</a>.</p>
+        <p align="center">
+            <a href="https://learn.sparkfun.com/tutorials/8">Serial Communication<br>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/7/d/f/9/9/50d24be7ce395f1f6c000000.jpg"></a>
+        </p>
+    
     <p align="center">
-        <a href="https://learn.sparkfun.com/tutorials/16">Serial Peripheral Interface (SPI)<br>
-        <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/6/spiThumb_Updated.jpg"></a>
+        <i>Default UART ports on the ESP32-WROOM Thing Plus. (Click to enlarge)</i>
     </p>
 
-<p align="center">
-    <i>Default SPI bus connections on the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
-</p>
+    !!! tip
+        <p>We have noticed that with the ESP32 Arduino core, `Serial.available()` does not operate instantaneously. This is due to an interrupt triggered by the UART, to empty the FIFO when the <b>`RX`</b> pin is inactive for two byte periods:
+            <ul>
+                <li>At 9600 baud, `hwAvailable` takes [`number of bytes received` + 2] x 1 ms = <b>11 ms</b> before the UART indicates that data was received from: `\r\nERROR\r\n`.</li>
+                <li>At 115200 baud, `hwAvailable` takes [`number of bytes received` + 2] x .087 ms = <b>~1 ms</b> before the UART indicates that data was received from: `\r\nERROR\r\n`.</li>
+            </ul>
+        </p>
+        <p><i>For more information, please refer to this <a href="https://gitter.im/espressif/arduino-esp32?at=5e25d6370a1cf54144909c85"> chatroom discussion</a>.</i></p>
 
+=== "SPI Pins"
 
-
-#### I<sup>2</sup>C Communication Pins
-The ESP32-WROOM module module can support up to two I<sup>2</sup>C buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/wire">Wire class</a> is configured to utilize pins <code>GPIO 21</code> (SDA) and <code>GPIO 22</code> (SCL). These pins share the same I<sup>2</sup>C bus with the Qwiic connector and MAX17048 fuel gauge. In order to utilize the other  I<sup>2</sup>C ports, users will need to create a custom Wire object and declare which pins to access.
-
-<a href="../img/hookup_guide/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="../img/hookup_guide/I2C_connections.jpg" width="200" align="right"></a>
-
-<center>
-    <table>
-        <tr>
-            <th style="text-align:center">SCL</th>
-            <td  style="text-align:center"><code>GPIO 22</code> (<code>SCL</code>)</td>
-        </tr>
-        <tr>
-            <th style="text-align:center">SDA</th>
-            <td style="text-align:center"><code>GPIO 21</code> (<code>SDA</code>)</td>
-        </tr>
-    </table>
-</center>
-
-
-!!! note
-    To learn more about the inter-integrated circuit (I<sup>2</sup>C) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/i2c">tutorial</a>.</p>
+    The <Microcontroller/Module> provides three SPI buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/SPI">SPI class</a> is configured to utilize pins `GPIO 18` (SCK), `GPIO 19` (POCI), `GPIO 23` (PICO). These pins share the same SPI bus as the &micro;SD card slot, which utilizes pin `5` (`SS`) for its chip select. In order to utilize the other SPI ports or objects, users will need to create a custom SPI object and declare which pins to access.
+    
+    !!! info
+        To comply with the latest <a href="https://www.oshwa.org/">OSHW</a> design practices, we have <a href="https://www.sparkfun.com/spi_signal_names">adopted the new SPI signal nomenclature</a> (<b>SDO</b>/<b>SDI</b> and <b>PICO</b>/<b>POCI</b>). The terms Master and Slave are now referred to as Controller and Peripheral. The `MOSI` signal on a controller has been replaced with `SDO` or `PICO`. Please refer to this <a href="https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names">announcement on the decision to deprecate the <b>MOSI</b>/<b>MISO</b> terminology and transition to the <b>SDO</b>/<b>SDI</b> naming convention</a>.</p>
+    
+    <a href="../img/hookup_guide/pins_spi.jpg"><img alt="Annotated image of IOM2 SPI pins" src="../img/hookup_guide/pins_spi.jpg" width="200" align="right"></a>
+    
+    <center>
+        <table>
+            <tr>
+                <th style="text-align:center">SCK</th>
+                <td style="text-align:center"><code>GPIO 18</code> (<code>SCK</code>)</td>
+            </tr>
+            <tr>
+                <th style="text-align:center">SDI or POCI</th>
+                <td style="text-align:center"><code>GPIO 19</code> (<code>MISO</code>)</td>
+            </tr>
+            <tr>
+                <th style="text-align:center">SDO or PICO</th>
+                <td style="text-align:center"><code>GPIO 23</code> (<code>MOSI</code>)</td>
+            </tr>
+            <tr>
+                <th style="text-align:center">CS (&micro;SD Card)</th>
+                <td style="text-align:center"><code>GPIO 5</code> (<code>SS</code>)</td>
+            </tr>
+        </table>
+    </center>
+    
+    !!! tip
+        To learn more about the serial peripheral interface (SPI) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi">tutorial</a>.
+        <p align="center">
+            <a href="https://learn.sparkfun.com/tutorials/16">Serial Peripheral Interface (SPI)<br>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/1/6/spiThumb_Updated.jpg"></a>
+        </p>
+    
     <p align="center">
-        <a href="https://learn.sparkfun.com/tutorials/82">I2C<br>
-        <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg"></a>
+        <i>Default SPI bus connections on the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
     </p>
+    
+=== "I<sup>2</sup>C Pins"
 
-<br>
-<br>
-
-<p align="center">
-    <i>Default I<sup>2</sup>C bus connections for the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
-</p>
+    The <Microcontroller/Module> module can support up to two I<sup>2</sup>C buses. By default, in the Arduino IDE, the <a href="https://www.arduino.cc/en/reference/wire">Wire class</a> is configured to utilize pins `GPIO 21` (SDA) and `GPIO 22` (SCL). These pins share the same I<sup>2</sup>C bus with the Qwiic connector and MAX17048 fuel gauge. In order to utilize the other  I<sup>2</sup>C ports, users will need to create a custom Wire object and declare which pins to access.
+    
+    <a href="../img/hookup_guide/I2C_connections.jpg"><img alt="Annotated image of IOM2 I<sup>2</sup>C pins" src="../img/hookup_guide/I2C_connections.jpg" width="200" align="right"></a>
+    
+    <center>
+        <table>
+            <tr>
+                <th style="text-align:center">SCL</th>
+                <td  style="text-align:center"><code>GPIO 22</code> (<code>SCL</code>)</td>
+            </tr>
+            <tr>
+                <th style="text-align:center">SDA</th>
+                <td style="text-align:center"><code>GPIO 21</code> (<code>SDA</code>)</td>
+            </tr>
+        </table>
+    </center>
+    
+    
+    !!! tip
+        To learn more about the inter-integrated circuit (I<sup>2</sup>C) protocol, check out this great <a href="https://learn.sparkfun.com/tutorials/i2c">tutorial</a>.</p>
+        <p align="center">
+            <a href="https://learn.sparkfun.com/tutorials/82">I2C<br>
+            <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg"></a>
+        </p>
+    
+    <br>
+    <br>
+    
+    <p align="center">
+        <i>Default I<sup>2</sup>C bus connections for the ESP32-WROOM Thing Plus.</i> (Click to enlarge)</i>
+    </p>
 
 
 
