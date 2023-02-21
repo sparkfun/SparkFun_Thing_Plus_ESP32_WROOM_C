@@ -7,7 +7,9 @@ site_author: SparkFun Electronics
 repo_url: https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
 repo_name: sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
 
-copyright: Copyright 2022 SparkFun Electronics (6333 Dry Creek Parkway, Niwot, Colorado 80503)
+copyright:
+  Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;<br>
+  <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
 
 # Configuration for webpage theme
 theme:
@@ -144,6 +146,8 @@ plugins:
   # For PDF rendering
   - with-pdf:
       cover_subtitle: none
+      author: SparkFun Electronics&#174;
+      copyright: Copyright 2022 - SparkFun Electronics&#174;
       cover_logo: img/sfe_logo_sm.png
       exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
       output_path: board_files/hookup_guide.pdf
