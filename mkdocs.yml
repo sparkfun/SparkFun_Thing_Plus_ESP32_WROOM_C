@@ -70,7 +70,7 @@ theme:
       accent: red
       toggle:
         icon: material/brightness-auto
-        name: Switch to dark mode
+        name: Switch to light mode
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -79,7 +79,7 @@ theme:
       scheme: default 
       toggle:
         icon: material/brightness-7
-        name: Switch to system preference
+        name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
@@ -88,7 +88,7 @@ theme:
       scheme: slate
       toggle:
         icon: material/weather-night
-        name: Switch to light mode    
+        name: Switch to system preference    
 
   # Configures icons of callout boxes
   icon:
@@ -213,10 +213,13 @@ nav:
     - Introduction: index.md
     - Hardware Overview: hardware_overview.md
     - Hardware Assembly: hardware_assembly.md
-    - Arduino IDE:
-      - Software Overview: software_overview.md
-      # - Blink:
-      # - WiFi:
+    # - Software Overview: software_overview.md
+    - Software Overview:
+      - UART Driver: software-driver.md
+      - Arduino IDE: software-arduino.md
+      # - Examples:
+        # - Blink:
+        # - WiFi:
   - Resources: resources.md
   - Support:
     - Troubleshooting Tips: troubleshooting_tips.md
