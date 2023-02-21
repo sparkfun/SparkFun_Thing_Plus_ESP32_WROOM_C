@@ -59,11 +59,6 @@ theme:
     # Renders path for page navigation at top of the page (makes page navigation more mobile friendly)
     - navigation.path
 
-    
-  
-  # Easter Egg: Animated Snow
-  ᴴₒᴴₒᴴₒ__button: true
-
   # Adds light/dark theme to webpage
   palette:
     # Palette toggle for automatic mode
