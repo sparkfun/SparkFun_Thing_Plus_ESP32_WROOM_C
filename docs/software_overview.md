@@ -68,7 +68,7 @@ Install the latest <b>ESP32</b> board definitions in the Arduino IDE.
 
 When selecting a board to program in the Arduino IDE, users should select the **SparkFun ESP32 Thing Plus C** from the Tools drop-down menu _(_i.e. **Tools** > **Board** > **ESP32 Arduino** > **SparkFun ESP32 Thing Plus C**)._ Alternatively, users can also select the **ESP32 Dev Module**; however, they may lose some pin assignments (i.e. `LED_BUILTIN`).
 
-<center>
-[![Board Selection](./img/hookup_guide/board_selection.png){ width="400" }](./img/hookup_guide/board_selection.png)<br>
-_Select the **SparkFun ESP32 Thing Plus C** from the Tools drop-down menu in the Arduino IDE. (Click to enlarge)_
-</center>
+<figure markdown>
+[![Board Selection](./img/hookup_guide/board_selection.png){ width="400" }](./img/hookup_guide/board_selection.png "Click to enlarge")
+<figcaption markdown>Select the **SparkFun ESP32 Thing Plus C** from the Tools drop-down menu in the Arduino IDE.</figcaption>
+</figure>
