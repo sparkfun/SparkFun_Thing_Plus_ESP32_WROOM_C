@@ -125,27 +125,27 @@ theme:
 # Included MkDocs plugins
 # Add the installation of any new plugins to the ./github/workflows/mkdocs.yml file also
 plugins:
-  # - search
-  # # Add revision date
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  #     type: timeago
-  # # Add git commiters at bottom of the page
-  # - git-committers:
-  #     repository: sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
-  #     branch: docs-test
-  # # Add git autors at bottom of the page
-  # - git-authors
-  # # Enables use of Git submodules and larger code base
-  # - monorepo
-  # # For PDF rendering
-  # - with-pdf:
-  #     author: SparkFun Electronics&#174;
-  #     copyright: Copyright 2022 - SparkFun Electronics&#174;
-  #     cover_logo: img/sfe_logo_sm.png
-  #     cover_subtitle: ''
-  #     exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
-  #     output_path: board_files/hookup_guide.pdf
+  - search
+  # Add revision date
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  # Add git commiters at bottom of the page
+  - git-committers:
+      repository: sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C
+      branch: docs-test
+  # Add git authors at bottom of the page
+  - git-authors
+  # Enables use of Git submodules and larger code base
+  - monorepo
+  # For PDF rendering
+  - with-pdf:
+      author: SparkFun Electronics&#174;
+      copyright: Copyright 2022 - SparkFun Electronics&#174;
+      cover_logo: img/sfe_logo_sm.png
+      cover_subtitle: ''
+      exclude_pages: [ "single_page", "github/file_issue", "github/contribute" ]
+      output_path: board_files/hookup_guide.pdf
 
 
 # Included Markdown extensions
@@ -187,7 +187,7 @@ markdown_extensions:
 extra:
   social:
     - icon: sfe_logo # simple/sparkfun
-      link: https://www.sparkfun.com/products/21247
+      link: https://www.sparkfun.com/products/20168
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/sparkfun
     - icon: fontawesome/brands/instagram
