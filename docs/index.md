@@ -2,26 +2,19 @@
 
     This guide is specific to the <a href="https://www.sparkfun.com/products/20168">ESP32 Thing Plus (USB-C)</a> board variant. For the variants with the USB micro-B connector, please refer to the <a href="https://learn.sparkfun.com/tutorials/852">ESP32 Thing Plus hookup guide</a>.
 
-<p class="pdf" align="center">
-  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/issues" alt="Issues">
-    <img src="https://img.shields.io/github/issues/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C.svg" /></a>
-  <a href="https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/blob/master/LICENSE.md" alt="License">
-    <img src="https://img.shields.io/badge/license-CC%20BY--SA%204.0-EF9421.svg" /></a>
-  <a href="https://twitter.com/intent/follow?screen_name=sparkfun">
-    <img src="https://img.shields.io/twitter/follow/sparkfun.svg?style=social&logo=twitter" alt="follow on Twitter"></a>
-</p>
-
-# SparkFun Thing Plus - ESP32 WROOM (USB-C)
+# Introduction
 
 <div class="grid cards desc" markdown>
 
--   [**SKU:** DEV-20168](https://www.sparkfun.com/products/20168)
+-   <a href="https://www.sparkfun.com/products/20168">
+    **ESP32 WROOM Thing Plus (USB-C)**<br>
+    **SKU:** DEV-20168
 	
 	---
 	
 	<figure markdown>
-	[![SparkFun Thing Plus - ESP32 WROOM (USB-C)](https://cdn.sparkfun.com/r/500-500/assets/parts/1/9/9/6/8/20168Diagonal.jpg)](https://cdn.sparkfun.com/assets/parts/1/9/9/6/8/20168Diagonal.jpg)
-	</figure>
+	![Product image](https://cdn.sparkfun.com/r/500-500/assets/parts/1/9/9/6/8/20168Diagonal.jpg)
+	</figure></a>
 
     <center>
     <section class="video">
