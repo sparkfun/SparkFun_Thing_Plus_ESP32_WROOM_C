@@ -56,7 +56,7 @@ Product Variants
 
 Product Versions
 ----------------
-* [v01](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/tree/b49a8a67c697a0e4b83bd7077b59e9f83cbbc87a) - Initial Release
+* [v01](https://github.com/sparkfun/SparkFun_Thing_Plus_ESP32_WROOM_C/releases/tag/v10) - Initial Release
 
 License Information
 -------------------
