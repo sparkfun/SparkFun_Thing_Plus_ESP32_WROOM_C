@@ -47,21 +47,21 @@ Below, is a general summary of the power circuitry on the board:
 * **`3V3`** - Provides a regulated 3.3V from the USB (5V) power and/or battery connections.
     * Used to power the ESP32-WROOM module, &micro;SD card slot, WS2812 RGB LED, CH340C Serial-to-UART bridge, and power LED.
         * The Qwiic connector is powered by its own voltage regulator, from the same power source(s).
-    * The **3.3V** [XC6222](./component_datasheets/XC6222.pdf) LDO regulator can source up to 700mA.
+    * The **3.3V** [XC6222](./component_documentation/XC6222.pdf) LDO regulator can source up to 700mA.
         * Output is controlled by the `EN` pin on the board.
 * **`VUSB`** - The voltage from the USB-C connector, usually **5V**.
     * Power source for the entire board.
         * Powers the 3.3V voltage regulators and the battery charging circuit for `VBAT`.
     * Overides power from the battery through a P-channel MOSFET, when both are connected.
-    * Utilizes a [BAT20J protection diode](./component_datasheets/BAT20J_datasheet.pdf) for the USB-C connection.
+    * Utilizes a [BAT20J protection diode](./component_documentation/BAT20J_datasheet.pdf) for the USB-C connection.
 * **`VBAT`** - The voltage from the JST battery connector; meant for single cell LiPo batteries.
-    * Provides power to the 3.3V voltage regulators and [MAX17048](./component_datasheets/MAX17048.pdf) battery fuel gauge.
-    * The [MCP73831](./component_datasheets/MCP73831.pdf) linear charge management controller is powered from the USB (5V) power supply.
+    * Provides power to the 3.3V voltage regulators and [MAX17048](./component_documentation/MAX17048.pdf) battery fuel gauge.
+    * The [MCP73831](./component_documentation/MCP73831.pdf) linear charge management controller is powered from the USB (5V) power supply.
         * The charge controller is configured for **500mA** *(max)* rate of charge to a connected battery.
 * **`GND`** - The common ground or the 0V reference for the voltage supplies.
 * **Qwiic Connector** - Provides a regulated 3.3V voltage from the USB (5V) power and/or battery connections.
     * Operates independently from the `3V3` pin, with its own voltage regulator.
-    * The **3.3V** [XC6222](./component_datasheets/XC6222.pdf) LDO regulator can source up to 700mA.
+    * The **3.3V** [XC6222](./component_documentation/XC6222.pdf) LDO regulator can source up to 700mA.
         * Output is controlled by `GPIO 0` of the ESP32-WROOM.
 
 *For more details, users can reference the [schematic](./board_files/schematic.pdf) and the datasheets of the individual components in the power circuitry.*
@@ -77,11 +77,11 @@ The red, `PWR` LED will light up once **3.3V** is supplied to the board; however
 
 
 ### Charging Circuit
-The charging circuit utilizes the [MCP73831 linear charge management controller](./component_datasheets/MCP73831.pdf) and is powered directly from the USB-C connector or `VUSB`. The controller is configured for a **500mA** charge rate and active charging is indicated by the yellow, `CHG` LED. If the charge controller is shutdown or charging is complete, the `CHG` LED will turn off. For more information, please refer to the [MCP73831 datasheet](./component_datasheets/MCP73831.pdf) and the **Indicator LEDs** section below.
+The charging circuit utilizes the [MCP73831 linear charge management controller](./component_documentation/MCP73831.pdf) and is powered directly from the USB-C connector or `VUSB`. The controller is configured for a **500mA** charge rate and active charging is indicated by the yellow, `CHG` LED. If the charge controller is shutdown or charging is complete, the `CHG` LED will turn off. For more information, please refer to the [MCP73831 datasheet](./component_documentation/MCP73831.pdf) and the **Indicator LEDs** section below.
 
 
 ### Power Control
-The power source for the [XC6222 LDO voltage regulators](./component_datasheets/XC6222.pdf) is controlled by a P-channel MOSFET. In addition, the **3.3V** regulated output from the XC6222 LDOs are enabled by the control pin (`CE`).
+The power source for the [XC6222 LDO voltage regulators](./component_documentation/XC6222.pdf) is controlled by a P-channel MOSFET. In addition, the **3.3V** regulated output from the XC6222 LDOs are enabled by the control pin (`CE`).
 
 <figure markdown>
 [![3V3 Power Supply Circuits](./img/hookup_guide/power_control_circuits.png){ width="200" }](./img/hookup_guide/power_control_circuits.png "Click to enlarge")
@@ -180,7 +180,7 @@ The P-channel MOSFET operates based on the voltages at the MOSFET&apos;s gate an
 </center>
 
 
-The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of control for the board's power. By default, the regulated 3.3V output is enabled. To disable and shutdown the output voltage from the XC6222, the control pin needs to be pulled low (i.e. shorted to ground (`GND`)). For more information, please refer to the [XC6222 datasheet](./component_datasheets/XC6222.pdf).
+The control pin (`CE`) of the XC6222 LDOs also provides an additional amount of control for the board's power. By default, the regulated 3.3V output is enabled. To disable and shutdown the output voltage from the XC6222, the control pin needs to be pulled low (i.e. shorted to ground (`GND`)). For more information, please refer to the [XC6222 datasheet](./component_documentation/XC6222.pdf).
 
 * The 3.3V power for the board (`3V3`) is controlled by the `EN` pin, which is broken out on the board.
 * The 3.3V power for the Qwiic connector is controlled by `GPIO 0` of the ESP32-WROOM.
@@ -375,7 +375,7 @@ It is possible for users to reach sub-mA power consumption levels with the deep 
 
 
 ## ESP32-WROOM
-This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf) with 16MB of flash memory. Espressif&apos;s ESP32-WROOM module is a versitile, WiFi+BT+BLE MCU module that targets a wide variety of applications. At the core of this module is the ESP32-D0WDQ6 system on a chip (SoC) which is designed to be both scalable and adaptive. Its laundry list of features include:
+This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module](./component_documentation/esp32-wroom-32e_datasheet_en.pdf) with 16MB of flash memory. Espressif&apos;s ESP32-WROOM module is a versitile, WiFi+BT+BLE MCU module that targets a wide variety of applications. At the core of this module is the ESP32-D0WDQ6 system on a chip (SoC) which is designed to be both scalable and adaptive. Its laundry list of features include:
 
 <center>
 <table>
@@ -417,7 +417,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
     <p>Users should be aware of the following nuances and details of this board</p>
     <ul>
         <li>The ESP32-WROOM is only compatible with <b>2.4GHz WiFi</b> networks; it will not work on the 5GHz bands.</li>
-        <li>For details on the boot mode configuration, please refer to <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf#8">section <b>3.3 Strapping Pins</b></a> of the ESP32-WROOM module datasheet.</li>
+        <li>For details on the boot mode configuration, please refer to <a href="./component_documentation/esp32-wroom-32e_datasheet_en.pdf#8">section <b>3.3 Strapping Pins</b></a> of the ESP32-WROOM module datasheet.</li>
     </ul>
 
 
@@ -435,7 +435,7 @@ This variant of the ESP32 Thing Plus is designed around the [ESP32-WROOM module]
         <li><b>Off</b> - Chip is powered off</li>
     </ul>
     
-    <p><i>For more information on the power management of the ESP32-WROOM module, pleaser refer to <b>Section 3.7</b> and <b>Tables: 8 and 17</b> of the <a href="./component_datasheets/esp32_soc_datasheet_en.pdf">ESP32 SoC Datasheet</a>.</i></p>
+    <p><i>For more information on the power management of the ESP32-WROOM module, pleaser refer to <b>Section 3.7</b> and <b>Tables: 8 and 17</b> of the <a href="./component_documentation/esp32_soc_datasheet_en.pdf">ESP32 SoC Datasheet</a>.</i></p>
 
 
 ### Debugging
@@ -463,12 +463,12 @@ Users can manually force the board into the <a href="https://docs.espressif.com/
                 <li>The I/O pins are <strong>not 5V-tolerant</strong>! To interface with higher voltage components, a <a href="https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide"><b>logic level adapter</b></a> is recommended.</li>
             </ul>
         </li>
-        <li>&#9889;  There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.</li>
-        <li>There are some limitations to the ADC performance, see the <b>Note</b> from the <a href="./component_datasheets/esp32_soc_datasheet_en.pdf"><b>ADC Characteristics</b> section of the ESP32 SoC datasheet</a>.
+        <li>&#9889;  There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_documentation/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.</li>
+        <li>There are some limitations to the ADC performance, see the <b>Note</b> from the <a href="./component_documentation/esp32_soc_datasheet_en.pdf"><b>ADC Characteristics</b> section of the ESP32 SoC datasheet</a>.
     </ul>
 
 
-The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** broken out into a feather form factor layout on this board. All of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) pins have a .1&#x22; pitch spacing for headers. With the [pin multiplexing](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#id1) capabilities of the ESP32 SoC, various pins can have several functionalities. For more technical specifications on the **I/O** pins, please refer to the [ESP32 SoC datasheet](./component_datasheets/esp32_soc_datasheet_en.pdf).
+The ESP32-WROOM module has *26 multifunctional GPIO*, of which, **21 I/O pins** broken out into a feather form factor layout on this board. All of the [ESP32-WROOM Thing Plus (USB-C)](https://www.sparkfun.com/products/20168) pins have a .1&#x22; pitch spacing for headers. With the [pin multiplexing](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#id1) capabilities of the ESP32 SoC, various pins can have several functionalities. For more technical specifications on the **I/O** pins, please refer to the [ESP32 SoC datasheet](./component_documentation/esp32_soc_datasheet_en.pdf).
 
 * 13x 12-bit analog to digital converter (ADC) channels
 * 3x UARTs (only two are configured by default in the Arduino IDE, one UART is used for bootloading/debug)
@@ -510,11 +510,11 @@ When configured properly, an <b>input</b> pin will be looking for a <b>HIGH</b> 
 When configured as an <b>output</b> the pin will be at a <b>HIGH</b> or <b>LOW</b> voltage. <b>Output</b> pins are <b>Low Impedance</b>: This means that they can provide a relatively substantial amount of current to other circuits.
 
 !!! warning
-    <b>&#9889;</b> There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_datasheets/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.
+    <b>&#9889;</b> There are electrical limitations to the amount of current that the ESP32-WROOM module can sink or source. For more details, check out the <a href="./component_documentation/esp32-wroom-32e_datasheet_en.pdf">ESP32-WROOM module datasheet</a>.
 
 
 ### Additional Functions
-There are several pins that have special functionality in addition to general **digital I/O**. These pins and their additional functions are listed in the tabs below. For more technical specifications on the **I/O** pins, you can refer to the [schematic](./board_files/schematic.pdf), [ESP32-WROOM module datasheet](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf), [ESP32 SoC datasheet](./component_datasheets/esp32_soc_datasheet_en.pdf), and [documentation for the ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#peripherals).
+There are several pins that have special functionality in addition to general **digital I/O**. These pins and their additional functions are listed in the tabs below. For more technical specifications on the **I/O** pins, you can refer to the [schematic](./board_files/schematic.pdf), [ESP32-WROOM module datasheet](./component_documentation/esp32-wroom-32e_datasheet_en.pdf), [ESP32 SoC datasheet](./component_documentation/esp32_soc_datasheet_en.pdf), and [documentation for the ESP32 Arduino core](https://docs.espressif.com/projects/arduino-esp32/en/latest/tutorials/io_mux.html?#peripherals).
 
 
 
@@ -723,7 +723,7 @@ The red, power (`PWR`) LED will light up once **3.3V** is supplied to the board.
 
 
 ### Battery Charging LED
-The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 charge management controller. The LED will shut off when no battery is present, when the charge management controller is in standby (*after the battery charging has been completed*), or when the charge management controller is shutdown. The LED will illuminate when the charge management controller is in the process of charging the battery. For more information, please refer to the [MCP73831 datasheet](./component_datasheets/MCP73831.pdf).
+The yellow, battery charging (`CHG`) LED indicates the status of the MCP73831 charge management controller. The LED will shut off when no battery is present, when the charge management controller is in standby (*after the battery charging has been completed*), or when the charge management controller is shutdown. The LED will illuminate when the charge management controller is in the process of charging the battery. For more information, please refer to the [MCP73831 datasheet](./component_documentation/MCP73831.pdf).
 
 <table style="width:100%">
     <tr>
@@ -783,7 +783,7 @@ The blue, status (`STAT`) LED is typically used as a test or status LED to make 
 
 
 ### WS2812 RGB LED
-The WS2812 RGB LED is controlled with a 24-bit (GRB) data signal. This indicator is connected to `GPIO 02` and the digital output pin from the LED is available through a test point. For more information, please refer to the [WS2812C datasheet](./component_datasheets/WS2812C-2020.pdf).
+The WS2812 RGB LED is controlled with a 24-bit (GRB) data signal. This indicator is connected to `GPIO 02` and the digital output pin from the LED is available through a test point. For more information, please refer to the [WS2812C datasheet](./component_documentation/WS2812C-2020.pdf).
 
 <figure markdown>
 [![RGB LED](./img/hookup_guide/LED_WS2812.jpg){ width="200" }](./img/hookup_guide/LED_WS2812.jpg "Click to enlarge")
@@ -882,7 +882,7 @@ The Qwiic connector and battery fuel gauge are attached to the primary I<sup>2</
 
 
 ### Battery Fuel Gauge
-The [MAX17048 fuel gauge](./component_datasheets/MAX17048.pdf) measures the approximate charge or discharge rate, state of charge (SOC) (based on ModelGauge algorithm), and voltage of a connected battery. Additionally, the chip is powered directly from `VBAT`, when a LiPo battery is connected. For more information, please refer to the [MAX17048 datasheet](./component_datasheets/MAX17048.pdf).
+The [MAX17048 fuel gauge](./component_documentation/MAX17048.pdf) measures the approximate charge or discharge rate, state of charge (SOC) (based on ModelGauge algorithm), and voltage of a connected battery. Additionally, the chip is powered directly from `VBAT`, when a LiPo battery is connected. For more information, please refer to the [MAX17048 datasheet](./component_documentation/MAX17048.pdf).
 
 
 <table>

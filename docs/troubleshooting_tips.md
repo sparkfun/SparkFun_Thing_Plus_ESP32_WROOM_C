@@ -65,12 +65,12 @@ For ultra-low power projects, these are the current consumption of the individua
     <tr>
         <td>
             <ul>
-                <li><a href="./component_datasheets/XC6222.pdf">XC6222 LDO Regulator</a>:
+                <li><a href="./component_documentation/XC6222.pdf">XC6222 LDO Regulator</a>:
                     <ul>
                         <li>Supply Current: 100 - 220 &micro;A</li>
                     </ul>
                 </li>
-                <li><a href="./component_datasheets/MCP73831.pdf">MCP73831 Charger Controller</a>:
+                <li><a href="./component_documentation/MCP73831.pdf">MCP73831 Charger Controller</a>:
                     <ul>
                         <li>Supply Current:
                             <ul>
@@ -97,7 +97,7 @@ For ultra-low power projects, these are the current consumption of the individua
                         </li>
                     </ul>
                 </li>
-                <li><a href="./component_datasheets/MAX17048.pdf">MAX17048 Fuel Gauge</a>:
+                <li><a href="./component_documentation/MAX17048.pdf">MAX17048 Fuel Gauge</a>:
                     <ul>
                         <li>Supply Current:
                             <ul>
@@ -113,7 +113,7 @@ For ultra-low power projects, these are the current consumption of the individua
         </td>
         <td>
             <ul>
-                <li><a href="./component_datasheets/CH340DS1.PDF">CH340C Serial-to-UART Bridge</a>:
+                <li><a href="./component_documentation/CH340DS1.PDF">CH340C Serial-to-UART Bridge</a>:
                     <ul>
                         <li>Supply Current: 4 - 12 mA
                             <ul>
@@ -122,7 +122,7 @@ For ultra-low power projects, these are the current consumption of the individua
                         </li>
                     </ul>
                 </li>
-                <li><a href="./component_datasheets/esp32_soc_datasheet_en.pdf">ESP32 SoC</a>:
+                <li><a href="./component_documentation/esp32_soc_datasheet_en.pdf">ESP32 SoC</a>:
                     <ul>
                         <li>Rec Supply current: 500 mA</li>
                         <li>Active: 95 - 240 mA
@@ -146,7 +146,7 @@ For ultra-low power projects, these are the current consumption of the individua
                         </li>
                     </ul>
                 </li>
-                <li><a href="./component_datasheets/WS2812C-2020.pdf">WS2812 RGB LED</a>:
+                <li><a href="./component_documentation/WS2812C-2020.pdf">WS2812 RGB LED</a>:
                     <ul>
                         <li>Supply Current: 1&micro;A (@5V)</li>
                         <li>LEDs: 5mA each (@5V)</li>

@@ -16,14 +16,14 @@
 
 ## Hardware Component Documentation
 * ESP32 Module
-    * [ESP32-WROOM Module (PDF)](./component_datasheets/esp32-wroom-32e_datasheet_en.pdf)
-        * [ESP32 SoC (PDF)](./component_datasheets/esp32_soc_datasheet_en.pdf)
+    * [ESP32-WROOM Module (PDF)](./component_documentation/esp32-wroom-32e_datasheet_en.pdf)
+        * [ESP32 SoC (PDF)](./component_documentation/esp32_soc_datasheet_en.pdf)
 * Power Components
-	* Voltage Regulator: [XC6222 (PDF)](./component_datasheets/XC6222.pdf)
+	* Voltage Regulator: [XC6222 (PDF)](./component_documentation/XC6222.pdf)
 	* Battery:
-		* Charge Controller: [MCP73831 (PDF)](./component_datasheets/MCP73831.pdf)
-		* Fuel Gauge: [MAX17048 (PDF)](./component_datasheets/MAX17048.pdf)
-* LED: [WS2812 (PDF)](./component_datasheets/WS2812C-2020.pdf)
+		* Charge Controller: [MCP73831 (PDF)](./component_documentation/MCP73831.pdf)
+		* Fuel Gauge: [MAX17048 (PDF)](./component_documentation/MAX17048.pdf)
+* LED: [WS2812 (PDF)](./component_documentation/WS2812C-2020.pdf)
 
 
 ## Manufacturer's Resources

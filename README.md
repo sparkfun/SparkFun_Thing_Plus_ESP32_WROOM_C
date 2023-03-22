@@ -31,7 +31,7 @@ Repository Contents
         * [Schematic](/docs/board_files/schematic.pdf) (.pdf)
         * [Dimensions](/docs/board_files/dimensions.pdf) (.pdf)
         * [Graphical Datasheet](/docs/board_files/graphical_datasheet.pdf) (.pdf)
-    * [component_datasheets](/docs/component_datasheets/) - Datasheets for hardware components
+    * [component_documentation](/docs/component_documentation/) - Datasheets for hardware components
     * [graphical_datasheet](/docs/graphical_datasheet/) - Original graphical datasheet files
     * [img/hookup_guide/](/docs/img/hookup_guide/) - Images for hookup guide documentation
 * **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals

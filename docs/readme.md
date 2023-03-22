@@ -30,7 +30,7 @@ The documentation files are organized in the following fashion:
             * ZIP folder containing the `*.sch` and `*.brd` files
         * graphical datasheet (PDF): `graphical_datasheet.pdf` *(if available)*
             * PDF of the graphical datasheet
-    * Links to resources in the `component_datasheets` folder
+    * Links to resources in the `component_documentation` folder
         * The relevant datasheets for the board components in a PDF format
     * Links to our website
         * Product page
@@ -62,7 +62,7 @@ Assets, such as example code, `*.pdf` files, or images that are linked in the do
             * ZIP folder containing the `*.sch` and `*.brd` files
         * graphical datasheet (PDF): `graphical_datasheet.pdf` *(if available)*
             * PDF of the graphical datasheet
-* `component_datasheets` Folder
+* `component_documentation` Folder
     * This folder should contain the relevant datasheets for the board components in a PDF format
         * Including those linked in the documentation
         * Example exception: restrictions by manufacturer
