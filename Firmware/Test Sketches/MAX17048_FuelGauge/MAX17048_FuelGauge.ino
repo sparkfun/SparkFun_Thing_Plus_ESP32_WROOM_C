@@ -10,13 +10,15 @@
 
 #include <SparkFun_MAX1704x_Fuel_Gauge_Arduino_Library.h> // Click here to get the library: http://librarymanager/All#SparkFun_MAX1704x_Fuel_Gauge_Arduino_Library
 SFE_MAX1704X lipo(MAX1704X_MAX17048); // Allow access to all the 17048 features
+#define I2C_SDA_PIN 21
+#define I2C_SCL_PIN 22
 
 void setup()
 {
 	Serial.begin(115200); // Start serial, to output debug data
   Serial.println(F("MAX17048 Example"));
 
-  Wire.begin();
+  Wire.begin(I2C_SDA_PIN, I2C_SCL_PIN, 1000000);
 
   // Set up the MAX17048 LiPo fuel gauge:
   if (lipo.begin() == false) // Connect to the MAX17048 using the default wire port
