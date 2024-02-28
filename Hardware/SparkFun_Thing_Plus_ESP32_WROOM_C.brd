@@ -12774,19 +12774,15 @@ These are the minimums &lt;a href=&quot;https://jlcpcb.com/capabilities/Capabili
 <attribute name="NAME" x="9.144" y="29.21" size="0.6096" layer="26" font="vector" ratio="20" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="11.43" y="29.21" size="0.6096" layer="28" font="vector" ratio="20" rot="MR270" align="top-center"/>
 </element>
-<element name="U3" library="SparkFun-IC-Power" package="SOT23-5" value="XC6222B331MR-G" x="11.43" y="22.86" smashed="yes">
-<attribute name="IOUT" value="700mA" x="11.43" y="22.86" size="1.778" layer="27" display="off"/>
+<element name="U3" library="SparkFun-IC-Power" package="SOT23-5" value="3.3V" x="11.43" y="22.86" smashed="yes">
 <attribute name="NAME" x="9.652" y="25.019" size="0.6096" layer="25" ratio="20"/>
-<attribute name="PROD_ID" value="VREG-16775" x="11.43" y="22.86" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="9.652" y="20.066" size="0.6096" layer="27" ratio="20"/>
-<attribute name="VOUT" value="3.3V" x="11.43" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="VREG-12457" x="11.43" y="22.86" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="3.3V" x="9.652" y="20.066" size="0.6096" layer="27" ratio="20"/>
 </element>
-<element name="U5" library="SparkFun-IC-Power" package="SOT23-5" value="XC6222B331MR-G" x="15.24" y="15.4432" smashed="yes" rot="R270">
-<attribute name="IOUT" value="700mA" x="15.24" y="15.4432" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="U5" library="SparkFun-IC-Power" package="SOT23-5" value="3.3V" x="15.24" y="15.4432" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.399" y="17.2212" size="0.6096" layer="25" ratio="20" rot="R270"/>
-<attribute name="PROD_ID" value="VREG-16775" x="15.24" y="15.4432" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="12.446" y="17.2212" size="0.6096" layer="27" ratio="20" rot="R270"/>
-<attribute name="VOUT" value="3.3V" x="15.24" y="15.4432" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PROD_ID" value="VREG-12457" x="15.24" y="15.4432" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="3.3V" x="12.446" y="17.2212" size="0.6096" layer="27" ratio="20" rot="R270"/>
 </element>
 <element name="J2" library="SparkFun-Connectors" package="MICROSD_TINY" value="MICRO-SDFRICTION" x="12.1412" y="10.7442" smashed="yes" rot="MR0">
 <attribute name="NAME" x="14.6812" y="10.7442" size="0.8128" layer="26" rot="MR0"/>

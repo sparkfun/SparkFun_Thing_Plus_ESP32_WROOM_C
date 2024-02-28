@@ -27056,12 +27056,33 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 </device>
 </devices>
 </deviceset>
-<deviceset name="XC6222" prefix="U">
+<deviceset name="V_REG_AP2112" prefix="U">
+<description>&lt;h3&gt;AP2112 - 600mA CMOS LDO Regulator w/ Enable&lt;/h3&gt;
+&lt;p&gt;The AP2112 is CMOS process low dropout linear regulator with enable function, the regulator delivers a guaranteed 600mA (min.) continuous load current.&lt;/p&gt;
+&lt;p&gt;Features&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;Output Voltage Accuracy: ±1.5% &lt;/li&gt;
+&lt;li&gt;Output Current: 600mA (Min.) &lt;/li&gt;
+&lt;li&gt;Foldback Short Current Protection: 50mA &lt;/li&gt;
+&lt;li&gt;Enable Function to Turn ON/OFF VOUT&lt;/li&gt;
+&lt;li&gt;Low Dropout Voltage (3.3V): 250mV (Typ.) @IOUT=600mA &lt;/li&gt;
+&lt;li&gt;Excellent Load Regulation: 0.2%/A (Typ.) &lt;/li&gt;
+&lt;li&gt;Excellent Line Regulation: 0.02%/V (Typ.) &lt;/li&gt;
+&lt;li&gt;Low Quiescent Current: 55μA (Typ.)&lt;/li&gt;
+&lt;li&gt;Low Standby Current: 0.01μA (Typ.)&lt;/li&gt;
+&lt;li&gt;Low Output Noise: 50μVRMS &lt;/li&gt;
+&lt;li&gt;PSRR: 100Hz -65dB, 1kHz -65dB &lt;/li&gt;
+&lt;li&gt; OTSD Protection &lt;/li&gt;
+&lt;li&gt;Stable  with  1.0μF Flexible Cap: Ceramic, Tantalum and Aluminum Electrolytic &lt;/li&gt;
+&lt;li&gt;Operation Temperature Range: -40°C to 85°C &lt;/li&gt;
+&lt;li&gt;ESD: MM 400V, HBM 4000V&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="V-REG-LDO_NO-BP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="B331MR-G" package="SOT23-5">
+<device name="K-3.3V" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -27070,9 +27091,8 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 </connects>
 <technologies>
 <technology name="">
-<attribute name="IOUT" value="700mA" constant="no"/>
-<attribute name="PROD_ID" value="VREG-16775" constant="no"/>
-<attribute name="VOUT" value="3.3V" constant="no"/>
+<attribute name="PROD_ID" value="VREG-12457"/>
+<attribute name="VALUE" value="3.3V"/>
 </technology>
 </technologies>
 </device>
@@ -29454,8 +29474,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5" value="TEST-POINT3X5"/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME_FLAME" device=".1_INCH" value="SFE_LOGO_NAME_FLAME.1_INCH"/>
 <part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-SMT_2_NC_TRACE_SILK"/>
-<part name="U3" library="SparkFun-IC-Power" deviceset="XC6222" device="B331MR-G"/>
-<part name="U5" library="SparkFun-IC-Power" deviceset="XC6222" device="B331MR-G"/>
+<part name="U3" library="SparkFun-IC-Power" deviceset="V_REG_AP2112" device="K-3.3V" value="3.3V"/>
+<part name="U5" library="SparkFun-IC-Power" deviceset="V_REG_AP2112" device="K-3.3V" value="3.3V"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="MICRO-SD" device="FRICTION"/>
 <part name="U2" library="SparkFun-RF" deviceset="ESP-WROOM-32" device="32D-NARROW"/>
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-SMT_2_NC_TRACE_SILK"/>
@@ -29476,7 +29496,7 @@ I_CHG = 1000 / R_PROG
 R_PROG=2k : I_CHG=500mA</text>
 <text x="60.96" y="271.78" size="2.54" layer="94" font="vector" align="center">System Regulator</text>
 <text x="167.64" y="266.7" size="2.54" layer="94" font="vector" align="center">Lithium-Polymer Battery Charger</text>
-<text x="68.58" y="226.06" size="1.778" layer="97" font="vector" align="top-center">700mA out
+<text x="68.58" y="226.06" size="1.778" layer="97" font="vector" align="top-center">600mA out
 6V max in</text>
 <text x="60.96" y="190.5" size="2.54" layer="94" font="vector" align="center">Auto-Reset</text>
 <wire x1="0" y1="203.2" x2="116.84" y2="203.2" width="0.2032" layer="97" style="longdash"/>
@@ -29556,7 +29576,7 @@ V_BATT - Single Cell (4.2V MAX)</text>
 <text x="388.62" y="264.16" size="2.54" layer="94" font="vector" align="center">Fuel Gauge</text>
 <wire x1="345.44" y1="279.4" x2="345.44" y2="203.2" width="0.2032" layer="97" style="longdash"/>
 <wire x1="269.24" y1="134.62" x2="340.36" y2="134.62" width="0.2032" layer="97" style="longdash"/>
-<text x="175.26" y="17.78" size="1.778" layer="97" font="vector" align="center">700mA out</text>
+<text x="175.26" y="17.78" size="1.778" layer="97" font="vector" align="center">600mA out</text>
 <text x="307.34" y="187.96" size="2.54" layer="94" font="vector" align="center">RGB Status LED</text>
 <text x="58.42" y="55.88" size="2.54" layer="94" font="vector" align="center">microSD Connector</text>
 <text x="205.74" y="142.24" size="1.27" layer="97" font="vector" align="center-left">IO15: Has builtin pullup at POR.</text>
