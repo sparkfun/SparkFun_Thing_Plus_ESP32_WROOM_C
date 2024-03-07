@@ -10,7 +10,11 @@
 */
 #include "FS.h"
 #include "SD.h"
-#include "SPI.h"
+#include <SPI.h>
+
+#define SD_SCK 18
+#define SD_MISO 19
+#define SD_MOSI 23
 
 const int sd_cs = 5; //Thing Plus C
 
@@ -176,6 +180,9 @@ void setup() {
   Serial.begin(115200);
   delay(1000);
   Serial.println("SD test");
+
+  SPI.begin(SD_SCK, SD_MISO, SD_MOSI, sd_cs);
+  delay(100);
 
   if (!SD.begin(sd_cs)) {
     Serial.println("Card Mount Failed");
