@@ -60,13 +60,13 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.1778,
-          "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_clearance": 0.1524,
+          "min_island_area": 9.99999999996,
+          "min_thickness": 0.1524,
           "pad_connection": 1,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
-          "thermal_relief_spoke_width": 0.5
+          "thermal_relief_gap": 0.1524,
+          "thermal_relief_spoke_width": 0.1524
         }
       },
       "diff_pair_dimensions": [
@@ -214,10 +214,11 @@
       ],
       "track_widths": [
         0.0,
-        0.1524,
-        0.254,
-        0.5588,
-        1.27
+        0.127,
+        0.1778,
+        0.3048,
+        0.4064,
+        0.5588
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -251,7 +252,7 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.6096,
+          "diameter": 0.5588,
           "drill": 0.3048
         }
       ],
@@ -534,27 +535,26 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
         "tuning_profile": "",
-        "via_diameter": 0.6096,
-        "via_drill": 0.3048,
+        "via_diameter": 0.56,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
         "bus_width": 12,
-        "clearance": 0.1524,
+        "clearance": 0.127,
         "diff_pair_gap": 0.254,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2032,
         "line_style": 0,
         "microvia_diameter": 0.3048,
         "microvia_drill": 0.1524,
-        "name": "Power",
+        "name": "5mil",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.254,
+        "track_width": 0.127,
         "tuning_profile": "",
-        "via_diameter": 0.6096,
-        "via_drill": 0.3048,
+        "via_diameter": 0.56,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -563,32 +563,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Power",
-        "pattern": "VUSB"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "VBATT"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "VIN"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "3.3V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "QWIIC_3.3V"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -718,7 +693,7 @@
         "uuid": "0d15854d-881e-4260-bedf-99db83a3c37c"
       }
     ],
-    "used_designators": "TP1,TP4,#PWR53",
+    "used_designators": "TP1,TP4,#PWR2,#PWR46,#PWR53-58,J3,R12,R15",
     "variants": []
   },
   "sheets": [

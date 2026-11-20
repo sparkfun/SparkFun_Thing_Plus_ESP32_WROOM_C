@@ -1,36 +1,54 @@
-# Ignore list for Eagle, a PCB layout tool
+# SparkFun hardware repo .gitignore
+# NOTE: Production outputs (gerbers, drill, BOM/CPL, panels, ordering instructions) ARE committed. Do not add *.gbr, *.drl, *bom* here.
 
-# Backup files
+# ---------- KiCad (local state, caches, backups) ----------
+*.kicad_prl
+fp-info-cache
+*-cache.lib
+*cache.lib
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-bak
+*-backups/
+_autosave-*
+_autosave*
+\#auto_saved_files\#
+~*.lck
+*.lck
+.history/
+# sym-lib-table / fp-lib-table are NOT ignored: project-local libraries (ARTWORK_*, PENDING_*) need them.
+
+# ---------- Eagle (legacy boards) ----------
 *.s#?
 *.b#?
 *.l#?
 
-# Eagle project file
-# It contains a serial number and references to the file structure
-# on your computer.
-# comment the following line if you want to have your project file included.
-eagle.epf
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
 
-# CAM files
-*.$$$
-*.cmp
-*.ly2
-*.l15
-*.sol
-*.plc
-*.stc
-*.sts
-*.crc
-*.crs
+# ---------- Editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.un~
+*~
+~$*
+*.bak
+*.tmp
 
-*.dri
-*.drl
-*.gpi
-*.pls
-
-*.drd
-*.drd.*
-
-*.info
-
-*.eps
+# ---------- OS ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.lnk

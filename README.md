@@ -13,7 +13,8 @@ We took all the good from the original [ESP32 Thing Plus](https://www.sparkfun.c
 Repository Contents
 -------------------
 
-* **[/Hardware](/Hardware/)** - Eagle design files (.brd, .sch)
+* **[/Hardware](/Hardware/)** - KiCad design files (.kicad_sch, .kicad_pcb). Parts come from the [SparkFun KiCad Libraries](https://github.com/sparkfun/SparkFun-KiCad-Libraries)
+* **[/Documents](/Documents/)** - Design notes: pin map, design calculations, BOM changes
 * **[/Firmware](/Firmware/)** - Example sketches demonstrating extra peripherals
 
 Documentation
@@ -24,6 +25,7 @@ Documentation
 Product Versions
 ----------------
 * ESP32 Thing Plus (USB-C variant)
+  * [WRL-20168](https://www.sparkfun.com/products/20168) - v5.0, ESP32-WROOM-32E-N16R2 module (16MB flash, 2MB PSRAM). Header RX moves to IO17 and TX to IO1 (UART0) because IO16 is used by the PSRAM. Design files moved from Eagle to KiCad.
   * [WRL-20168](https://www.sparkfun.com/products/20168) - v1.0, Initial Release
   * [SPX-18018](https://www.sparkfun.com/products/18018) - SparkX Release
 * ESP32 Thing Plus
